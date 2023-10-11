@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC&family=Oswald:wght@200;500&family=Rubik:wght@400;700;900&display=swap');
+
+
+/*MAIN*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #efefef;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*CATEGORY*/
+
+.categories-container {
+    position: absolute;
+    top: 25%;
+}
+
+.categories-container .categories-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.categories-container .categories-menu li {
+    width: 300px;
+    padding: 13px 10px 13px 10px;
+    display: block;
+    transition: .3s;
+    border-radius: 7px;
+}
+
+.categories-container .categories-menu li:hover {
+    background: #f1efef;
+    box-shadow: -7px 10px 20px rgba(0,0,0,0.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.categories-container .categories-menu li a{
+    font-size: 18px;
+    color: black;
+}
+
+.categories-container .categories-menu {
+    position: relative;
+    left: 25%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    transition: .3s;
+    list-style: none;
+}
+
+/*NAV*/
+
+.nav-container {
+    width: 650px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+
+nav .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2b2b2b;
+    border-radius: 200px;
+    padding: 10px 20px;
+    box-shadow: 7px 7px 25px rgba(0,0,0,0.5);
+}
+
+nav .navbar .nav-btn {
+    display: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+nav .navbar .nav-btn::before {
+    content: '\f0c9';
+    font-family: fontawesome;
+    font-size: 26px;
+    color: #ffff; 
+}
+
+nav .navbar .nav-btn.active::before{
+    content: '\f00d';
+}
+
+nav .navbar .logo {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffff;
+}
+
+nav .navbar .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .main-menu li {
+    display: block;
+    padding: 0 10px;
+    list-style: none;
+}
+
+nav .navbar .main-menu li a {
+    display: block;
+    font-size: 14px;
+    color: #949494;
+    transition: .3s;
+}
+
+nav .navbar .main-menu li a:hover {
+    color: #ffff;
+}
+
+nav .navbar .btn {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2b2b2b;
+    background-color: #ffff;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav .navbar .btn:hover {
+    background-color: #6acdff;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .btn {
+        display: none;
+    }
+    .btn-mobile {
+        display: block;
+        margin-top: 20px;
+    }
+    nav .navbar {
+        border-radius: 20px;
+        transition: .3s;
+    }
+    nav .navbar.active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    nav .navbar .main-menu {
+        z-index: 50;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 40px;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        flex-direction: column;
+        background: #2b2b2b;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transform-origin: top;
+        transition: .3s;
+    }
+    nav .navbar .main-menu li{
+        padding: 15px;
+    }
+    nav .navbar .main-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    nav .navbar .nav-btn {
+        display: block;
+    }
+
+    /*CATEGORY*/
+}
