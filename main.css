@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC&family=Oswald:wght@200;500&family=Rubik:wght@400;700;900&display=swap');
 
 
-/*MAIN*/
+/*MAIN START*/
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -25,7 +27,9 @@ a {
     text-decoration: none;
 }
 
-/*CATEGORY*/
+/*MAIN END*/
+
+/*CATEGORY START*/
 
 .categories-container {
     position: absolute;
@@ -68,12 +72,14 @@ a {
     transition: .3s;
     list-style: none;
 }
+/*CATEGORY END*/
 
-/*NAV*/
+/*NAV START*/
 
 .nav-container {
     width: 650px;
     margin: 0 auto;
+    z-index: 5;
 }
 
 nav {
@@ -84,11 +90,13 @@ nav {
 }
 
 nav .navbar {
+    z-index: 5;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2b2b2b;
+    background: rgba(43, 43, 43, 0.5);
+    backdrop-filter: blur(6px);
     border-radius: 200px;
     padding: 10px 20px;
     box-shadow: 7px 7px 25px rgba(0,0,0,0.5);
@@ -165,7 +173,10 @@ nav .navbar .btn:hover {
     display: none;
 }
 
+/*NAV END*/
+
 @media (max-width:900px) {
+    /*NAV START*/
     .container {
         width: 100%;
         padding: 0 15px;
@@ -215,6 +226,7 @@ nav .navbar .btn:hover {
     nav .navbar .nav-btn {
         display: block;
     }
+    /*NAV END*/
 
     /*CATEGORY*/
 }
