@@ -1,63 +1,112 @@
 <!DOCTYPE html>
 
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Dronmarket - Drone, DJI Ürünleri</title>
-        <link rel="stylesheet" href="./main.css" />
-        <link rel="stylesheet" href="./banner.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <nav>
-            <div class="nav-container">
-                <div class="navbar">
-                    <a href="#" class="logo">Dronmarket</a>
-                    <button class="nav-btn"></button>
-                    <ul class="main-menu">
-                        <li><a href="#">Kategoriler</a></li>
-                        <li><a href="#">Ana Sayfa</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Hakkında</a></li>
-                        <li><a href="#">İletişim</a></li>
-                        <button class="btn btn-mobile">Giriş Yap</button>
-                    </ul>
-                    <button class="btn">Giriş Yap</button>
-                </div>
-            </div>
-        </nav>
-        <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dronmarket - Drone, DJI Ürünleri</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./banner.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css" integrity="sha512-cAtZ0Luj6XlQ7YGgi5mPW0szI2z/2+btPjOqVEqK3z4h1/qojUwvQyTcocgKKOFv8noUFH5GOuhheX7PeDwwPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./home-product-card.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <div class="text-wrapper">
+        <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
+        <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
+        <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
+        <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
+      </div> -->
+      <nav>
+        <div class="nav-container">
+          <div class="navbar">
+            <a href="#" class="logo">Dronmarket</a>
+            <button class="nav-btn"></button>
+            <ul class="main-menu">
+              <li><a href="#">Kategoriler</a></li>
+              <li><a href="#">Ana Sayfa</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Hakkında</a></li>
+              <li><a href="#">İletişim</a></li>
+              <i class="fa-solid fa-cart-shopping cart-btn"></i>
+              <button class="btn btn-mobile">Giriş Yap</button>
+            </ul>
+            <button class="btn">Giriş Yap</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="home">
+        <div class="home-left">
+            <div class="home-product-card-slider-root" id="home-product-card-slider-root"></div>
+        </div>
+        <div class="home-right">
             <div id="root"></div>
-            <!-- <div class="categories-container">
-                <ul class="categories-menu">
-                    <li><a href="#">DJI Drone</a></li>
-                    <li><a href="#">Dron Multikopter</a></li>
-                    <li><a href="#">Dron Malzemeleri</a></li>
-                    <li><a href="#">Profesyonel Dron</a></li>
-                    <li><a href="#">Endüstriyel Drone</a></li>
-                    <li><a href="#">Zirai İnsansız Hava Araçları</a></li>
-                    <li><a href="#">Su Altı Drone</a></li>
-                    <li><a href="#">İHA Drone Pilot Eğitimleri</a></li>
-                    <li><a href="#">Dron kamera ve Gimballerı</a></li>
-                    <li><a href="#">Akıllı Teknoloji</a></li>
-                </ul>
-            </div> -->
-        </main>
-        <footer></footer>
-    </body>
+        </div>
+      </aside>
+      <aside class="features">
+        <h1>Özellikler</h1>
+      </aside>
+      <aside class="blogs">
+        <h1>Bloglar</h1>
+      </aside>
+      <aside class="services">
+        <h1>Diğer hizmetler</h1>
+      </aside>
+      <aside class="most-comments">
+        <h1>Yorumlar</h1>
+      </aside>
+    </main>
+    <footer></footer>
+  </body>
 
-<script type="text/javascript">
-    const navBtn = document.querySelector('.nav-btn');
-    const mainMenu = document.querySelector('.main-menu');
-    const navbar = document.querySelector('.navbar');
+  <script type="text/javascript">
+    const navBtn = document.querySelector(".nav-btn");
+    const mainMenu = document.querySelector(".main-menu");
+    const navbar = document.querySelector(".navbar");
 
-    navBtn.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-        navBtn.classList.toggle('active');
-        mainMenu.classList.toggle('active');
+    navBtn.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+      navBtn.classList.toggle("active");
+      mainMenu.classList.toggle("active");
     });
-</script>
-<script src="script.js"></script>
+  </script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="home-product-card-slider-script.js"></script>
+  <script>
+    var swiper = new Swiper('.home-product-card-slider-root', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+        invert: false,
+    },
+    pagination: {
+        el: '.pagination',
+        clickable: true,
+    }
+  });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script>
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= 35){
+            $('nav').addClass('fixed-navbar');
+        } else if($(window).scrollTop() <= 35){
+            $('nav').removeClass('fixed-navbar');
+        }
+    })
+  </script>
 </html>
