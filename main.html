@@ -8,6 +8,8 @@
     <title>Dronmarket - Drone, DJI Ürünleri</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./banner.css" />
+    <link rel="stylesheet" href="./distributations-section.css" />
+    <link rel="stylesheet" href="./home-skewed-blog-post.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,6 +28,7 @@
         <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
         <h1>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</h1>
       </div> -->
+      <!--NAVBAR-->
       <nav>
         <div class="nav-container">
           <div class="navbar">
@@ -49,20 +52,61 @@
     <main>
       <aside class="home">
         <div class="home-left">
+            <!--Popular products swiper-->
             <div class="home-product-card-slider-root" id="home-product-card-slider-root"></div>
+            <!--Last published blog-->
+            <div class="skewed-blog">
+              <div class="skewed-blog-content">
+                <small>1 Eylül 2021</small>
+                <h1>Drone Ehliyeti Nasıl/Nereden Alınır?</h1>
+                <p>Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil...</p>
+                <a href="#">Devamını Oku &rarr;</a>
+              </div>
+              <div class="skewed-blog-image"></div>
+            </div>
         </div>
         <div class="home-right">
+            <!--Root of banner(news image slider)-->
             <div id="root"></div>
         </div>
       </aside>
+      <aside class="distributations">
+        <!--Use header and texts with niche keywords and put alt descriptions for images-->
+        <!--Buyuk bir kisim kaplamasin makul olsun ve asagi ile baglantili olsun ki bunlari dedikten sonra hadi simdi teklif al cta i daha anlamli olsun-->
+        <div class="logo-circle">
+          <div class="logo">
+            <img  width="50%" src="./assets/logos/dji-logo.png" alt="">
+          </div>
+          <div class="logo">
+            <img  width="50%" src="./assets/logos/chasing-logo.png" alt="">
+          </div>
+          <div class="logo">
+            <img  width="50%" src="./assets/logos/emlid-logo.png" alt="">
+          </div>
+        </div>
+        <div class="distributator-header">
+          <h3>Distribütöründen</h3>
+        </div>
+      </aside>
       <aside class="features">
-        <h1>Özellikler</h1>
+        <!--Use text with niche keywords and put alt for images-->
+        <!--png 3d dji urunlerini kullan-->
+        <h1>CTA - Şimdi Teklif Al</h1>
+      </aside>
+      <aside class="services">
+        <!--Bir video yanına dron uygulamalarını koy 3 tane kart şeklinde devamını oku yazsın-->
+        <!--Onun altına da dronmarket akademi eğitimleri verdiğimizle ilgili havalı bi cta kısmı yap şimdi eğitimlere katıl gibi vs.-->
+        <h1>Diğer hizmetler</h1>
+      </aside>
+      <aside class="most-products">
+        <h1>Popüler - İndirimdekiler - Yeni Ürünler</h1>
       </aside>
       <aside class="blogs">
         <h1>Bloglar</h1>
       </aside>
-      <aside class="services">
-        <h1>Diğer hizmetler</h1>
+      <aside class="features">
+        <!--Cok buyuk alan kaplamasin, burasi icin appledan ornek alabilirsin -->
+        <h1>Özellikler</h1>
       </aside>
       <aside class="most-comments">
         <h1>Yorumlar</h1>
@@ -101,6 +145,7 @@
   </script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
+    // Make navbar to fixed on scroll
     $(window).scroll(function(){
         if($(window).scrollTop() >= 35){
             $('nav').addClass('fixed-navbar');

@@ -11,7 +11,8 @@
     border-radius: 25px;
     height: 242px;
     transition: all 0.3s;
-}
+/*     font-family: 'Montserrat';
+ */}
 
 @media screen and (max-width: 992px) {
     .home-product-card-slider-root{

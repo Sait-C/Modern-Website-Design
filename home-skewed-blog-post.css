@@ -1,0 +1,104 @@
+/*SKEWED BLOG POST START*/
+.skewed-blog p, small {
+    color: #8f8f8f;
+  }
+  .skewed-blog p {
+    font-size: 0.7em;
+    line-height: 15px;
+  }
+  
+  .skewed-blog h1 {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .skewed-blog {
+    height: 15em;
+    width: 32em;
+    color: #f1f1f1;
+    display: flex;
+    background: #111;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+  }
+  
+  .skewed-blog .skewed-blog-content {
+    padding: 1.5em;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .skewed-blog a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .skewed-blog .skewed-blog-image {
+    width: calc(50% + 50px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: url("https://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2023/09/drone-ile-ruzgar-turbini-kontrolu-ve-yuzey-hasar-tespiti-1.png.webp");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  
+  .skewed-blog .skewed-blog-image::before {
+    content: '';
+    position: absolute;
+    left: -4.2em;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .skewed-left .skewed-blog-image::before {
+    transform: translateY(-50%) rotate(-20deg);
+    left: initial;
+    right: -6.1em;
+  }
+  /*SKEWED BLOG POST END*/
+
+@media screen and (max-width: 768px) {
+    .skewed-blog{
+      display: block;
+      position: relative;
+      width: 19em;
+      height: 12em;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      margin: auto;
+      margin-top: -150px;
+    }
+    .skewed-blog .skewed-blog-image {
+      width: 100%;
+    }
+    .skewed-blog .skewed-blog-content {width: 100%;}
+    .skewed-blog .skewed-blog-image {
+      width: 100%;
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    .skewed-blog .skewed-blog-image::before {
+      width: 120%;
+      height: 40%;
+      top: -3em;
+      left: 50%;
+      transform: translateX(-50%) rotate(10deg);
+    }
+    .skewed-left .skewed-blog-image::before {
+      transform: translateX(-50%) rotate(-10deg);
+      top: initial;
+      bottom: -5em;
+    }
+  }
+  
