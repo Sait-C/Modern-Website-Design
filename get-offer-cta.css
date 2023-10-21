@@ -1,0 +1,107 @@
+main .get-offer-cta {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .get-offer-cta a {
+    z-index: 0;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 100px;
+    text-decoration: none;
+    font-size: clamp(2.5em, 6vw, 6em);
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.5s;
+    background: linear-gradient(rgba(0, 0, 0, 1) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .get-offer-cta a:hover {
+    z-index: 1000;
+}
+
+main .get-offer-cta .clouds {
+    z-index: 50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+main .get-offer-cta .products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+main .get-offer-cta .clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: cloud-animate-2 calc(8s * var(--i)) linear infinite;
+}
+
+main .get-offer-cta .products img {
+    position: absolute;
+}
+
+main .get-offer-cta .products img:nth-child(1) {
+    left: -20%;
+    transform: rotate(20deg);
+}
+
+main .get-offer-cta .products img:nth-child(2) {
+    right: 5%;
+    bottom: 0;
+    transform: rotate(10deg);
+}
+
+main .get-offer-cta .products img:nth-child(3) {
+    right: -5%;
+    transform: rotate(20deg);
+}
+
+@keyframes cloud-animate {
+    0%
+    {
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%, 75%
+    {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+@keyframes cloud-animate-2 {
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main .get-offer-cta {
+        height: 15vh;
+        margin-top: 30px;
+    }
+}
