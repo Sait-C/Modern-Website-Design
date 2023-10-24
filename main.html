@@ -3,14 +3,16 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./banner.css" />
     <link rel="stylesheet" href="./distributations-section.css" />
     <link rel="stylesheet" href="./home-skewed-blog-post.css" />
     <link rel="stylesheet" href="./get-offer-cta.css" />
+    <link rel="stylesheet" href="./features-section.css" />
+    <link rel="stylesheet" href="./most-products-section.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -112,8 +114,87 @@
           <img width="60%" src="./assets/cloud5.png" style="--i:6" alt=""> -->
         </div>
       </aside>
+      <aside class="features">
+        <div class="top"></div>
+        <!--Cok buyuk alan kaplamasin, burasi icin appledan ornek alabilirsin -->
+        <h1>Özellikler</h1>
+      </aside>
       <aside class="most-products">
-        <h1>Popüler - İndirimdekiler - Yeni Ürünler</h1>
+        <header>
+          <h1>Ürünlerimiz</h1>
+        </header>
+        <div class="content-container">
+          <div class="tab-container">
+            <div class="tab-filter-container">
+              <li class="filter-btn active" data-tab="on-sale">
+                İndirimdekiler
+              </li>
+              <li class="filter-btn" data-tab="popular">
+                Çok Satanlar
+              </li>
+              <li class="filter-btn" data-tab="new">
+                Yeniler
+              </li>
+            </div>
+            <div class="tab-filter-item-container">
+              <div class="tab-item on-sale selected_tab">
+                <div class="on-sale-products-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product-slide-box">
+                        <div class="like-btn">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-slide-img">
+                          <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
+                        </div>
+                        <div class="product-detail-box">
+                          <div class="product-type">
+                            <a href="#">Dron Kumandası</a>
+                            <span>Dron Malzemeleri</span>
+                          </div>
+                          <a href="#" class="product-price">$23</a>
+                          <div class="action-button">
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-slide-box">
+                        <div class="like-btn">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-slide-img">
+                          <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
+                        </div>
+                        <div class="product-detail-box">
+                          <div class="product-type">
+                            <a href="#">Dron Kumandası</a>
+                            <span>Dron Malzemeleri</span>
+                          </div>
+                          <a href="#" class="product-price">$23</a>
+                          <div class="action-button">
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>                  
+                </div>
+              </div>
+              <div class="tab-item popular">
+                Çok Satan Ürünlerin Listesi
+              </div>
+              <div class="tab-item new">
+                Yeni Ürünlerin Listesi
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
       <aside class="services">
         <!--Bir video yanına dron uygulamalarını koy 3 tane kart şeklinde devamını oku yazsın-->
@@ -122,10 +203,6 @@
       </aside>
       <aside class="blogs">
         <h1>Bloglar</h1>
-      </aside>
-      <aside class="features">
-        <!--Cok buyuk alan kaplamasin, burasi icin appledan ornek alabilirsin -->
-        <h1>Özellikler</h1>
       </aside>
       <aside class="most-comments">
         <h1>Yorumlar</h1>
@@ -146,6 +223,11 @@
     });
   </script>
   <script src="script.js"></script>
+  
+  <script>
+    
+  </script>
+  <script src="products-tab-script.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="home-product-card-slider-script.js"></script>
   <script>
@@ -162,6 +244,36 @@
     }
   });
   </script>
+  <script>
+    const onSaleProductsSwiper = new Swiper('.on-sale-products-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      577: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+  </script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
     // Make navbar to fixed on scroll
@@ -174,3 +286,11 @@
     })
   </script>
 </html>
+
+<!--
+  - Products swiperlar javascript ile DOM ile oluşturulsunlar
+  - Product card responsive değil, ekran küçülürken küçülsün
+  - products-tab-script javascript dosyası çok hatalı onu fix et yeniden yaz daha optimize yaz
+  - products-tab-script scriptinde content boyutuna göre boyut atıyor boyutu fixle değişmesin
+  - most products sectionındaki product card tasarımını değiştir(seçilmiş video var bununla ilgili browser tablarına bak)
+-->
