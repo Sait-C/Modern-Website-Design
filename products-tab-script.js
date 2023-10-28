@@ -19,8 +19,3 @@ for(let i = 0; i < filter_btns.length; i++) {
         }
     })
 }
-
-for (let th = 0; th < tab_items.length; th++) {
-    document.querySelector('.tab-filter-item-container').style.height = 
-        tab_items[t].scrollHeight + 'px';
-}

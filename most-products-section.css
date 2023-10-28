@@ -135,7 +135,13 @@ main .most-products .product-slide-box .product-slide-img {
     align-items: center;
     justify-content: center;
     margin: 15px;
+    height: 12rem;
 }
+
+main .most-products .product-slide-box .product-slide-img img:hover {
+    transform: scale(1.1);
+}
+
 
 main .most-products .product-slide-box .product-slide-img img {
     width: 100%;
@@ -143,6 +149,7 @@ main .most-products .product-slide-box .product-slide-img img {
     object-fit: cover;
     object-position: center;
     box-sizing: border-box;
+    transition: 0.4s;
 }
 
 main .most-products .product-slide-box .product-detail-box {
@@ -165,6 +172,12 @@ main .most-products .product-slide-box .product-detail-box .product-type a {
     font-weight: 700;
     letter-spacing: 0.5px;
     padding-right: 8px;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical; /* Display vertically */
+    line-height: 1.2; /* Adjust line height for better appearance */
 }
 
 main .most-products .product-slide-box .product-detail-box .product-type span {
@@ -207,6 +220,7 @@ main .most-products .product-slide-box .product-detail-box .action-button .add-t
 
 main .most-products .product-slide-box .like-btn {
     position: absolute;
+    z-index: 10;
     top: 10px;
     right: 10px;
     width: 44px;
@@ -220,12 +234,12 @@ main .most-products .product-slide-box .like-btn {
 
 
 /*PRODUCT SWIPER*/
-.on-sale-products-swiper {
+.products-swiper {
     width: 100%;
     height: 100%;
 }
 
-.on-sale-products-swiper .swiper-slide {
+.products-swiper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
