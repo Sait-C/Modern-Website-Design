@@ -210,9 +210,9 @@ nav .navbar .cart-btn:hover {
 }
 /*Infinite Marquee END*/
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   /*NAV START*/
-  .container {
+  .nav-container {
     width: 100%;
     padding: 0 15px;
   }
