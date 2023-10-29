@@ -1,0 +1,99 @@
+main .testimonials-section {
+    width: 100%;
+    padding: 0px 8%;
+    background-color: #191d28;
+}
+
+main .testimonials-section .section-header {
+    max-width: 700px;
+    text-align: center;
+    margin: 30px auto 40px;
+}
+
+main .testimonials-section .section-header h1 {
+    position: relative;
+    font-size: 36px;
+    color: #f0bf6a;
+}
+
+main .testimonials-section .testimonial-swiper {
+    position: relative;
+}
+main .testimonials-section .testimonial-swiper .testimonial-card {
+    padding: 20px;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body {
+    background-color: #161922;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote {
+    display: flex;
+    align-items: center;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote i {
+    font-size: 45px;
+    color: #dadada;
+    margin-right: 20px;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote h2 {
+    color: #dadada;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body p {
+    margin: 10px 0px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #767a86;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .ratings {
+    margin-top: 20px;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .ratings i {
+    font-size: 17px;
+    color: #f0bf6a;
+    cursor: pointer;
+}
+
+main .testimonials-section .testimonial-swiper .testimonial-card .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+main .testimonials-section .testimonial-card .profile .profile-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+main .testimonials-section .testimonial-card .profile .profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main .testimonials-section .testimonial-card .profile .profile-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0bf6a;
+}
+
+main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(2) {
+    font-size: 15px;
+    color: #767a86;
+}

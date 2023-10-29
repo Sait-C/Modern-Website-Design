@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./most-products-section.css" />
     <link rel="stylesheet" href="./other-services-section.css" />
     <link rel="stylesheet" href="./blogs-section.css" />
+    <link rel="stylesheet" href="./what-clients-say-section.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -310,8 +311,106 @@
           </div>
         </div>
       </aside>
-      <aside class="most-comments">
-        <h1>Yorumlar</h1>
+      <aside class="testimonials-section">
+        <header class="section-header">
+          <h1>Müşterilerimizin Görüşleri</h1>
+        </header>
+        <div class="testimonial-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="test-card-body">
+                  <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                    <h2>Harika Hizmet</h2>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  </p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="profile">
+                  <div class="profile-image">
+                    <img src="./assets/avatars/avatar1.png" alt="">
+                  </div>
+                  <div class="profile-desc">
+                    <span>Person Name</span>
+                    <span>Description</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="test-card-body">
+                  <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                    <h2>Harika Şirket</h2>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  </p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="profile">
+                  <div class="profile-image">
+                    <img src="./assets/avatars/avatar2.png" alt="">
+                  </div>
+                  <div class="profile-desc">
+                    <span>Person Name</span>
+                    <span>Description</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="test-card-body">
+                  <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                    <h2>Teşekkürler</h2>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  </p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="profile">
+                  <div class="profile-image">
+                    <img src="./assets/avatars/avatar3.png" alt="">
+                  </div>
+                  <div class="profile-desc">
+                    <span>Person Name</span>
+                    <span>Description</span>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>  
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->            
+        </div>
       </aside>
     </main>
     <footer>FOOTER</footer>
@@ -419,6 +518,46 @@
     }
   });
   </script>
+  
+  <script>
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 2,
+    pauseOnMouseEnter: true,
+    loop: true,
+    autoplay: {
+      delay: 2000
+    },
+    spaceBetween: 50,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 1
+      },
+      769: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 2
+      }
+    }
+  });
+  </script>
 </html>
 
 <!--
@@ -429,4 +568,5 @@ TODO:  - CLS sorunlarını çöz
        - Mobilde navbar arkası blur olmuyor
        - Ürünler yazısını responsive yap, ekran küçüldüğünde küçülsün (clamp veya media query)
        - products-tab-script javascript dosyası çok hatalı onu fix et yeniden yaz daha optimize yaz
+       - Swiperların şuan comment altında olan pagination ve navigationlarını uncomment yaptığımda layout bozuluyor nav arrowlar sayfanın en üstüne gözüküyor vs.
 -->
