@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./features-section.css" />
     <link rel="stylesheet" href="./most-products-section.css" />
     <link rel="stylesheet" href="./other-services-section.css" />
+    <link rel="stylesheet" href="./blogs-section.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -200,10 +201,66 @@
       <aside class="services">
         <!--Bir video yanına dron uygulamalarını koy 3 tane kart şeklinde devamını oku yazsın-->
         <!--Onun altına da dronmarket akademi eğitimleri verdiğimizle ilgili havalı bi cta kısmı yap şimdi eğitimlere katıl gibi vs.-->
-       
+        <div class="drone-applications-container">
+          <div class="content-wrapper">
+            <h2>Dron Uygulamaları</h2>
+            <p>Drone teknolojisi, günümüzde pek çok sektörde etkili olmaya devam eden, hayaraziatı ve iş yapma şeklini kolaylaştıran olağanüstü yeniliklerden biridir.</p>
+          </div>
+          <div class="collection-wrapper">
+            <div class="post-lists">
+              <div class="post-item">
+                <div class="post-content">
+                  <a class="post-title" href="#">Tarım Dron Uygulamaları</a>
+                  <p class="post-description">Tarım alanlarında kullanılan tarım drone tipleri hem çok motorlu hem de sabit kanatlı olarak tercih edilebilir. Çok motorlu sistemler nispeten kullanım kolaylığına sahip olur. </p>
+                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="post-image">
+                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/dji-agras-zirai-ilaclama-dronu-uygulamalari.png" alt="">
+                </div>
+              </div>
+              <div class="post-item">
+                <div class="post-content">
+                  <a class="post-title" href="#">Enerji Dron Uygulamaları</a>
+                  <p class="post-description">Enerji sektörü içerisinde drone’lardan faydalanılması son zamanlarda oldukça popüler. Bilindiği üzere drone teknolojileri maden, tarım, inşaat, enerji ve daha pek çok sektörde aktif olarak kullanılır. </p>
+                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="post-image">
+                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1a1a1/g%C3%BCne%C5%9F%20enerjisi1%20.jpg" alt="">
+                </div>
+              </div>
+              <div class="post-item">
+                <div class="post-content">
+                  <a class="post-title" href="#">İnşaat ve Harita Uygulamaları</a>
+                  <p class="post-description">Haritalama drone uygulamaları dışında, yüksek düzeyde doğruluk ve çözünürlük sunan fotogrametrik bir harita elde etmenin tek yolu, ilgili bölgede insanlı bir uçakla uçmak ya da bir uyduya erişim sağlamaktır.</p>
+                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="post-image">
+                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1aaa11/8.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
       <aside class="blogs">
-        <h1>Bloglar</h1>
+        <div class="blogs-container">
+          <div class="blogs-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                TEST
+              </div>
+              <div class="swiper-slide">
+                TEST 2
+              </div>
+              <div class="swiper-slide">
+                TEST 3
+              </div>
+            </div>  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>                  
+          </div>
+        </div>
       </aside>
       <aside class="most-comments">
         <h1>Yorumlar</h1>
@@ -283,6 +340,36 @@
             $('nav').removeClass('fixed-navbar');
         }
     })
+  </script>
+  <script>
+    const blogsSwiper = new Swiper('.blogs-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 20,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      577: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
   </script>
 </html>
 
