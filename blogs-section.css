@@ -2,17 +2,162 @@ main .blogs {
     width: 100%;
 }
 
+main .blogs .blogs-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: black;
+}
 
-main .blogs .blogs-container {
+main .blogs .blogs-content-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    width: 100%;
+    height: 600px;
+    padding: 30px;
 }
+
+main .blogs .blogs-top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem;
+    text-align: center;
+}
+
+main .blogs .blogs-top-wrapper h2 {
+    font-size: clamp(1em, 3em, 5em);
+    color: white;
+    text-wrap: balance;
+    margin: auto;
+}
+
+
+main .blogs .blogs-top-wrapper p {
+    font-size: clamp(.5em, 1em, 2em);
+    color: white;
+    text-wrap: balance;
+    margin: 20px auto;
+}
+
+/*Blogs Post Card*/
+main .blogs .blogs-content-container .blog-post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: black;
+    border: 1px solid white;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+main .blogs .blog-post-details-wrap::before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    background: #f49c26;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+
+main .blogs .blogs-content-container .blog-post-card:hover .blog-post-details-wrap::before {
+    height: 100%;
+}
+
+main .blogs .blogs-content-container .blog-post-card:hover .blog-card-name {
+    color: black;
+}
+main .blogs .blogs-content-container .blog-post-card:hover .blog-details {
+    color: black;
+}
+main .blogs .blogs-content-container .blog-post-card:hover .blog-card-date-wrap {
+    color: black;
+}
+main .blogs .blogs-content-container .blog-post-card:hover .learn-more-button {
+    color: black;
+}
+main .blogs .blogs-content-container .blog-post-card:hover .blog-post-image-link img {
+    transform: scale(1.1);
+}
+
+main .blogs .blogs-content-container .blog-post-card .blog-card-date-wrap {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #a5a4a5;
+    transition: color .5s;
+}
+
+main .blogs .blog-card-content {
+    display: inline-block;
+}
+
+main .blogs .blogs-content-container .blog-post-card .blog-card-name {
+    color: white;
+    font-size: clamp(.5em, 7cqi, 1.5em);
+    font-weight: 600;
+    text-wrap: balance;
+    transition: color .5s;
+}
+
+main .blogs .blogs-content-container .blog-post-card .blog-post-image-link {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+main .blogs .blogs-content-container .blog-post-card .blog-post-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1.5s;
+}
+
+main .blogs .blogs-content-container .blog-post-card .learn-more-button {
+    color: white;
+    font-size: clamp(.8em, 1.1em, 1.3em);
+    transition: color .5s;
+}
+
+main .blogs .blogs-content-container .blog-post-card .blog-post-details-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+main .blogs .blogs-content-container .blog-post-card .blog-details {
+    font-size: 16px;
+    text-wrap: balance;
+    margin: 15px 0px 25px 0px;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical; /* Display vertically */
+    line-height: 1.5; /* Adjust line height for better appearance */
+    color: #a5a4a5;
+    transition: color .5s;
+}
+
 
 /*BLOG POST SWIPER*/
 .blogs-swiper {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 

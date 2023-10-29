@@ -243,22 +243,70 @@
         </div>
       </aside>
       <aside class="blogs">
-        <div class="blogs-container">
-          <div class="blogs-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                TEST
-              </div>
-              <div class="swiper-slide">
-                TEST 2
-              </div>
-              <div class="swiper-slide">
-                TEST 3
-              </div>
-            </div>  
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>                  
+        <div class="blogs-section-container">
+          <div class="blogs-top-wrapper">
+            <h2>Yayınlanmış Diğer Blogları ve Kaynakları Keşfet</h2>
+            <p>Integer condimentum, eros vitae pellentesque blandit, tellus mauris consectetur risusa sdvitae venenatis mi magna ut nulla. Curabitur vitae porttitor</p>
+          </div>
+          <div class="blogs-content-container">
+            <div class="blogs-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="blog-post-card">
+                    <a class="blog-post-image-link" href="#">
+                      <img src="https://assets.website-files.com/643935ad63d70d8521e3cbac/643936ca6d20a5251050391f_blog%20post%20img%201.png" alt="">
+                    </a>
+                    <div class="blog-post-details-wrap">
+                      <div class="blog-card-content">
+                        <div class="blog-card-date-wrap">
+                          <p>14 Nisan 2023</p>
+                        </div>
+                        <a class="blog-card-name" href="#">Dron Ehliyeti Nasıl/Nereden Alınır ?</a>
+                        <p class="blog-details">Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil olarak etkisini her alanda hissettirmeyi başarıyor. Bu noktada değinebileceğimiz araçlardan bir tanesi, günümüzdeki geniş yelpazede sektörde ve mecrada kullanımı giderek yaygınlaşmaktadır. </p>
+                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-post-card">
+                    <a class="blog-post-image-link" href="#">
+                      <img src="https://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/hangi-dronelar-icin-belge.jpg.webp" alt="">
+                    </a>
+                    <div class="blog-post-details-wrap">
+                      <div class="blog-card-content">
+                        <div class="blog-card-date-wrap">
+                          <p>1 Eylül 2021</p>
+                        </div>
+                        <a class="blog-card-name" href="#">Hangi Dronlar İçin İzin Belgesi & Ehliyet/Sertifika Gerekli?</a>
+                        <p class="blog-details">Modern dünyanın nimetleri mevzubahis olduğunda akla gelen ilk olgulardan bir tanesi, şüphesiz üstün teknolojinin hayatımızı hiç olmadığı kadar kolaylaştıran icatlarıdır. Üstelik bu icatlar, yalnızca uzay, biyogenetik veya nükleer gibi alanlarda değil gündelik yaşantımızın hemen her noktasında kendisini gösterebilmektedir.  </p>
+                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-post-card">
+                    <a class="blog-post-image-link" href="#">
+                      <img src="https://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/08/IHA-Drone-Pilotlugu-Ehliyeti-ve-Egitimi.jpg.webp" alt="">
+                    </a>
+                    <div class="blog-post-details-wrap">
+                      <div class="blog-card-content">
+                        <div class="blog-card-date-wrap">
+                          <p>24 Ağustos 2021</p>
+                        </div>
+                        <a class="blog-card-name" href="#">İHA Drone Pilotluğu Ehliyeti ve Eğitimi</a>
+                        <p class="blog-details">Dronmarket, 2015 yılından itibaren ileri teknoloji drone çözümleri sunar. Sektörde önemli bir yer edinen Dronmarket, teknolojiyi ve gelişmeleri takip eder ve ürün seçkisini bu geliştirir. DJI Agriculture ve Enterprise Türkiye distribütörü olan Dronmarket, kaliteli hizmet ve teknolojileri en güvenilir hizmetleri sunar. </p>
+                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>       -->      
+            </div>
           </div>
         </div>
       </aside>
@@ -374,6 +422,11 @@
 </html>
 
 <!--
-TODO:  - product-card'ta bir sıkıntı var, card image büyüklüğüne göre yani contente göre scale oluyor, asıl content ona göre scale olmalı gerek
+TODO:  - CLS sorunlarını çöz
+       - Responsive sorunlarını tespit et ve çöz
+       - Performansı iyileştir
+       - Navbar responsivliğini kontrol et mobilde sıkıntılı
+       - Mobilde navbar arkası blur olmuyor
+       - Ürünler yazısını responsive yap, ekran küçüldüğünde küçülsün (clamp veya media query)
        - products-tab-script javascript dosyası çok hatalı onu fix et yeniden yaz daha optimize yaz
 -->
