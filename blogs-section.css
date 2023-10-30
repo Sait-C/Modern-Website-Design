@@ -21,22 +21,22 @@ main .blogs .blogs-content-container {
 }
 
 main .blogs .blogs-top-wrapper {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
     margin: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 main .blogs .blogs-top-wrapper h2 {
-    font-size: clamp(1em, 3em, 5em);
+    font-size: clamp(1rem, 5cqi, 2.5rem);
     color: white;
     text-wrap: balance;
     margin: auto;
 }
-
 
 main .blogs .blogs-top-wrapper p {
     font-size: clamp(.5em, 1em, 2em);
@@ -165,4 +165,10 @@ main .blogs .blogs-content-container .blog-post-card .blog-details {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    main .blogs .blogs-top-wrapper {
+        width: 100%;
+    }
 }

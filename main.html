@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./other-services-section.css" />
     <link rel="stylesheet" href="./blogs-section.css" />
     <link rel="stylesheet" href="./what-clients-say-section.css" />
+    <link rel="stylesheet" href="./category-mega-menu.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -41,7 +42,157 @@
             <a href="#" class="logo">Dronmarket</a>
             <button class="nav-btn"></button>
             <ul class="main-menu">
-              <li><a href="#">Kategoriler</a></li>
+              <li class="nav-category-list-menu">
+                <a href="javascript:void(0);">Kategoriler</a>
+                <div class="category-mega-menu">
+                  <div class="category-mega-menu-inner">
+                    <div class="category-mega-menu-item category-mega-menu-base-item">
+                      <div class="category-mega-menu-item-heading">Kategoriler</div>
+                      <div onclick="toggleSubCategories(1)" class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Endüstriyel Dronlar</h1>
+                          <p>Endüstriyel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                      <div onclick="toggleSubCategories(2)" class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>DJI Drone</h1>
+                          <p>DJI markasının dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Multikopter</h1>
+                          <p>FPV dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Malzemeleri</h1>
+                          <p>İhtiyacın olabilecek tüm malzemeleri görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Profesyonel Drone</h1>
+                          <p>Profesyonel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="category-mega-menu-sub-item-1" class="category-mega-menu-item category-mega-menu-sub-item">
+                      <div class="category-mega-menu-item-heading">Sub Kategoriler 1</div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Endüstriyel Dronlar</h1>
+                          <p>Endüstriyel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>DJI Drone</h1>
+                          <p>DJI markasının dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Multikopter</h1>
+                          <p>FPV dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Malzemeleri</h1>
+                          <p>İhtiyacın olabilecek tüm malzemeleri görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Profesyonel Drone</h1>
+                          <p>Profesyonel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="category-mega-menu-sub-item-2" class="category-mega-menu-item category-mega-menu-sub-item">
+                      <div class="category-mega-menu-item-heading">Sub Kategoriler 2</div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Endüstriyel Dronlar</h1>
+                          <p>Endüstriyel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>DJI Drone</h1>
+                          <p>DJI markasının dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Multikopter</h1>
+                          <p>FPV dronlarını görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Dron Malzemeleri</h1>
+                          <p>İhtiyacın olabilecek tüm malzemeleri görüntüle.</p>
+                        </div>
+                      </div>
+                      <div class="category-mega-menu-item-list">
+                        <div class="category-mega-menu-item-image">
+                          <img src="./assets/icons/drone-icon.png" alt="">
+                        </div>
+                        <div class="category-mega-menu-item-list-info">
+                          <h1>Profesyonel Drone</h1>
+                          <p>Profesyonel dronları görüntüle.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li><a href="#">Ana Sayfa</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Hakkında</a></li>
@@ -200,8 +351,6 @@
         </div>
       </aside>
       <aside class="services">
-        <!--Bir video yanına dron uygulamalarını koy 3 tane kart şeklinde devamını oku yazsın-->
-        <!--Onun altına da dronmarket akademi eğitimleri verdiğimizle ilgili havalı bi cta kısmı yap şimdi eğitimlere katıl gibi vs.-->
         <div class="drone-applications-container">
           <div class="content-wrapper">
             <h2>Dron Uygulamaları</h2>
@@ -524,7 +673,6 @@
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 2,
-    pauseOnMouseEnter: true,
     loop: true,
     autoplay: {
       delay: 2000
@@ -558,15 +706,39 @@
     }
   });
   </script>
+
+  <script>
+    const blurLink = document.querySelector(".nav-category-list-menu");
+    const pageContent = document.querySelector("main");
+
+    blurLink.addEventListener("mouseover", function() {
+      pageContent.style.filter = "blur(5px)"; // Adjust the blur intensity as needed
+    });
+
+    blurLink.addEventListener("mouseout", function() {
+      pageContent.style.filter = "none"; // Remove the blur on mouse out
+    });
+  </script>
+  <script src="./category-mega-menu.js"></script>
 </html>
 
 <!--
 TODO:  - CLS sorunlarını çöz
+       - Ürün arama Search Bar ekle
        - Responsive sorunlarını tespit et ve çöz
        - Performansı iyileştir
-       - Navbar responsivliğini kontrol et mobilde sıkıntılı
        - Mobilde navbar arkası blur olmuyor
        - Ürünler yazısını responsive yap, ekran küçüldüğünde küçülsün (clamp veya media query)
        - products-tab-script javascript dosyası çok hatalı onu fix et yeniden yaz daha optimize yaz
        - Swiperların şuan comment altında olan pagination ve navigationlarını uncomment yaptığımda layout bozuluyor nav arrowlar sayfanın en üstüne gözüküyor vs.
+       - En son her şeyin üstünden geç ve site uyumunu sağla
+       - Reveal/Scroll Animasyonları ekle
+-->
+
+<!--
+  30.10.2023 yapılacaklar:
+  1- Fix category mega menu
+  2- Add Footer
+  3- Go over all of page and ensure site compliance
+  4- Gelecek günler için üstteki yazılanlara bak
 -->

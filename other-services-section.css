@@ -13,11 +13,12 @@ main .services .drone-applications-container {
 main .services .drone-applications-container .content-wrapper {
     text-align: center;
     width: 50%;
+    padding: 18px;
 }
 
 main .services .drone-applications-container .content-wrapper h2 {
     color: white;
-    margin-top: 7rem;
+    margin-top: 1.5rem;
     font-weight: bold;
     font-size: 2.5em;
 }
