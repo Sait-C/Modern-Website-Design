@@ -111,7 +111,7 @@ const slider = () => {
     prevButton.addEventListener("click", handleClickPrev);
 
     const prevIcon = document.createElement("i");
-    prevIcon.className = "fa fa-angle-left";
+    prevIcon.className = "fa-solid fa-caret-left";
     prevButton.appendChild(prevIcon);
 
     // Create the next button
@@ -120,7 +120,7 @@ const slider = () => {
     nextButton.addEventListener("click", handleClickNext);
 
     const nextIcon = document.createElement("i");
-    nextIcon.className = "fa fa-angle-right";
+    nextIcon.className = "fa-solid fa-caret-right";
     nextButton.appendChild(nextIcon);
 
     // Append buttons to container

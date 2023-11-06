@@ -61,6 +61,8 @@ main .most-products .tab-filter-container {
     padding: 2rem;
     text-align: center;
     background: hsl(205.71, 30.43%, 95.49%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 main .most-products .filter-btn {
@@ -84,6 +86,8 @@ main .most-products .tab-filter-item-container {
     position: relative;
     overflow: hidden;
     height: 30rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 main .most-products .tab-filter-item-container .tab-item {

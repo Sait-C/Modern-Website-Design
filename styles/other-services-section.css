@@ -1,5 +1,6 @@
 main .services {
     width: 100%;
+    /* background: #3b3e40; */
     background: #1a1c1f;
 }
 
@@ -79,10 +80,10 @@ main .services .drone-applications-container .collection-wrapper .post-lists .po
 }
 
 main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon {
-    color: #056cdc;
+    color: #fe8a39;
     display: block;
     font-size: clamp(0.5em, 1.1em, 1.7em);
-    transition: color .5s
+    transition: opacity .5s
 }
 
 main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon i {
@@ -91,7 +92,8 @@ main .services .drone-applications-container .collection-wrapper .post-lists .po
 }
 
 main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon:hover {
-    color: #095bb3;
+    color: #fe8a39;
+    opacity: 0.5;
 }
 
 main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-image {
