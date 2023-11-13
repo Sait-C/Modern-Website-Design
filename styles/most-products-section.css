@@ -14,7 +14,7 @@ main .most-products header {
 
 main .most-products header h1 {
     margin: 3rem 0;
-    font-size: 4rem;
+    font-size: clamp(1rem, 15cqi, 4rem);
     padding: 0.7rem;
     position: relative;
     display: inline-block;
@@ -247,4 +247,10 @@ main .most-products .product-slide-box .like-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    main .most-products .product-slide-box {
+        width: 100%;
+    }
 }

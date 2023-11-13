@@ -1,7 +1,8 @@
 main .testimonials-section {
     width: 100%;
     padding: 0px 8%;
-    background-color: #191d28;
+   /* background-color: #191d28; */
+   background-color: #1e1f20;
 }
 
 main .testimonials-section .section-header {
@@ -24,7 +25,8 @@ main .testimonials-section .testimonial-swiper .testimonial-card {
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body {
-    background-color: #161922;
+    /* background-color: #161922; */
+    background-color: #2f3132;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
     padding: 20px;
 }
@@ -41,14 +43,16 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote h2 {
-    color: #dadada;
+    color: #fff;
+    /*color: #dadada*/
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body p {
     margin: 10px 0px 15px;
     font-size: 14px;
     line-height: 1.5;
-    color: #767a86;
+    /* color: #767a86; */
+    color: #babdbe;
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .ratings {

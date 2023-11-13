@@ -127,8 +127,8 @@ main .services .drone-applications-container .collection-wrapper .post-lists .po
     main .services .drone-applications-container .collection-wrapper .post-lists .post-item {
         flex-direction: column-reverse;
         justify-content: center;
-        height: 450px;
-        padding: 25px;
+        height: 480px;
+        padding: 30px;
     }
     main .services .drone-applications-container .collection-wrapper {
         width: 100%;

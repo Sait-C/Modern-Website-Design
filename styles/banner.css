@@ -298,7 +298,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .banner-container {
-        width: 450px;
-        height: 400px;
+        width: 600px;
+        height: 470px;
     }
 }
