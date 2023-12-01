@@ -93,6 +93,9 @@ const slider = () => {
 
     const button = document.createElement("button");
     button.textContent = "Daha fazlasını gör";
+    button.classList.add('btn');
+    button.classList.add('btn-reverse');
+    button.classList.add('btn-sm');
 
     content.appendChild(title);
     content.appendChild(description);

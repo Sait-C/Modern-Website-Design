@@ -110,17 +110,15 @@
 }
 
 .banner-item button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
     opacity: 0;
     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
     transition: 0.5s;
 }
 
 .banner-item button:hover {
-    background-color: #bac383;
-}
+    background-color: var(--color-secondary-700);
+    color: var(--color-primary-100);
+  }
 
 @keyframes showcontent{
     from {

@@ -1,0 +1,11 @@
+:root {
+    --button-box-shadow-color: rgba(252, 56, 56, 0.4);
+
+    /*Button sizes*/
+    --button-padding-y-primary: 0.8rem;
+    --button-padding-x-primary: 2.5rem;
+    --button-border-radius-primary: 1.875rem;
+
+    --button-padding-y-secondary: 0.625rem;
+    --button-padding-x-secondary: 0.75rem;
+}

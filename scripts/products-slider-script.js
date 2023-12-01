@@ -56,6 +56,7 @@ const productsSwiper = (swiperClass, data, options) => {
     const addToCartBtn = document.createElement("button");
     addToCartBtn.textContent = "Sepete Ekle";
     addToCartBtn.classList.add("add-to-cart-btn");
+    addToCartBtn.classList.add("btn");
 
     actionButtons.appendChild(addToCartBtn);
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
-    <link rel="stylesheet" href="./variables/variables.css">
+    <link rel="stylesheet" href="./styles/custom.css">
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/banner.css" />
     <link rel="stylesheet" href="./styles/distributations-section.css" />
@@ -467,7 +467,7 @@
               <i class="fa-solid fa-cart-shopping cart-btn"></i>
               <button class="btn btn-mobile">Giriş Yap</button>
             </ul>
-            <button class="btn">Giriş Yap</button>
+            <button class="btn btn-reverse btn-sm">Giriş Yap</button>
           </div>
         </div>
       </nav>
@@ -574,13 +574,13 @@
         <div class="content-container">
           <div class="tab-container">
             <div class="tab-filter-container">
-              <li class="filter-btn active" data-tab="on-sale">
+              <li class="btn filter-btn active" data-tab="on-sale">
                 İndirimdekiler
               </li>
-              <li class="filter-btn" data-tab="popular">
+              <li class="btn filter-btn" data-tab="popular">
                 Çok Satanlar
               </li>
-              <li class="filter-btn" data-tab="new">
+              <li class="btn filter-btn" data-tab="new">
                 Yeniler
               </li>
             </div>
@@ -603,7 +603,7 @@
                           </div>
                           <a href="#" class="product-price">$23</a>
                           <div class="action-button">
-                            <button class="add-to-cart-btn">Sepete Ekle</button>
+                            <button class="btn add-to-cart-btn">Sepete Ekle</button>
                           </div>
                         </div>
                       </div>
@@ -623,7 +623,7 @@
                           </div>
                           <a href="#" class="product-price">$23</a>
                           <div class="action-button">
-                            <button class="add-to-cart-btn">Sepete Ekle</button>
+                            <button class="btn add-to-cart-btn">Sepete Ekle</button>
                           </div>
                         </div>
                       </div>
@@ -910,8 +910,8 @@
       mainMenu.classList.toggle("active");
     });
   </script>
-  <script src="scripts/script.js"></script>
   
+  <script src="scripts/banner-script.js"></script>
   <script src="scripts/products-tab-script.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="scripts/home-product-card-slider-script.js"></script>
@@ -959,7 +959,7 @@
     }
   });
   </script>
-  <script src="scripts/products-slider.js"></script>
+  <script src="scripts/products-slider-script.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
     // Make navbar to fixed on scroll
@@ -1053,7 +1053,7 @@
       pageContent.style.filter = "none"; // Remove the blur on mouse out
     });
   </script>
-  <script src="scripts/category-mega-menu.js"></script>
+  <script src="scripts/category-mega-menu-script.js"></script>
 </html>
 
 <!--

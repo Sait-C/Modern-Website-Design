@@ -1,0 +1,7 @@
+/* Variables */
+@import "./custom/variables/variables.css";
+@import "./custom/variables/index.css";
+
+/*Components and Pages*/
+@import "./custom/components/components.css";
+@import "./custom/pages/pages.css";

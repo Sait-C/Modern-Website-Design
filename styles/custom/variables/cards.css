@@ -1,0 +1,13 @@
+:root {
+    --card-border-radius-primary: 0.5rem;
+    --card-border-radius-secondary: 0.75rem;
+
+    --card-border-size-100: 1px;
+    --card-border-size-200: 1.5px;
+    --card-border-size-300: 2px;
+
+    --card-box-shadow-size-100: 6px;
+    --card-box-shadow-size-200: 10px;
+
+    --card-width-size-300: 31rem;
+}

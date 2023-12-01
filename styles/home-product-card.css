@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC&family=Montserrat&family=Oswald:wght@200;500&family=Rubik:wght@400;700;900&display=swap');
 
 .home-product-card-slider-root {
-    width: 95%;
     position: relative;
-    max-width: 500px;
+    max-width: 31rem;
     margin: 20px 0px 0px 0px;
     background: #fff;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
@@ -203,20 +202,7 @@
 }
 
 .home-product-card-slider-root .product-item a {
-    display: inline-flex;
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    padding: 10px 20px;
-    border-radius: 30px;
-    color: #fff;
-    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
-    text-decoration: none;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
     letter-spacing: 1px;
-}
-.home-product-card-slider-root .product-item a:hover {
-    cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {

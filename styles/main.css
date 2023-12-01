@@ -145,21 +145,17 @@ nav .navbar .main-menu li a:hover {
 }
 
 nav .navbar .btn {
-  border: none;
-  outline: none;
   border-radius: 100px;
   font-size: 12px;
   font-weight: 700;
-  color: #2b2b2b;
-  background-color: #ffff;
-  padding: 9px 15px;
+  color: var(--color-secondary-300);
   text-transform: uppercase;
-  cursor: pointer;
   transition: 0.3s;
 }
 
 nav .navbar .btn:hover {
-  background-color: #6acdff;
+  background-color: var(--color-secondary-600);
+  color: var(--color-primary-100);
 }
 
 nav .navbar .cart-btn {

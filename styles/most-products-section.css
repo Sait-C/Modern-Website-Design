@@ -65,19 +65,9 @@ main .most-products .tab-filter-container {
     border-top-left-radius: 20px;
 }
 
-main .most-products .filter-btn {
-    display: inline-flex;
-    padding: 0.8rem 2.5rem;
-    cursor: pointer;
-    border-radius: 2rem;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-}
-
-main .most-products .filter-btn.active {
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    color: white;
+main .most-products .filter-btn:not(.active) {
+    background: transparent;
+    color: var(--color-secondary-700);
 }
 
 main .most-products .tab-filter-item-container {
@@ -209,17 +199,11 @@ main .most-products .product-slide-box .product-detail-box .action-button {
 
 main .most-products .product-slide-box .product-detail-box .action-button .add-to-cart-btn {
     position: relative;
-    border-radius: 25px;
-    background: #fe8a39;
-    padding: .9em;
     width: 100%;
-    outline: none;
-    border: none;
-    font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #fff;
     text-transform: uppercase;
+    background: var(--color-primary-600);
 }
 
 main .most-products .product-slide-box .like-btn {

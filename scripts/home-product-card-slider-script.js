@@ -64,6 +64,9 @@ const homeProductCardSlider = () => {
   
       const button = document.createElement("a");
       button.textContent = "Ürüne Git";
+      button.classList.add('btn');
+      button.classList.add('btn-shadow');
+      button.classList.add('btn-sm');
   
       slideItem.appendChild(itemImage);
       content.appendChild(title);
