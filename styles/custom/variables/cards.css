@@ -1,6 +1,6 @@
 :root {
-    --card-border-radius-primary: 0.5rem;
-    --card-border-radius-secondary: 0.75rem;
+    --card-border-radius-primary: 1.25rem;
+    --card-border-radius-secondary: 0.625rem;
 
     --card-border-size-100: 1px;
     --card-border-size-200: 1.5px;

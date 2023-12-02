@@ -74,14 +74,14 @@ body {
 /*NAV START*/
 
 .nav-container {
-  width: 650px;
+  width: var(--nav-width-size);
   margin: 0 auto;
   z-index: 99999;
 }
 
 nav {
   position: absolute;
-  top: 40px;
+  top: var(--nav-top-offset-size);
   left: 0;
   width: 100%;
   z-index: 9999;
@@ -92,15 +92,15 @@ nav .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(6px);
-  border-radius: 200px;
-  padding: 10px 20px;
-  box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.5);
+  background: var(--nav-background-color-primary);
+  backdrop-filter: blur(var(--nav-blur-size-100));
+  border-radius: var(--nav-border-radius-size);
+  padding: var(--nav-padding-y-primary-size) var(--nav-padding-x-primary-size);
+  box-shadow: var(--nav-box-shadow);
 }
 
 nav .navbar:hover {
-  background: rgba(255, 255, 255, 1)
+  background: var(--nav-background-hover-color-primary);
 }
 
 nav .navbar .nav-btn {
@@ -126,7 +126,7 @@ nav .navbar .logo {
   display: block;
   font-size: 16px;
   font-weight: 900;
-  color: #f49c26;
+  color: var(--color-primary-500);
 }
 
 nav .navbar .main-menu {
@@ -137,25 +137,25 @@ nav .navbar .main-menu {
 
 nav .navbar .main-menu li {
   display: block;
-  padding: 0 10px;
+  padding: 0 var(--navbar-list-item-padding-x);
   list-style: none;
 }
 
 nav .navbar .main-menu li a {
   display: block;
-  font-size: 14px;
-  color: #949494;
+  font-size: var(--font-size-200);
+  color: var( --navbar-list-item-text-color);
   transition: 0.3s;
 }
 
 nav .navbar .main-menu li a:hover {
-  color: #000000;
+  color: var(--navbar-list-item-text-hover-color);
 }
 
 nav .navbar .btn {
   border-radius: 100px;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: var(--font-size-100);
+  font-weight: var(--font-weight-bold);
   color: var(--color-secondary-300);
   text-transform: uppercase;
   transition: 0.3s;
@@ -174,11 +174,11 @@ nav .navbar .cart-btn {
   font-size: 13px;
   padding: 10px;
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.6s;
 }
 
 nav .navbar .cart-btn:hover {
-  background-color: #f0f0f1;
+  background-color: var(--color-primary-600);
 }
 
 .btn-mobile {

@@ -1,0 +1,21 @@
+:root {
+    --nav-background-color-primary: rgba(255, 255, 255, 0.5);
+    --nav-background-hover-color-primary: rgba(255, 255, 255, 1);
+
+    --nav-blur-size-100: 6px;
+
+    --nav-width-size: 40.625rem;
+    --nav-top-offset-size: 2.5rem;
+    --nav-border-radius-size: 12.5rem;
+
+    --nav-padding-y-primary-size: 0.625rem;
+    --nav-padding-x-primary-size: 1.25rem;
+    
+    --nav-box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.5);
+
+    /*Navbar Menu*/
+    --navbar-list-item-text-color: #949494;
+    --navbar-list-item-text-hover-color: #000; 
+
+    --navbar-list-item-padding-x: 0.625rem;
+}
