@@ -14,11 +14,10 @@
   
   .skewed-blog {
     height: 15em;
-    width: 32em;
+    width: 100%;
     color: #f1f1f1;
     display: flex;
     background: #111;
-    margin: 20px 0px 0px 0px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
   }

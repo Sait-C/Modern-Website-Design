@@ -1,8 +1,5 @@
 .banner-container {
     position: relative;
-    right: 0;
-    top: 50%;
-    transform: translate(-10%, 25%);
     width: 800px;
     height: 500px;
     background-color: #efefef;
@@ -171,7 +168,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .banner-container {
-        width: 90%;
+        width: min(var(--container-max-width), 100vw - (var(--container-padding) * 0.3));
         transform: translateY(20%);
         margin: auto;
     }
@@ -182,7 +179,7 @@
         top: 60%
     }
     .banner-item::before {
-       border-radius: 10px;    
+       border-radius: 10px;
     }
     
     .banner-item:nth-child(3)::before{
@@ -236,7 +233,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .banner-container {
-        width: 90%;
+        width: min(var(--container-max-width), 100vw - (var(--container-padding) * 2));
         transform: translateY(20%);
         margin: auto;
     }
@@ -296,7 +293,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .banner-container {
-        width: 600px;
+        width: min(var(--container-max-width), 50vw - (var(--container-padding) * 2));;
         height: 470px;
     }
 }
