@@ -3,23 +3,23 @@
     color: #8f8f8f;
   }
   .skewed-blog p {
-    font-size: 0.7em;
+    font-size: var(--font-size-100);
     line-height: 15px;
   }
   
   .skewed-blog h1 {
     margin: 0;
-    font-size: 15px;
+    font-size: var(--font-size-400);
   }
   
   .skewed-blog {
-    height: 15em;
+    height: var(--card-height-size-500);
     width: 100%;
     color: #f1f1f1;
     display: flex;
-    background: #111;
+    background: var(--color-secondary-700);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
+    border-radius: var(--card-border-radius-primary);
   }
   
   .skewed-blog .skewed-blog-content {
@@ -33,7 +33,7 @@
   }
   
   .skewed-blog a {
-    color: #fff;
+    color: var(--color-primary-100);
     text-decoration: none;
   }
   
@@ -42,7 +42,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: var(--card-border-radius-primary);
     background: url("http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2023/09/drone-ile-ruzgar-turbini-kontrolu-ve-yuzey-hasar-tespiti-1.png.webp");
     background-position: 50% 50%;
     background-size: cover;
@@ -54,7 +54,7 @@
     left: -4.2em;
     top: 50%;
     transform: translateY(-50%) rotate(20deg);
-    background: #111;
+    background: var(--color-secondary-700);
     width: 40%;
     height: 140%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);

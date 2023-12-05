@@ -5,6 +5,7 @@ main .get-offer-cta {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: var(--font-weight-semi-bold);
 }
 
 main .get-offer-cta a {

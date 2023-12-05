@@ -540,7 +540,7 @@
       <aside class="features">
         <div class="top"></div>
         <div class="features-wrapper">
-          <div class="content-box">
+          <div class="content-box prevent-select">
             <div class="card">
               <i class="fa-solid fa-truck-fast"></i>
               <h2>Aynı Gün Kargo</h2>
@@ -573,115 +573,119 @@
         <header>
           <h1>Ürünlerimiz</h1>
         </header>
-        <div class="content-container">
-          <div class="tab-container">
-            <div class="tab-filter-container">
-              <li class="btn filter-btn active" data-tab="on-sale">
-                İndirimdekiler
-              </li>
-              <li class="btn filter-btn" data-tab="popular">
-                Çok Satanlar
-              </li>
-              <li class="btn filter-btn" data-tab="new">
-                Yeniler
-              </li>
-            </div>
-            <div class="tab-filter-item-container">
-              <div class="tab-item on-sale selected_tab">
-                <div class="on-sale-products-swiper products-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="product-slide-box">
-                        <div class="like-btn">
-                          <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="product-slide-img">
-                          <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
-                        </div>
-                        <div class="product-detail-box">
-                          <div class="product-type">
-                            <a href="#">Dron Kumandası</a>
-                            <span>Dron Malzemeleri</span>
+        <div class="container">
+          <div class="content-container">
+            <div class="tab-container">
+              <div class="tab-filter-container">
+                <li class="btn filter-btn active" data-tab="on-sale">
+                  İndirimdekiler
+                </li>
+                <li class="btn filter-btn" data-tab="popular">
+                  Çok Satanlar
+                </li>
+                <li class="btn filter-btn" data-tab="new">
+                  Yeniler
+                </li>
+              </div>
+              <div class="tab-filter-item-container">
+                <div class="tab-item on-sale selected_tab">
+                  <div class="on-sale-products-swiper products-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-slide-box">
+                          <div class="like-btn">
+                            <i class="fa-regular fa-heart"></i>
                           </div>
-                          <a href="#" class="product-price">$23</a>
-                          <div class="action-button">
-                            <button class="btn add-to-cart-btn">Sepete Ekle</button>
+                          <div class="product-slide-img">
+                            <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="product-slide-box">
-                        <div class="like-btn">
-                          <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="product-slide-img">
-                          <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
-                        </div>
-                        <div class="product-detail-box">
-                          <div class="product-type">
-                            <a href="#">Dron Kumandası</a>
-                            <span>Dron Malzemeleri</span>
-                          </div>
-                          <a href="#" class="product-price">$23</a>
-                          <div class="action-button">
-                            <button class="btn add-to-cart-btn">Sepete Ekle</button>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Dron Kumandası</a>
+                              <span>Dron Malzemeleri</span>
+                            </div>
+                            <a href="#" class="product-price">$23</a>
+                            <div class="action-button">
+                              <button class="btn add-to-cart-btn">Sepete Ekle</button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>  
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>                  
+                      <div class="swiper-slide">
+                        <div class="product-slide-box">
+                          <div class="like-btn">
+                            <i class="fa-regular fa-heart"></i>
+                          </div>
+                          <div class="product-slide-img">
+                            <img src="https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr" alt="">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Dron Kumandası</a>
+                              <span>Dron Malzemeleri</span>
+                            </div>
+                            <a href="#" class="product-price">$23</a>
+                            <div class="action-button">
+                              <button class="btn add-to-cart-btn">Sepete Ekle</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>                  
+                  </div>
                 </div>
-              </div>
-              <div class="tab-item popular">
-                <div class="popular-products-swiper products-swiper"></div>
-              </div>
-              <div class="tab-item new">
-                <div class="new-products-swiper products-swiper"></div>
+                <div class="tab-item popular">
+                  <div class="popular-products-swiper products-swiper"></div>
+                </div>
+                <div class="tab-item new">
+                  <div class="new-products-swiper products-swiper"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </aside>
       <aside class="services">
-        <div class="drone-applications-container">
-          <div class="content-wrapper">
-            <h2>Dron Uygulamaları</h2>
-            <p>Drone teknolojisi, günümüzde pek çok sektörde etkili olmaya devam eden, hayaraziatı ve iş yapma şeklini kolaylaştıran olağanüstü yeniliklerden biridir.</p>
-          </div>
-          <div class="collection-wrapper">
-            <div class="post-lists">
-              <div class="post-item">
-                <div class="post-content">
-                  <a class="post-title" href="#">Tarım Dron Uygulamaları</a>
-                  <p class="post-description">Tarım alanlarında kullanılan tarım drone tipleri hem çok motorlu hem de sabit kanatlı olarak tercih edilebilir. Çok motorlu sistemler nispeten kullanım kolaylığına sahip olur. </p>
-                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="container">
+          <div class="drone-applications-container">
+            <div class="content-wrapper">
+              <h2>Dron Uygulamaları</h2>
+              <p>Drone teknolojisi, günümüzde pek çok sektörde etkili olmaya devam eden, hayaraziatı ve iş yapma şeklini kolaylaştıran olağanüstü yeniliklerden biridir.</p>
+            </div>
+            <div class="collection-wrapper">
+              <div class="post-lists">
+                <div class="post-item">
+                  <div class="post-content">
+                    <a class="post-title" href="#">Tarım Dron Uygulamaları</a>
+                    <p class="post-description">Tarım alanlarında kullanılan tarım drone tipleri hem çok motorlu hem de sabit kanatlı olarak tercih edilebilir. Çok motorlu sistemler nispeten kullanım kolaylığına sahip olur. </p>
+                    <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="post-image">
+                    <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/dji-agras-zirai-ilaclama-dronu-uygulamalari.png" alt="">
+                  </div>
                 </div>
-                <div class="post-image">
-                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/dji-agras-zirai-ilaclama-dronu-uygulamalari.png" alt="">
+                <div class="post-item">
+                  <div class="post-content">
+                    <a class="post-title" href="#">Enerji Dron Uygulamaları</a>
+                    <p class="post-description">Enerji sektörü içerisinde drone’lardan faydalanılması son zamanlarda oldukça popüler. Bilindiği üzere drone teknolojileri maden, tarım, inşaat, enerji ve daha pek çok sektörde aktif olarak kullanılır. </p>
+                    <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="post-image">
+                    <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1a1a1/g%C3%BCne%C5%9F%20enerjisi1%20.jpg" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="post-item">
-                <div class="post-content">
-                  <a class="post-title" href="#">Enerji Dron Uygulamaları</a>
-                  <p class="post-description">Enerji sektörü içerisinde drone’lardan faydalanılması son zamanlarda oldukça popüler. Bilindiği üzere drone teknolojileri maden, tarım, inşaat, enerji ve daha pek çok sektörde aktif olarak kullanılır. </p>
-                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="post-image">
-                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1a1a1/g%C3%BCne%C5%9F%20enerjisi1%20.jpg" alt="">
-                </div>
-              </div>
-              <div class="post-item">
-                <div class="post-content">
-                  <a class="post-title" href="#">İnşaat ve Harita Uygulamaları</a>
-                  <p class="post-description">Haritalama drone uygulamaları dışında, yüksek düzeyde doğruluk ve çözünürlük sunan fotogrametrik bir harita elde etmenin tek yolu, ilgili bölgede insanlı bir uçakla uçmak ya da bir uyduya erişim sağlamaktır.</p>
-                  <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="post-image">
-                  <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1aaa11/8.jpg" alt="">
+                <div class="post-item">
+                  <div class="post-content">
+                    <a class="post-title" href="#">İnşaat ve Harita Uygulamaları</a>
+                    <p class="post-description">Haritalama drone uygulamaları dışında, yüksek düzeyde doğruluk ve çözünürlük sunan fotogrametrik bir harita elde etmenin tek yolu, ilgili bölgede insanlı bir uçakla uçmak ya da bir uyduya erişim sağlamaktır.</p>
+                    <a class="link-with-icon" href="#">Daha Fazla Oku <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="post-image">
+                    <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/1aa200s/1aaa11/8.jpg" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -689,72 +693,74 @@
         </div>
       </aside>
       <aside class="blogs">
-        <div class="blogs-section-container">
-          <div class="blogs-top-wrapper">
-            <h2>Yayınlanmış Diğer Blogları ve Kaynakları Keşfet</h2>
-            <p>Integer condimentum, eros vitae pellentesque blandit, tellus mauris consectetur risusa sdvitae venenatis mi magna ut nulla. Curabitur vitae porttitor</p>
-          </div>
-          <div class="blogs-content-container">
-            <div class="blogs-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="blog-post-card">
-                    <a class="blog-post-image-link" href="#">
-                      <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
-                    </a>
-                    <div class="blog-post-details-wrap">
-                      <div class="blog-card-content">
-                        <div class="blog-card-date-wrap">
-                          <p>14 Nisan 2023</p>
-                        </div>
-                        <a class="blog-card-name" href="#">Dron Ehliyeti Nasıl/Nereden Alınır ?</a>
-                        <p class="blog-details">Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil olarak etkisini her alanda hissettirmeyi başarıyor. Bu noktada değinebileceğimiz araçlardan bir tanesi, günümüzdeki geniş yelpazede sektörde ve mecrada kullanımı giderek yaygınlaşmaktadır. </p>
-                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="blog-post-card">
-                    <a class="blog-post-image-link" href="#">
-                      <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/hangi-dronelar-icin-belge.jpg.webp" alt="">
-                    </a>
-                    <div class="blog-post-details-wrap">
-                      <div class="blog-card-content">
-                        <div class="blog-card-date-wrap">
-                          <p>1 Eylül 2021</p>
-                        </div>
-                        <a class="blog-card-name" href="#">Hangi Dronlar İçin İzin Belgesi & Ehliyet/Sertifika Gerekli?</a>
-                        <p class="blog-details">Modern dünyanın nimetleri mevzubahis olduğunda akla gelen ilk olgulardan bir tanesi, şüphesiz üstün teknolojinin hayatımızı hiç olmadığı kadar kolaylaştıran icatlarıdır. Üstelik bu icatlar, yalnızca uzay, biyogenetik veya nükleer gibi alanlarda değil gündelik yaşantımızın hemen her noktasında kendisini gösterebilmektedir.  </p>
-                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="blog-post-card">
-                    <a class="blog-post-image-link" href="#">
-                      <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/08/IHA-Drone-Pilotlugu-Ehliyeti-ve-Egitimi.jpg.webp" alt="">
-                    </a>
-                    <div class="blog-post-details-wrap">
-                      <div class="blog-card-content">
-                        <div class="blog-card-date-wrap">
-                          <p>24 Ağustos 2021</p>
-                        </div>
-                        <a class="blog-card-name" href="#">İHA Drone Pilotluğu Ehliyeti ve Eğitimi</a>
-                        <p class="blog-details">Dronmarket, 2015 yılından itibaren ileri teknoloji drone çözümleri sunar. Sektörde önemli bir yer edinen Dronmarket, teknolojiyi ve gelişmeleri takip eder ve ürün seçkisini bu geliştirir. DJI Agriculture ve Enterprise Türkiye distribütörü olan Dronmarket, kaliteli hizmet ve teknolojileri en güvenilir hizmetleri sunar. </p>
-                        <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-              <!-- If we need navigation buttons -->
-              <!-- <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>       -->      
+        <div class="container">
+          <div class="blogs-section-container padding-block-100">
+            <div class="blogs-top-wrapper">
+              <h2>Yayınlanmış Diğer Blogları ve Kaynakları Keşfet</h2>
+              <p>Integer condimentum, eros vitae pellentesque blandit, tellus mauris consectetur risusa sdvitae venenatis mi magna ut nulla. Curabitur vitae porttitor</p>
             </div>
-          </div>
+            <div class="blogs-content-container">
+              <div class="blogs-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="blog-post-card">
+                      <a class="blog-post-image-link" href="#">
+                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
+                      </a>
+                      <div class="blog-post-details-wrap">
+                        <div class="blog-card-content">
+                          <div class="blog-card-date-wrap">
+                            <p>14 Nisan 2023</p>
+                          </div>
+                          <a class="blog-card-name" href="#">Dron Ehliyeti Nasıl/Nereden Alınır ?</a>
+                          <p class="blog-details">Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil olarak etkisini her alanda hissettirmeyi başarıyor. Bu noktada değinebileceğimiz araçlardan bir tanesi, günümüzdeki geniş yelpazede sektörde ve mecrada kullanımı giderek yaygınlaşmaktadır. </p>
+                          <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-post-card">
+                      <a class="blog-post-image-link" href="#">
+                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/hangi-dronelar-icin-belge.jpg.webp" alt="">
+                      </a>
+                      <div class="blog-post-details-wrap">
+                        <div class="blog-card-content">
+                          <div class="blog-card-date-wrap">
+                            <p>1 Eylül 2021</p>
+                          </div>
+                          <a class="blog-card-name" href="#">Hangi Dronlar İçin İzin Belgesi & Ehliyet/Sertifika Gerekli?</a>
+                          <p class="blog-details">Modern dünyanın nimetleri mevzubahis olduğunda akla gelen ilk olgulardan bir tanesi, şüphesiz üstün teknolojinin hayatımızı hiç olmadığı kadar kolaylaştıran icatlarıdır. Üstelik bu icatlar, yalnızca uzay, biyogenetik veya nükleer gibi alanlarda değil gündelik yaşantımızın hemen her noktasında kendisini gösterebilmektedir.  </p>
+                          <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-post-card">
+                      <a class="blog-post-image-link" href="#">
+                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/08/IHA-Drone-Pilotlugu-Ehliyeti-ve-Egitimi.jpg.webp" alt="">
+                      </a>
+                      <div class="blog-post-details-wrap">
+                        <div class="blog-card-content">
+                          <div class="blog-card-date-wrap">
+                            <p>24 Ağustos 2021</p>
+                          </div>
+                          <a class="blog-card-name" href="#">İHA Drone Pilotluğu Ehliyeti ve Eğitimi</a>
+                          <p class="blog-details">Dronmarket, 2015 yılından itibaren ileri teknoloji drone çözümleri sunar. Sektörde önemli bir yer edinen Dronmarket, teknolojiyi ve gelişmeleri takip eder ve ürün seçkisini bu geliştirir. DJI Agriculture ve Enterprise Türkiye distribütörü olan Dronmarket, kaliteli hizmet ve teknolojileri en güvenilir hizmetleri sunar. </p>
+                          <a class="learn-more-button" href="#">Daha Fazlasını Öğren &rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>       -->      
+              </div>
+            </div>
         </div>
+      </div>
       </aside>
       <aside class="testimonials-section">
         <header class="section-header">
@@ -859,7 +865,7 @@
       </aside>
     </main>
     <footer>
-      <div class="footer-row">
+      <div class="footer-row padding-block-400">
         <div class="footer-col">
           <img src="./assets/logo.webp" class="logo" />
           <p>Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.</p>

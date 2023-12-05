@@ -1,7 +1,7 @@
 main .features {
     width: 100%;
     min-height: 40vh;
-    background: rgb(255,255,255);
+    background: var(--color-primary-100);
 }
 
 main .features .top {
@@ -10,7 +10,7 @@ main .features .top {
     transform: translateY(-50%);
     width: 100%;
     height: 15vh;
-    background: rgb(255,255,255);
+    background: var(--color-primary-100);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(246,246,246,0) 100%);
 }
 
@@ -36,21 +36,21 @@ main .features .features-wrapper .content-box .card {
     min-height: 180px;
     width: 250px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: var(--card-border-radius-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.185);
-    background: #fff;
+    background: var(--color-primary-100);
     margin: 10px 10px;
     transition: 0.3s;
 }
 
 main .features .features-wrapper .content-box .card i {
     margin-bottom: 10px;
-    color: #f49c26;
-    font-size: 20px;
+    color: var(--color-primary-500);
+    font-size: var(--font-size-400);
 }
 
 main .features .features-wrapper .content-box .card h2 {
@@ -60,7 +60,7 @@ main .features .features-wrapper .content-box .card h2 {
 
 main .features .features-wrapper .content-box .card p {
     text-align: center;
-    color: #6c757d;
+    color: var(--color-secondary-300);
 }
 
 /* main .features .features-wrapper .content-box .card:hover {
@@ -86,17 +86,17 @@ main .features .features-wrapper .content-box .card:hover {
 
 @media screen and (max-width: 576px) {
     main .features .features-wrapper .content-box .card p {
-        font-size: 13px;
+        font-size: var(--font-size-200);
         text-align: left;
         font-weight: 600;
     }
 
     main .features .features-wrapper .content-box .card p .highlight {
-        color: black;
+        color: var(--color-secondary-700);
     }
 
     main .features .features-wrapper .content-box .card i {
-        font-size: 19px;
+        font-size: var(--font-size-400);
     }
 
     main .features .features-wrapper .content-box {
@@ -113,7 +113,7 @@ main .features .features-wrapper .content-box .card:hover {
     }
 
     main .features .features-wrapper .card h2 {
-        font-size: 15px;
+        font-size: var(--font-size-300);
         display: none;
     }
 }

@@ -2,7 +2,7 @@ main .testimonials-section {
     width: 100%;
     padding: 0px 8%;
    /* background-color: #191d28; */
-   background-color: #1e1f20;
+   background-color: var(--color-secondary-400);
 }
 
 main .testimonials-section .section-header {
@@ -14,21 +14,22 @@ main .testimonials-section .section-header {
 main .testimonials-section .section-header h1 {
     position: relative;
     font-size: 36px;
-    color: #f0bf6a;
+    color: var(--color-primary-400);
 }
 
 main .testimonials-section .testimonial-swiper {
     position: relative;
 }
 main .testimonials-section .testimonial-swiper .testimonial-card {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body {
     /* background-color: #161922; */
-    background-color: #2f3132;
+    background-color: var(--color-secondary-300);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
-    padding: 20px;
+    padding: 1.25rem;
+    border-radius: var(--card-border-radius-secondary);
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote {
@@ -37,22 +38,22 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote i {
-    font-size: 45px;
-    color: #dadada;
-    margin-right: 20px;
+    font-size: var(--font-size-800);
+    color: var(--color-secondary-100);
+    margin-right: 1.25rem;
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote h2 {
-    color: #fff;
+    color: var(--color-primary-100);
     /*color: #dadada*/
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body p {
     margin: 10px 0px 15px;
-    font-size: 14px;
+    font-size: var(--font-size-200);
     line-height: 1.5;
     /* color: #767a86; */
-    color: #babdbe;
+    color: var(--color-secondary-200);
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .ratings {
@@ -60,8 +61,8 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .ratings i {
-    font-size: 17px;
-    color: #f0bf6a;
+    font-size: var(--font-size-300);
+    color: var(--color-primary-400);
     cursor: pointer;
 }
 
@@ -93,11 +94,11 @@ main .testimonials-section .testimonial-card .profile .profile-desc {
 
 main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(1) {
     font-size: 24px;
-    font-weight: bold;
-    color: #f0bf6a;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-400);
 }
 
 main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(2) {
-    font-size: 15px;
-    color: #767a86;
+    font-size: var(--font-size-300);
+    color: var(--color-secondary-200);
 }

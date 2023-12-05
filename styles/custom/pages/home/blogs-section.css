@@ -1,5 +1,6 @@
 main .blogs {
     width: 100%;
+    background: var(--color-secondary-700);
 }
 
 main .blogs .blogs-section-container {
@@ -8,7 +9,6 @@ main .blogs .blogs-section-container {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: black;
 }
 
 main .blogs .blogs-content-container {
@@ -17,7 +17,7 @@ main .blogs .blogs-content-container {
     justify-content: center;
     width: 100%;
     height: 600px;
-    padding: 30px;
+    padding-bottom: 2rem;
 }
 
 main .blogs .blogs-top-wrapper {
@@ -32,14 +32,14 @@ main .blogs .blogs-top-wrapper {
 }
 
 main .blogs .blogs-top-wrapper h2 {
-    font-size: clamp(1rem, 5cqi, 2.5rem);
-    color: white;
+    font-size: clamp(var(--font-size-500), 5cqi, var(--font-size-800));
+    color: var(--color-primary-100);
     text-wrap: balance;
     margin: auto;
 }
 
 main .blogs .blogs-top-wrapper p {
-    font-size: clamp(.5em, 1em, 2em);
+    font-size: clamp(var(--font-size-100), 1em, var(--font-size-700));
     color: white;
     text-wrap: balance;
     margin: 20px auto;
@@ -53,9 +53,9 @@ main .blogs .blogs-content-container .blog-post-card {
     justify-content: center;
     width: 100%;
     height: 100%;
-    border-radius: 25px;
-    background-color: black;
-    border: 1px solid white;
+    border-radius: var(--card-border-radius-primary);
+    background-color: var(--color-secondary-700);
+    border: 1px solid var(--color-primary-100);
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -66,11 +66,11 @@ main .blogs .blog-post-details-wrap::before {
     content: "";
     width: 100%;
     height: 0%;
-    background: #f49c26;
+    background: var(--color-primary-500);
     position: absolute;
     bottom: 0;
     left: 0;
-    border-radius: 25px;
+    border-radius: var(--card-border-radius-primary);
     z-index: -1;
     transition: .5s;
 }
@@ -80,16 +80,16 @@ main .blogs .blogs-content-container .blog-post-card:hover .blog-post-details-wr
 }
 
 main .blogs .blogs-content-container .blog-post-card:hover .blog-card-name {
-    color: black;
+    color: var(--color-secondary-700);
 }
 main .blogs .blogs-content-container .blog-post-card:hover .blog-details {
-    color: black;
+    color: var(--color-secondary-700);
 }
 main .blogs .blogs-content-container .blog-post-card:hover .blog-card-date-wrap {
-    color: black;
+    color: var(--color-secondary-700);
 }
 main .blogs .blogs-content-container .blog-post-card:hover .learn-more-button {
-    color: black;
+    color: var(--color-secondary-700);
 }
 main .blogs .blogs-content-container .blog-post-card:hover .blog-post-image-link img {
     transform: scale(1.1);
@@ -110,10 +110,15 @@ main .blogs .blog-card-content {
 
 main .blogs .blogs-content-container .blog-post-card .blog-card-name {
     color: white;
-    font-size: clamp(.5em, 7cqi, 1.5em);
+    font-size: clamp(var(--font-size-100), 7cqi, 1.4em);
     font-weight: 600;
-    text-wrap: balance;
     transition: color .5s;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical; /* Display vertically */
+    line-height: 1.5; /* Adjust line height for better appearance */
 }
 
 main .blogs .blogs-content-container .blog-post-card .blog-post-image-link {
@@ -141,7 +146,7 @@ main .blogs .blogs-content-container .blog-post-card .blog-post-details-wrap {
 }
 
 main .blogs .blogs-content-container .blog-post-card .blog-details {
-    font-size: 16px;
+    font-size: var(--font-size-300);
     text-wrap: balance;
     margin: 15px 0px 25px 0px;
     overflow: hidden; /* Hide overflow text */
@@ -157,7 +162,7 @@ main .blogs .blogs-content-container .blog-post-card .blog-details {
 
 /*BLOG POST SWIPER*/
 .blogs-swiper {
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -167,7 +172,7 @@ main .blogs .blogs-content-container .blog-post-card .blog-details {
     align-items: center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     main .blogs .blogs-top-wrapper {
         width: 100%;
     }
