@@ -50,23 +50,19 @@ const productsSwiper = (swiperClass, data, options) => {
     productPrice.href = "#";
     productPrice.textContent = `$${item.price}`;
 
-    const actionButtons = document.createElement("div");
-    actionButtons.classList.add("action-button");
-
     const addToCartBtn = document.createElement("button");
     addToCartBtn.textContent = "Sepete Ekle";
     addToCartBtn.classList.add("add-to-cart-btn");
     addToCartBtn.classList.add("btn");
 
-    actionButtons.appendChild(addToCartBtn);
-
+    
     slideProductDetailBox.appendChild(productType);
     slideProductDetailBox.appendChild(productPrice);
-    slideProductDetailBox.appendChild(actionButtons);
-
+    
     slideProductBox.appendChild(likeBtn);
     slideProductBox.appendChild(slideImage);
     slideProductBox.appendChild(slideProductDetailBox);
+    slideProductBox.appendChild(addToCartBtn);
 
     slide.appendChild(slideProductBox);
 
@@ -132,6 +128,27 @@ const newsData = [
     },
   ];
 
+  const inSaleData = [
+    {
+      id: 1,
+      imgUrl:
+        "https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr",
+      name: "Dron Kumandası",
+      category: "Dron Malzemeleri",
+      description: "",
+      price: 45
+    },
+    {
+      id: 2,
+      imgUrl:
+        "https://ideacdn.net/idea/cq/36/myassets/products/430/eachine-e8-mavi.jpg?revision=1697143329&AppLanguageCode=tr",
+      name: "Dron Kumandası",
+      category: "Dron Malzemeleri",
+      description: "",
+      price: 124
+    },
+  ];
+
 const options = {
   // Optional parameters
   direction: "horizontal",
@@ -164,3 +181,5 @@ const options = {
 const popularProductsSwiper = productsSwiper(".popular-products-swiper", popularData, options);
 
 const newProductsSwiper = productsSwiper(".new-products-swiper", newsData, options);
+
+const inSaleProductsSwiper = productsSwiper(".on-sale-products-swiper", inSaleData, options)
