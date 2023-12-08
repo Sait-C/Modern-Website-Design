@@ -276,6 +276,14 @@
     color: var(--color-primary-100);
 }
 
+.subscribe-cta {
+    background: url("../../../../assets/background-objects/glow_circle_1.png") !important;
+    overflow: hidden;
+    position: relative;
+    background-position: 5% 70%;
+    background-size: cover; /* Optional: Adjust the sizing based on your needs */
+    background-repeat: no-repeat; /* Optional: Prevent image repetition */
+}
 
 .subscribe-cta form{
     display: flex;
@@ -285,4 +293,6 @@
     gap: 1rem;
     margin: 1rem auto;
     margin-top: 2rem;
+    width: 100%;
+    z-index: 2;
 }

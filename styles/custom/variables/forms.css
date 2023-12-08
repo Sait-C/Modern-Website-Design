@@ -1,0 +1,10 @@
+:root {
+    --input-border-radius-size: 0.7rem;
+    --input-border-size: 2px;
+    --input-padding-block-size: 1.25rem;
+    --input-padding-inline-size: 1.5rem;
+
+    --input-border-color-primary: #fcfafa;
+    --input-background-color-primary: rgba(242,242,246, 0.3);
+    --input-placeholder-color-primary: #b8b3ae;
+}

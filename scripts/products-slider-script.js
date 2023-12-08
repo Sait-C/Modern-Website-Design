@@ -54,6 +54,7 @@ const productsSwiper = (swiperClass, data, options) => {
     addToCartBtn.textContent = "Sepete Ekle";
     addToCartBtn.classList.add("add-to-cart-btn");
     addToCartBtn.classList.add("btn");
+    addToCartBtn.classList.add("btn-smooth");
 
     
     slideProductDetailBox.appendChild(productType);

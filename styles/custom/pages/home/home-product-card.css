@@ -203,6 +203,7 @@
 
 .home-product-card-slider-root .product-item a {
     letter-spacing: 1px;
+    padding-block: var(--button-padding-y-secondary);
 }
 
 @media screen and (max-width: 576px) {

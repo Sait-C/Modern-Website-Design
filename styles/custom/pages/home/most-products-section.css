@@ -183,12 +183,8 @@ main .most-products .product-slide-box .product-detail-box .price {
 
 main .most-products .product-slide-box .add-to-cart-btn {
     margin-bottom: 1rem;
-    width: 90%;
+    width: 75%;
     margin-inline: auto;
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: var(--color-primary-600);
 }
 
 main .most-products .product-slide-box .like-btn {

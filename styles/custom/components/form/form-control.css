@@ -1,0 +1,38 @@
+.form-input-box {
+    width: 100%;
+}
+
+.form-input-box input {
+    width: 100%;
+    padding-block: var(--input-padding-block-size);
+    padding-inline: var(--input-padding-inline-size);
+    background-color: var(--color-primary-200);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 300ms ease-in-out;
+    border: none;
+    outline: none;
+    border-radius: var(--input-border-radius-size);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.form-input-box input:focus {
+    background-color: var(--color-primary-100);
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696, -13px -13px 100px var(--color-primary-100);
+}
+
+.form-input-box input:active {
+    transform: scale(1);
+}
+
+.form-input-box input::placeholder {
+    color: var(--input-placeholder-color-primary);
+}
+
+.form-input-box label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-200);
+}
