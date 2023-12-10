@@ -2,6 +2,28 @@
     width: 100%;
 }
 
+form .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: var(--color-primary-200);
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 9% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+form .input-field i {
+    text-align: start;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+form .input-field input,
 .form-input-box input {
     width: 100%;
     padding-block: var(--input-padding-block-size);
@@ -17,16 +39,19 @@
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+form .input-field input:focus,
 .form-input-box input:focus {
     background-color: var(--color-primary-100);
     transform: scale(1.05);
     box-shadow: 13px 13px 100px #969696, -13px -13px 100px var(--color-primary-100);
 }
 
+form .input-field input:active,
 .form-input-box input:active {
     transform: scale(1);
 }
 
+form .input-field input::placeholder,
 .form-input-box input::placeholder {
     color: var(--input-placeholder-color-primary);
 }
@@ -37,17 +62,17 @@
     font-size: var(--font-size-200);
 }
 
-.auth-page .form-container .social-text {
+.forms-container .social-text {
     padding: .7rem 0;
     font-size: 1rem;
 }
 
-.auth-page .form-container .social-media {
+.forms-container .social-media {
     display: flex;
     justify-content: center;
 }
 
-.auth-page .form-container .social-icon {
+.forms-container .social-icon {
     height: 46px;
     width: 46px;
     border: 1px solid #333;
@@ -62,7 +87,8 @@
     transition: .3s;
 }
 
-.auth-page .form-container .social-icon:hover {
+.forms-container .social-icon:hover {
     color: #4481eb;
     border-color: #4481eb;
 }
+
