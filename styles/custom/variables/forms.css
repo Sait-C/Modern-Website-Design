@@ -7,4 +7,8 @@
     --input-border-color-primary: #fcfafa;
     --input-background-color-primary: rgba(242,242,246, 0.3);
     --input-placeholder-color-primary: #b8b3ae;
+
+    --form-grid-column-size-100: 5rem;
+    --form-grid-column-size-200: 10rem;
+    --form-grid-column-size-300: 20rem;
 }

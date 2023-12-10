@@ -1,0 +1,19 @@
+.form-controls-even-column {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--form-grid-column-size-200), 1fr));
+    gap: 1.25rem;
+  }
+  
+  .form-controls-even-column.column-100 {
+    grid-template-columns: repeat(auto-fit, minmax(var(--form-grid-column-size-100), 1fr));
+  }
+  
+  .form-controls-even-column.column-200 {
+    grid-template-columns: repeat(auto-fit, minmax(var(--form-grid-column-size-200), 1fr));
+  }
+  
+  .form-controls-even-column.column-300 {
+    grid-template-columns: repeat(auto-fit, minmax(var(--form-grid-column-size-300), 1fr));
+  }

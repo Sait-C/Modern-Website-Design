@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
     <link rel="stylesheet" href="../styles/custom.css" />
-    <link rel="stylesheet" href="../styles/custom/pages/home/footer.css">
-    <link rel="stylesheet" href="../styles/custom/pages/home/category-mega-menu.css" />
+    <link rel="stylesheet" href="../styles/custom/pages/sign-up/auth.css">
+    <link rel="stylesheet" href="../styles/custom/pages/home/footer.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="../styles/custom/pages/home/category-mega-menu.css"
     />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
   <body>
     <header>
       <nav>
@@ -560,20 +564,126 @@
         </div>
       </nav>
     </header>
-    <main>
-        <div class="container padding-block-600">
-          
+    <main style="overflow-y: hidden;">
+      <div class="container padding-block-600 auth-page">
+        <div class="forms-container">
+          <div class="signin-signup">
+            <form action="" class="sign-in-form">
+              <h2 class="title">Giriş Yap</h2>
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Email" />
+              </div>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Şifre" />
+              </div>
+              <input type="submit" class="btn btn-smooth" value="Giriş Yap" />
+
+              <p class="social-text">veya sosyal platformlarla giriş yap</p>
+              <div class="social-media">
+                <a href="#" class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </form>
+
+            <form action="" class="sign-up-form">
+              <h2 class="title">Kayıt Ol</h2>
+              <div class="form-controls-even-column column-100">
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Ad" />
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Soyad" />
+                </div>
+              </div>
+              <div class="form-controls-even-column column-100">
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Email" />
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Şifre" />
+                </div>
+              </div>
+              
+              <div class="input-field">
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Cep Telefonu (5XX) XXX XX XX" />
+              </div>
+              <input type="submit" class="btn btn-smooth" value="Kayıt Ol" />
+
+              <p class="social-text">veya sosyal platformlarla kayıt ol</p>
+              <div class="social-media">
+                <a href="#" class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </form>
+          </div>
         </div>
+
+        <div class="panels-container">
+          <div class="panel left-panel">
+            <div class="content">
+              <h3>Yeni misin?</h3>
+              <p>
+                Ayrıcalıklardan yararlanmak ve siparişlerini takip edebilmek için hemen kayıt ol!
+              </p>
+              <button class="btn btn-sharp" id="sign-up-btn">
+                Kayıt Ol
+              </button>
+            </div>
+            <img src="../assets/illustrations/follow_me_drone.svg" class="image" alt="" />
+          </div>
+          <div class="panel right-panel">
+            <div class="content">
+              <h3>Zaten kayıtlı üye misin?</h3>
+              <p>
+                Bilgilerini girerek giriş yapabilirsin!
+              </p>
+              <button class="btn btn-sharp" id="sign-in-btn">
+                Giriş Yap
+              </button>
+            </div>
+            <img src="../assets/illustrations/drone_surveillance.svg" class="image" alt="" />
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-row padding-block-400">
         <div class="footer-col">
           <img src="../assets/logo.webp" class="logo" />
-          <p>Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.</p>
+          <p>
+            Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.
+          </p>
         </div>
         <div class="footer-col">
           <h3>İletişim</h3>
-          <p>Merkez Ofis: </p>
+          <p>Merkez Ofis:</p>
           <p>Gülbahar Mahallesi Cemal Sururi Sokak</p>
           <p>Halim Meriç İş Merkezi Şişli/İstanbul</p>
           <p class="email-id">destek@dronmarket.com</p>
@@ -593,7 +703,7 @@
           <h3>Bültene Abone Ol</h3>
           <form>
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Emailin gir" required>
+            <input type="email" placeholder="Emailin gir" required />
             <button type="submit"><i class="fas fa-arrow-right"></i></button>
           </form>
           <div class="social-icons">
@@ -608,7 +718,12 @@
   </body>
 
   <!--Scripts-->
-  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="../scripts/auth-page.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"
+  ></script>
   <script src="../scripts/category-mega-menu-script.js"></script>
   <!--Navbar Menu Script-->
   <script type="text/javascript">
@@ -627,23 +742,23 @@
     const blurLink = document.querySelector(".nav-category-list-menu");
     const pageContent = document.querySelector("main");
 
-    blurLink.addEventListener("mouseover", function() {
+    blurLink.addEventListener("mouseover", function () {
       pageContent.style.filter = "blur(5px)"; // Adjust the blur intensity as needed
     });
 
-    blurLink.addEventListener("mouseout", function() {
+    blurLink.addEventListener("mouseout", function () {
       pageContent.style.filter = "none"; // Remove the blur on mouse out
     });
   </script>
   <!--Navbar Script-->
   <script>
     // Make navbar to fixed on scroll
-    $(window).scroll(function(){
-        if($(window).scrollTop() >= 35){
-            $('nav').addClass('fixed-navbar');
-        } else if($(window).scrollTop() <= 35){
-            $('nav').removeClass('fixed-navbar');
-        }
-    })
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >= 35) {
+        $("nav").addClass("fixed-navbar");
+      } else if ($(window).scrollTop() <= 35) {
+        $("nav").removeClass("fixed-navbar");
+      }
+    });
   </script>
 </html>

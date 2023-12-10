@@ -36,3 +36,33 @@
     margin-bottom: 1rem;
     font-size: var(--font-size-200);
 }
+
+.auth-page .form-container .social-text {
+    padding: .7rem 0;
+    font-size: 1rem;
+}
+
+.auth-page .form-container .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-page .form-container .social-icon {
+    height: 46px;
+    width: 46px;
+    border: 1px solid #333;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.auth-page .form-container .social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+}
