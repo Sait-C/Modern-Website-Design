@@ -29,6 +29,11 @@ body {
   margin-inline: auto;
 }
 
+.content-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .even-columns {
   display: grid;
   gap: 1rem;

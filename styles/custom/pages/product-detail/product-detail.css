@@ -17,7 +17,7 @@
     border-radius: var(--card-border-radius-primary);
 }
 
-.shop-details-slider .swiper-slide {
+.product-detail-page .swiper-slide {
     display: flex;
     width: 100%;
     height: 100%;
@@ -110,7 +110,7 @@
 }
 
 /*Swiper customization*/
-.shop-details-slider .swiper-navBtn {
+.product-detail-page .swiper-navBtn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -125,30 +125,85 @@
     border: 1px solid var(--color-primary-700);
 }
 
-.shop-details-slider .swiper-navBtn:hover {
+.product-detail-page .swiper-navBtn:hover {
     background: var(--color-primary-100);
     color: var(--color-primary-700);
 }
 
-.shop-details-slider .swiper-navBtn::after {
+.product-detail-page .swiper-navBtn::after {
     font-size: var(--font-size-400);
 }
 
-.shop-details-slider .swiper-button-prev::after {
+.product-detail-page .swiper-button-prev::after {
     margin-right: 0.2rem;
 }
 
-.shop-details-slider .swiper-button-next::after {
+.product-detail-page .swiper-button-next::after {
     margin-left: 0.2rem;
 }
 
-.shop-details-slider .swiper-pagination {
+.product-detail-page .swiper-pagination {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 1.5rem;
 }
-.shop-details-slider .swiper-pagination-bullet {
+.product-detail-page .swiper-pagination-bullet {
     background: var(--color-primary-600);
+}
+
+
+/*RECENT PRODUCTS SECTION*/
+.recent-products-section .product-list-slider {
+    position: relative;
+    height: 100%;
+    padding-block: 4rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: var(--card-border-radius-primary);
+}
+
+.recent-products-section .product-list-slider .product-box {
+    background: var(--color-primary-100);
+    width: 80%;
+}
+
+.recent-products-section .section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+
+.recent-products-section .section-header span {
+    text-transform: uppercase;
+    color: var(--color-secondary-200);
+    font-size: var(--font-size-300);
+}
+
+.recent-products-section .section-header h3 {
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-800);
+}
+
+
+/*Media Quaries*/
+@media only screen and (max-width: 768px) {
+    .shop-details-wrapper {
+        grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+    }
+
+    .product-detail-page .swiper-navBtn {
+        margin-inline: 0rem;
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-100);
+    }
 }

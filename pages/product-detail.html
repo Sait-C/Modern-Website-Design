@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
     <link rel="stylesheet" href="../styles/custom.css" />
+    <link rel="stylesheet" href="../styles/custom/components/product/product.css">
     <link
       rel="stylesheet"
       href="../styles/custom/pages/product-detail/product-detail.css"
@@ -569,7 +570,7 @@
       </nav>
     </header>
     <main>
-      <div class="container padding-block-600">
+      <div class="container padding-block-600 product-detail-page">
         <section class="details-section">
           <div class="shop-details-wrapper">
             <div class="shop-details-slider">
@@ -635,11 +636,136 @@
               </div>
             </div>
           </div>
-          <div class="shop-details-block">
-            Some details and category of product
+        </section>
+        
+        <div class="content-container padding-block-100">
+          <div class="tab-container">
+            <div class="tab-filter-container">
+              <li class="btn btn-sharp filter-btn active" data-tab="shop-details-tab">
+                Detaylar
+              </li>
+              <li class="btn btn-sharp filter-btn" data-tab="shop-details-comments-tab">
+                Yorumlar
+              </li>
+              <li class="btn btn-sharp filter-btn" data-tab="shop-details-purchase-info-tab">
+                Taksit Seçenekleri
+              </li>
+            </div>
+            <div class="tab-filter-item-container">
+              <div class="tab-item shop-details-tab selected_tab">
+                Detaylar
+              </div>
+              <div class="tab-item shop-details-comments-tab">
+                Yorumlar
+              </div>
+              <div class="tab-item shop-details-purchase-info-tab">
+                Taksit Seçenekleri
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="recent-products-section">
+          <div class="section-header">
+            <span>ilgili ürünler</span>
+            <h3>Bizim Seçtiklerimiz</h3>
+          </div>
+          <div class="product-list-slider">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="product-box">
+                  <div class="like-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-img">
+                    <img src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="">
+                  </div>
+                  <div class="product-detail-box">
+                    <div class="product-type">
+                      <a href="#">Product Name</a>
+                      <span>Product Category</span>
+                    </div>
+                    <a href="$" class="product-price">$50</a>
+                  </div>
+                  <button class="btn btn-smooth add-to-cart-btn">
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                  <div class="like-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-img">
+                    <img src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="">
+                  </div>
+                  <div class="product-detail-box">
+                    <div class="product-type">
+                      <a href="#">Product Name</a>
+                      <span>Product Category</span>
+                    </div>
+                    <a href="$" class="product-price">$50</a>
+                  </div>
+                  <button class="btn btn-smooth add-to-cart-btn">
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                  <div class="like-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-img">
+                    <img src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="">
+                  </div>
+                  <div class="product-detail-box">
+                    <div class="product-type">
+                      <a href="#">Product Name</a>
+                      <span>Product Category</span>
+                    </div>
+                    <a href="$" class="product-price">$50</a>
+                  </div>
+                  <button class="btn btn-smooth add-to-cart-btn">
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-box">
+                  <div class="like-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-img">
+                    <img src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="">
+                  </div>
+                  <div class="product-detail-box">
+                    <div class="product-type">
+                      <a href="#">Product Name</a>
+                      <span>Product Category</span>
+                    </div>
+                    <a href="$" class="product-price">$50</a>
+                  </div>
+                  <button class="btn btn-smooth add-to-cart-btn">
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </section>
-        <section class="recent-products-section">Recent Products</section>
       </div>
     </main>
     <footer>
@@ -756,4 +882,47 @@
       },
     });
   </script>
+  <script>
+    const productListSwiper = new Swiper(".product-list-slider", {
+      // Optional parameters
+      direction: 'horizontal',
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: false,
+      grapCursor: true,
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+
+      breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      577: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+    });
+  </script>
+  <script src="../scripts/tab-script.js"></script>
 </html>
