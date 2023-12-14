@@ -71,7 +71,7 @@
     list-style: none;
   }
   
-  nav .navbar .main-menu li a {
+  nav .navbar .main-menu li a:not(.btn) {
     display: block;
     font-size: var(--font-size-200);
     color: var( --navbar-list-item-text-color);
@@ -82,7 +82,7 @@
     color: var(--navbar-list-item-text-hover-color);
   }
   
-  nav .navbar .btn {
+  nav .navbar .auth-btn {
     border-radius: 100px;
     font-size: var(--font-size-100);
     font-weight: var(--font-weight-bold);
@@ -121,11 +121,11 @@
       width: 100%;
       padding: 0 15px;
     }
-    .navbar .btn {
+    .navbar .auth-btn {
       display: none;
     }
     .btn-mobile {
-      display: block;
+      display: block !important;
       margin-top: 20px;
     }
     nav .navbar {
