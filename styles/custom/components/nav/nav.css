@@ -91,6 +91,20 @@
     transition: 0.3s;
   }
   
+  .navbar .signed-in-profile-nav-menu {
+    border-radius: 100px;
+    font-size: var(--font-size-100);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary-300);
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-top: 0rem;
+  }
+
+  .navbar .signed-in-profile-nav-menu i {
+    padding-right: 0.2rem;
+  }
+
   nav .navbar .btn:hover {
     background-color: var(--color-secondary-600);
     color: var(--color-primary-100);
@@ -122,6 +136,12 @@
       padding: 0 15px;
     }
     .navbar .auth-btn {
+      display: none;
+    }
+    .navbar .signed-in-profile-nav-menu {
+      display: none;
+    }
+    .navbar .nav-profile-list-menu {
       display: none;
     }
     .btn-mobile {
