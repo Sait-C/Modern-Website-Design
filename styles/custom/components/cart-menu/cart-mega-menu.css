@@ -45,7 +45,7 @@
 
 .cart-mega-menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   overflow: auto;
 }
@@ -201,5 +201,11 @@
 @media screen and (max-width: 576px) {
   .cart-mega-menu .cart-mega-menu-item-list .cart-item-info h1 {
     font-size: var(--font-size-300);
+  }
+
+  .cart-mega-menu .cart-mega-menu-footer .cart-footer-link-btn {
+    padding-block: var( --button-padding-y-secondary);
+    padding-inline: 1rem;
+    font-size: var(--font-size-200);
   }
 }

@@ -39,6 +39,10 @@ form .input-field input,
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+.form-input-box input[type="number"] {
+    box-shadow: none;
+}
+
 form .input-field input:focus,
 .form-input-box input:focus {
     background-color: var(--color-primary-100);

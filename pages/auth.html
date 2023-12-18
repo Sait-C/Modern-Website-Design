@@ -29,7 +29,7 @@
             <a href="#" class="logo">Dronmarket</a>
             <button class="nav-btn"></button>
             <ul class="main-menu">
-              <li class="nav-category-list-menu">
+              <li class="nav-category-list-menu blur-if-hover">
                 <a href="javascript:void(0);">Kategoriler</a>
                 <div class="category-mega-menu">
                   <div class="category-mega-menu-inner">
@@ -556,7 +556,7 @@
               <li><a href="#">Blog</a></li>
               <li><a href="#">Hakkında</a></li>
               <li><a href="#">İletişim</a></li>
-              <li class="nav-cart-list-menu">
+              <li class="nav-cart-list-menu blur-if-hover">
                 <div class="cart-counter-container">
                   <span class="cart-counter">1</span>
                   <i class="fa-solid fa-cart-shopping cart-btn"></i>
@@ -666,8 +666,50 @@
                 </div>
               </li>
               <button class="btn btn-mobile auth-btn">Giriş Yap</button>
+              <div style="display: none;" class="nav-profile-list-menu btn-mobile blur-if-hover">
+                <button class="signed-in-profile-nav-menu btn btn-reverse btn-sm btn-mobile">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Hesabım</span>
+                </button>
+                <div class="nav-profile-mega-menu">
+                  <div class="nav-profile-mega-menu-inner">
+                    <div class="nav-profile-mega-menu-heading">Profil</div>
+                    <div>
+                      <ul class="profile-operations-list">
+                        <li><a href="#">Hesabıma Git</a></li>
+                        <li><a href="#">Siparişlerim</a></li>
+                        <li><a href="#">Havale Bildirimi Yap</a></li>
+                        <li><a href="#">Bilgilerini Güncelle</a></li>
+                        <li><a href="#">Puan veya Hediye Çeklerine Bak</a></li>
+                        <li><a href="#">Favori Ürünlerine Gözat</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ul>
             <button class="auth-btn btn btn-reverse btn-sm">Giriş Yap</button>
+            <div style="display: none;" class="nav-profile-list-menu blur-if-hover">
+              <button class="signed-in-profile-nav-menu btn btn-reverse btn-sm">
+                <i class="fa-regular fa-user"></i>
+                <span>Hesabım</span>
+              </button>
+              <div class="nav-profile-mega-menu">
+                <div class="nav-profile-mega-menu-inner">
+                  <div class="nav-profile-mega-menu-heading">Profil</div>
+                  <div>
+                    <ul class="profile-operations-list">
+                      <li><a href="#">Hesabıma Git</a></li>
+                      <li><a href="#">Siparişlerim</a></li>
+                      <li><a href="#">Havale Bildirimi Yap</a></li>
+                      <li><a href="#">Bilgilerini Güncelle</a></li>
+                      <li><a href="#">Puan veya Hediye Çeklerine Bak</a></li>
+                      <li><a href="#">Favori Ürünlerine Gözat</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -846,18 +888,7 @@
     });
   </script>
   <!--Blur-->
-  <script>
-    const blurLink = document.querySelector(".nav-category-list-menu");
-    const pageContent = document.querySelector("main");
-
-    blurLink.addEventListener("mouseover", function () {
-      pageContent.style.filter = "blur(5px)"; // Adjust the blur intensity as needed
-    });
-
-    blurLink.addEventListener("mouseout", function () {
-      pageContent.style.filter = "none"; // Remove the blur on mouse out
-    });
-  </script>
+  <script src="../scripts/page-blur.js"></script>
   <!--Navbar Script-->
   <script>
     // Make navbar to fixed on scroll
