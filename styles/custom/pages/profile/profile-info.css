@@ -1,0 +1,38 @@
+.profile-account-container .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-account-container .page-content form {
+    width: 100%;
+}
+
+.profile-account-container .page-content .content-form {
+    width: 85%;
+}
+
+.profile-account-container .page-content .content-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-account-container .page-content .content-form form .input-field {
+    max-width: none;
+}
+
+.profile-account-container .page-content .content-form form .textarea-input-field textarea {
+    resize: none;
+    width: 100%;
+}
+
+.profile-account-container .page-content .content-form form .textarea-input-field {
+    width: 100%;
+    max-width: none;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}

@@ -1,0 +1,10 @@
+.profile-account-container .page-content {
+    width: 100%;
+}
+
+.profile-account-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+}

@@ -48,6 +48,10 @@
     grid-row: 1 / 2;
 }
 
+.auth-page .forms-container form .input-field {
+  margin-right: 1.4rem;
+}
+
 .auth-page .forms-container form.sign-in-form {
   z-index: 2;
 }

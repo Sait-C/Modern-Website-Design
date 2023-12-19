@@ -9,8 +9,11 @@ form .input-field {
     margin: 10px 0;
     height: 55px;
     border-radius: 55px;
-    display: grid;
-    grid-template-columns: 9% 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     padding: 0 0.4rem;
     position: relative;
 }
@@ -24,6 +27,10 @@ form .input-field i {
 }
 
 form .input-field input,
+form .input-field select,
+form .input-field textarea,
+.form-input-box select,
+.form-input-box textarea,
 .form-input-box input {
     width: 100%;
     padding-block: var(--input-padding-block-size);
@@ -41,9 +48,15 @@ form .input-field input,
 
 .form-input-box input[type="number"] {
     box-shadow: none;
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
 }
 
 form .input-field input:focus,
+form .input-field select:focus,
+form .input-field textarea:focus,
+.form-input-box select:focus,
+.form-input-box textarea:focus,
 .form-input-box input:focus {
     background-color: var(--color-primary-100);
     transform: scale(1.05);
@@ -51,11 +64,19 @@ form .input-field input:focus,
 }
 
 form .input-field input:active,
+form .input-field select:active,
+form .input-field textarea:active,
+.form-input-box select:active,
+.form-input-box textarea:active,
 .form-input-box input:active {
     transform: scale(1);
 }
 
 form .input-field input::placeholder,
+form .input-field select::placeholder,
+form .input-field textarea::placeholder,
+.form-input-box select::placeholder,
+.form-input-box textarea::placeholder,
 .form-input-box input::placeholder {
     color: var(--input-placeholder-color-primary);
 }
@@ -95,4 +116,3 @@ form .input-field input::placeholder,
     color: #4481eb;
     border-color: #4481eb;
 }
-
