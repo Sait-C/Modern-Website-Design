@@ -1,0 +1,10 @@
+.profile-account-container .page-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-account-container .page-content .content-form form .input-field {
+    max-width: none;
+    justify-content: start;
+}
