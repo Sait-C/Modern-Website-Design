@@ -1,0 +1,26 @@
+.list-of-orders-wrapper table .status {
+    padding: .6rem 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: var(--font-size-200);
+}
+
+.list-of-orders-wrapper table .status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.list-of-orders-wrapper table .status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.list-of-orders-wrapper table .status.pending {
+    background-color: #ebc474;
+    color: var(--color-secondary-700);
+}
+
+.list-of-orders-wrapper table .status.shipped {
+    background-color: #6fcaea;
+    color: #0b4b62;
+}

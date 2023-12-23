@@ -10,6 +10,12 @@
     margin-top: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .profile-addresses-wrapper .addresses-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /*Address Card*/
 .address-card {
   display: flex;

@@ -761,75 +761,80 @@
     <main>
       <div class="container padding-block-600">
         <div class="profile-account-container">
-          <div class="sidenav">
-            <ul class="sidenav-nav">
-              <li class="sidenav-item selected">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-user"></i>
-                  <span>Üye Bilgilerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-address-book"></i>
-                  <span>İletişim Tercihlerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-address-card"></i>
-                  <span>Adres Defteri</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <span>Alışveriş Sepetim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-money-bill"></i>
-                  <span>Sipariş ve İade</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-dollar-sign"></i>
-                  <span>Ödemelerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-heart"></i>
-                  <span>Favori Ürünlerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-align-justify"></i>
-                  <span>Havale Bildirim Formu</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-star"></i>
-                  <span>Puanlarım ve Hediye Çeklerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-user-plus"></i>
-                  <span>Davetlerim</span>
-                </a>
-              </li>
-              <li class="sidenav-item">
-                <a href="#" class="sidenav-link">
-                  <i class="fa-solid fa-right-from-bracket"></i>
-                  <span>Güvenli Çıkış</span>
-                </a>
-              </li>
-            </ul>
+          <div class="sidenav-wrapper">
+            <div class="open-menu-btn">
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div class="sidenav">
+              <ul class="sidenav-nav">
+                <li class="sidenav-item selected">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Üye Bilgilerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>İletişim Tercihlerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>Adres Defteri</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Alışveriş Sepetim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>Sipariş ve İade</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Ödemelerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Favori Ürünlerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span>Havale Bildirim Formu</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Puanlarım ve Hediye Çeklerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Davetlerim</span>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="#" class="sidenav-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Güvenli Çıkış</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="page-content">
             <h1>Profilimi Güncelle</h1>
@@ -978,6 +983,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../scripts/category-mega-menu-script.js"></script>
+  <!--Sidenav script-->
+  <script src="../../scripts/profile-sidenav-script.js"></script>
   <!--Navbar Menu Script-->
   <script type="text/javascript">
     const navBtn = document.querySelector(".nav-btn");

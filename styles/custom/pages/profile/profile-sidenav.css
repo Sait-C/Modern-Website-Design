@@ -4,6 +4,7 @@
     padding: 1.5rem;
     backdrop-filter: blur(var(--nav-blur-size-100));
     box-shadow: var(--nav-box-shadow);
+    position: relative;
 }
 
 .profile-account-container .sidenav .sidenav-nav {
@@ -43,7 +44,49 @@
     color: var(--color-primary-500);
 }
 
+.profile-account-container .sidenav-wrapper .open-menu-btn {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-300);
+    padding: 0.7rem;
+    border-radius: 50%;
+    background: var(--color-primary-700);
+    color: var(--color-primary-100);
+    top: -1rem;
+    left: 50%;
+    z-index: 150;
+    transform: translateX(-50%);
+}
+
+.profile-account-container .sidenav-wrapper.opened .open-menu-btn i {
+    transition: 0.5s;
+}
+
 @media only screen and (max-width: 768px) {
+    .profile-account-container .sidenav-wrapper {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        transition: 0.5s;
+    }
+
+    .profile-account-container .sidenav-wrapper.opened {
+        height: 15rem;
+    }
+
+    .profile-account-container .sidenav-wrapper .open-menu-btn {
+        display: flex;
+    }
+
+    .profile-account-container .sidenav-wrapper.opened .open-menu-btn i {
+        transform: rotate(180deg);
+    }
+
     .profile-account-container .sidenav {
         position: fixed;
         background: var(--color-primary-100);
@@ -52,11 +95,25 @@
         bottom: 0;
         left: 0;
         width: 100vw;
-        height: 15rem;
+        height: 5rem;
         overflow-y: scroll;
+        transition: 0.5s;
     }
 
     .profile-account-container .sidenav .sidenav-nav {
+        flex-direction: row;
+        height: 100%;
+        gap: 1.1rem;
+    }
+    .profile-account-container .sidenav .sidenav-nav .sidenav-item .sidenav-link span {
+        display: none;
+    }
+
+    .profile-account-container .sidenav-wrapper.opened .sidenav {
+        height: 15rem;
+    }
+
+    .profile-account-container .sidenav-wrapper.opened .sidenav .sidenav-nav {
         display: grid;
         grid-auto-flow:column dense; /* column flow with "dense" to fill all the cells */
         grid-template-rows: 1fr 1fr; /* 2 rows */
@@ -64,8 +121,9 @@
         height: 100%;
         gap: 1.1rem;
     }
-    .profile-account-container .sidenav .sidenav-nav .sidenav-item .sidenav-link span {
+    .profile-account-container .sidenav-wrapper.opened .sidenav .sidenav-nav .sidenav-item .sidenav-link span {
         display: block;
+        opacity: 1;
     }
 
     .profile-account-container .sidenav .sidenav-nav .sidenav-item {
@@ -74,6 +132,11 @@
 
     .profile-account-container .sidenav .sidenav-nav .sidenav-item .sidenav-link {
         height: 100%;
+        color: var(--color-secondary-700);
+    }
+
+    .profile-account-container .sidenav-wrapper.opened .sidenav .sidenav-nav .sidenav-item .sidenav-link {
+        height: 100%;
         width: 5rem;
         color: var(--color-secondary-700);
         flex-direction: column;
@@ -81,7 +144,7 @@
         justify-content: center;
         text-align: center;
     }
-    .profile-account-container .sidenav .sidenav-nav .sidenav-item .sidenav-link i {
+    .profile-account-container .sidenav-wrapper.opened .sidenav .sidenav-nav .sidenav-item .sidenav-link i {
         margin: 0;
         margin-bottom: 0.3rem;
     }
