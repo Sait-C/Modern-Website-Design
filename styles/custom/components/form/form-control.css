@@ -46,7 +46,7 @@ form .input-field textarea,
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-.form-input-box input[type="number"] {
+.form-input-box input[type="number"].quantity-item {
     box-shadow: none;
     padding-inline: 0.5rem;
     padding-block: 0.75rem;

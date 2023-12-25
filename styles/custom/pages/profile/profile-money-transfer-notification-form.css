@@ -1,0 +1,27 @@
+.profile-account-container .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.profile-account-container .page-content .content-form form .input-field {
+    max-width: none;
+}
+
+.profile-account-container .page-content .content-form form .textarea-input-field textarea {
+    resize: none;
+    width: 100%;
+}
+
+.profile-account-container .page-content .content-form form .textarea-input-field {
+    width: 100%;
+    max-width: none;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+.profile-account-container .page-content .content-form form .form-input-box label {
+    margin-block: 1rem;
+}
