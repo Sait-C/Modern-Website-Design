@@ -22,7 +22,7 @@
 
 .category-mega-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
     overflow: auto;
     padding: 2rem;
@@ -74,14 +74,14 @@
     opacity: 0.5;
     padding: 10px 20px;
     border-radius: 30px;
-    color: var(--color-primary-100);
+    color: var(--color-primary-100) !important;
     box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
     text-decoration: none;
     font-weight: 500;
     justify-content: center;
     text-align: center;
     letter-spacing: 1px;
-    font-size: var(--font-size-100);
+    font-size: var(--font-size-100) !important;
     cursor: pointer;
 }
 

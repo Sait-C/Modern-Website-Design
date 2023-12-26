@@ -60,7 +60,7 @@ main .features .features-wrapper .content-box .card h2 {
 
 main .features .features-wrapper .content-box .card p {
     text-align: center;
-    color: var(--color-secondary-300);
+    color: #3c3e3f;
 }
 
 /* main .features .features-wrapper .content-box .card:hover {
@@ -93,6 +93,7 @@ main .features .features-wrapper .content-box .card:hover {
 
     main .features .features-wrapper .content-box .card p .highlight {
         color: var(--color-secondary-700);
+        font-weight: var(--font-weight-bold);
     }
 
     main .features .features-wrapper .content-box .card i {

@@ -84,7 +84,19 @@
 
 @media screen and (max-width: 768px) {
     .product-list-content-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .products-wrapper .pagination {
+        font-size: var(--font-size-100);
+    }
+    .products-wrapper .pagination ul {
+        align-items: center;
+    }
+    .products-wrapper .pagination ul li.page {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
     }
 }
 

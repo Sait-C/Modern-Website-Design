@@ -184,11 +184,7 @@
     box-shadow: none;
     transition: all 0.5s ease-in;
   }
-
-  .cart-mega-menu .cart-mega-menu-inner {
-    margin: auto;
-  }
-
+  
   .nav-cart-list-menu:hover .cart-mega-menu {
     height: 420px;
     transition: all 0.5s ease-in;
