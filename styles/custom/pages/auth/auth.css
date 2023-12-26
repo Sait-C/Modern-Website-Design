@@ -272,6 +272,10 @@
     padding-bottom: 0 !important;
   }
 
+  .auth-page .forms-container form .input-field {
+    margin-right: 0;
+  }
+
   .auth-page .panels-container .image {
     display: none;
   }
@@ -282,10 +286,14 @@
 
   .auth-page .panels-container .panel.right-panel {
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 0;
+  }
+
+  .auth-page .panels-container .panel.right-panel h3 {
+    font-size: clamp(var(--font-size-100), 4.5cqi, var(--font-size-500));;
   }
 
   .auth-page .panels-container .panel.left-panel {

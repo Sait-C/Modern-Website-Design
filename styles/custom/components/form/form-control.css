@@ -18,6 +18,20 @@ form .input-field {
     position: relative;
 }
 
+form .input-field-errors {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form .input-field-errors p {
+    color: var(--color-primary-700);
+}
+
 form .input-field i {
     text-align: start;
     line-height: 55px;
@@ -116,3 +130,4 @@ form .input-field textarea::placeholder,
     color: #4481eb;
     border-color: #4481eb;
 }
+

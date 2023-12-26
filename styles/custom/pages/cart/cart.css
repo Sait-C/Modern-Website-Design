@@ -234,3 +234,7 @@
     gap: 0.5rem;
   }
 }
+
+.cart-content-container .cart-item-list-content .item-quantity input[type="number"] {
+  max-width: 5rem;
+}

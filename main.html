@@ -146,7 +146,7 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>Endüstriyel Dronlar</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>
                       </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
@@ -189,7 +189,8 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>DJI Drone</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>                      </div>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>
+                      </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
                           <img src="./assets/icons/drone-icon.png" alt="">
@@ -249,7 +250,7 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>Drone Multikopter</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>                      </div>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
                           <img src="./assets/icons/drone-icon.png" alt="">
@@ -291,7 +292,7 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>Drone Malzemeleri</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>                      </div>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
                           <img src="./assets/icons/drone_frame.png" alt="">
@@ -396,7 +397,7 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>Zirai İnsansız Hava Araçları</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>                      </div>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
                           <img src="./assets/icons/drone-icon.png" alt="">
@@ -438,7 +439,7 @@
                       <div class="category-mega-menu-item-heading">
                         <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
                         <h2>Drone Kamera ve Gimballeri</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>                      </div>
+                        <a href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
                       <div class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
                           <img src="./assets/icons/gopro.png" alt="">
@@ -467,7 +468,7 @@
               <li><a href="#">İletişim</a></li>
               <li class="nav-cart-list-menu blur-if-hover">
                 <div class="cart-counter-container">
-                  <span class="cart-counter">1</span>
+                  <span class="cart-counter">3</span>
                   <i class="fa-solid fa-cart-shopping cart-btn"></i>
                 </div>
                 <div class="cart-mega-menu">
@@ -858,7 +859,9 @@
                       </div>
                     </div>
                   </div>
-                </div>  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
                 <!-- If we need navigation buttons -->
                 <!-- <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>       -->      
@@ -1098,6 +1101,11 @@
       prevEl: '.swiper-button-prev',
     },
 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
     breakpoints: {
       0: {
         slidesPerView: 1
@@ -1130,11 +1138,6 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
     },
 
     breakpoints: {
