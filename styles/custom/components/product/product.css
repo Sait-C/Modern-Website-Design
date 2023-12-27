@@ -79,14 +79,21 @@
 
 .product-box .like-btn {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
-    top: 10px;
-    right: 10px;
-    width: 44px;
-    height: 44px;
+    top: 0.6rem;
+    right: 0.8rem;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
     cursor: pointer;
     border-radius: 2em;
     line-height: 1.92em;
     color: var(--color-primary-600);
+}
+
+.product-box .like-btn .heart-container {
+    font-size: var(--font-size-100);
 }

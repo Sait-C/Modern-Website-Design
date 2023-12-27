@@ -19,6 +19,9 @@
 
 .shop-details-slider .like-btn {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
     top: 10px;
     right: 10px;
@@ -99,10 +102,11 @@
 }
 
 .shop-item-info-wrapper .shop-item-price-wrapper {
-    grid-column-gap: 1rem;
+    grid-column-gap: 0.5rem;
     grid-row-gap: 1rem;
     flex-flow: wrap;
     display: flex;
+    align-items: center;
 }
 
 .shop-item-info-wrapper .shop-item-price-wrapper h4 {
@@ -110,6 +114,13 @@
     font-size: var(--font-size-600);
     font-weight: var(--font-weight-bold);
     line-height: 1.2em;
+}
+
+.shop-item-info-wrapper .shop-item-price-wrapper span {
+    font-size: var(--font-size-300);
+    color: var(--color-secondary-300);
+    text-decoration: line-through;
+    text-align: end;
 }
 
 .shop-details-content-block form {
@@ -131,6 +142,7 @@
 
 .shop-details-content-block form .quantity-item {
     width: 100px;
+    background: hsl(205.71, 30.43%, 95.49%);
 }
 
 .shop-details-content-block form .form-input-box {

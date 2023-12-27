@@ -169,6 +169,27 @@
   background: var(--color-primary-100);
 }
 
+.cart-mega-menu-item-list .cart-item .cart-item-info .cart-item-price-wrapper .item-price {
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+}
+
+.cart-mega-menu-item-list .cart-item .cart-item-info .cart-item-price-wrapper {
+  grid-column-gap: 0.5rem;
+  flex-flow: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.cart-mega-menu-item-list .cart-item .cart-item-info .cart-item-price-wrapper span {
+  font-size: var(--font-size-300);
+  color: var(--color-secondary-300);
+  text-decoration: line-through;
+  text-align: end;
+}
+
 @media screen and (max-width: 900px) {
   .cart-mega-menu {
     z-index: 0;
@@ -196,14 +217,39 @@
   }
 }
 
+.cart-mega-menu .cart-mega-menu-item-list .cart-item-info h1 {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit the number of displayed lines */
+  -webkit-box-orient: vertical; /* Display vertically */
+  line-height: 1.2; /* Adjust line height for better appearance */
+}
+
 @media screen and (max-width: 576px) {
   .cart-mega-menu .cart-mega-menu-item-list .cart-item-info h1 {
     font-size: var(--font-size-300);
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical; /* Display vertically */
+    line-height: 1.2; /* Adjust line height for better appearance */
   }
 
   .cart-mega-menu .cart-mega-menu-footer .cart-footer-link-btn {
     padding-block: var( --button-padding-y-secondary);
     padding-inline: 1rem;
     font-size: var(--font-size-200);
+  }
+
+  .cart-mega-menu-item-list .cart-item .cart-item-info .cart-item-price-wrapper .item-price {
+    font-size: var(--font-size-300);
+  }
+
+  .cart-mega-menu-item-list .cart-item .cart-item-info .cart-item-price-wrapper span {
+    font-size: var(--font-size-100);
   }
 }
