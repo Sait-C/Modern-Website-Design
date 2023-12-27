@@ -17,6 +17,10 @@
 .profile-account-container .page-content .content-form form .textarea-input-field {
     width: 100%;
     max-width: none;
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-account-container .page-content .content-form form .form-section-title {
+    margin-top: 1rem;
 }

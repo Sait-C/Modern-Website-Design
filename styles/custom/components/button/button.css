@@ -30,6 +30,7 @@
 .btn.btn-reverse {
     background: var(--color-primary-100);
     color: var(--color-secondary-700);
+    transition: 0.3s;
 }
 
 .btn.btn-sm {

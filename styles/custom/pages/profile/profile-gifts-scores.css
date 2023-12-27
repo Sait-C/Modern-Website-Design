@@ -1,0 +1,74 @@
+.scores-state-analytics {
+    display: grid;
+    padding-block: var(--padding-block-size-200);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--form-grid-column-size-200), 1fr)
+    );
+    grid-gap: 1rem 2.5rem;
+    width: 100%;
+}
+
+.scores-state-analytics .analytic {
+    box-shadow: 0px 4px 20px var(--color-secondary-200);
+    -moz-box-shadow: 0px 4px 20px var(--color-secondary-200);
+    -webkit-box-shadow: 0px 4px 20px var(--color-secondary-200);
+    padding: 1.5rem;
+    border-radius: var(--card-border-radius-primary);
+    display: flex;
+    justify-content: center;
+    background: var(--color-primary-300);
+}
+
+.scores-state-analytics .analytic .analytic-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.scores-state-analytics .analytic h4 {
+    font-weight: 400;
+    color: #555;
+    font-size: var(--font-size-300);
+}
+
+.scores-state-analytics .analytic h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-400);
+    color: var(--color-secondary-400);
+}
+
+.scores-state-analytics .analytic h2 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-300);
+    color: var(--color-secondary-300);
+}
+
+
+.scores-state-analytics .analytic .analytic-icon {
+    width: 38px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.scores-state-analytics .analytic:nth-child(2) .analytic-icon {
+    background: var(--color-primary-500);
+    color: var(--color-primary-300);
+}
+
+.scores-state-analytics .analytic:first-child .analytic-icon {
+    background: var(--color-primary-400);
+    color: var(--color-primary-300);
+}
+
+.scores-state-analytics .analytic:last-child .analytic-icon {
+    background: var(--color-primary-600);
+    color: var(--color-primary-300);
+}

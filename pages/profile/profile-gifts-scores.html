@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="../../styles/custom/pages/profile/profile-account.css"
     />
+    <link rel="stylesheet" href="../../styles/custom/pages/profile/profile-gifts-scores.css">
     <link rel="stylesheet" href="../../styles/custom/pages/home/footer.css" />
     <link
       rel="stylesheet"
@@ -834,47 +835,37 @@
           </div>
           <div class="page-content">
             <h1>Puanlarım ve Hediye Çeklerim</h1>
-            <div class="scores-state-table">
-              <table>
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Toplam Kazanılan</th>
-                    <th scope="col">Toplam Harcanan</th>
-                    <th scope="col">Kullanılabilir Puan</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th data-title="" scope="row">
-                      Puan
-                    </th>
-                    <th data-title="Toplam Kazanılan" scope="row">
-                      5000.00 Puan
-                    </th>
-                    <th data-title="Toplam Harcanan" scope="row">
-                      0.00 Puan
-                    </th>
-                    <th data-title="Kullanılabilir Puan" scope="row">
-                      5000.00 Puan
-                    </th>
-                  </tr>
-                  <tr>
-                    <th data-title="" scope="row">
-                      Şimdiki Puan Değeri
-                    </th>
-                    <th data-title="Toplam Kazanılan" scope="row">
-                      5,00 TL
-                    </th>
-                    <th data-title="Toplam Harcanan" scope="row">
-                      0,00 TL
-                    </th>
-                    <th data-title="Kullanılabilir Puan" scope="row">
-                      5,00 TL
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="scores-state-analytics">
+              <div class="analytic">
+                <div class="analytic-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="analytic-info">
+                  <h4>Toplam Kazanılan</h4>
+                  <h1>5000.00</h1>
+                  <h2>Değer: 5,00 TL</h2>
+                </div>
+              </div>
+              <div class="analytic">
+                <div class="analytic-icon">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="analytic-info">
+                  <h4>Toplam Harcanan</h4>
+                  <h1>0.00</h1>
+                  <h2>Değer: 0,00 TL</h2>
+                </div>
+              </div>
+              <div class="analytic">
+                <div class="analytic-icon">
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="analytic-info">
+                  <h4>Kullanılabilir Puan</h4>
+                  <h1>5000.00</h1>
+                  <h2>Değer: 5,00 TL</h2>
+                </div>
+              </div>
             </div>
             <h2>Puan Geçmişi</h2>
             <div class="scores-history-table">

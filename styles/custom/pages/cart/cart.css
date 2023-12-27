@@ -215,6 +215,11 @@
   width: 100px;
 }
 
+.cart-item-list-content .cart-items .item-quantity form {
+  gap: 0;
+  align-items: start;
+}
+
 .cart-item-list-content .cart-items .item .item-content-block {
   display: flex;
   width: 100%;

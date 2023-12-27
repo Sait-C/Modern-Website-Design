@@ -839,7 +839,7 @@
           <div class="page-content">
             <h1>Adres Bilgilerim</h1>
             <div class="profile-addresses-wrapper padding-block-100">
-                <button class="btn btn-smooth">Yeni Adres Ekle</button>
+                <button data-open-modal modal="edit-address-modal" id="modal-btn" class="btn btn-smooth">Yeni Adres Ekle</button>
                 <div class="addresses-list">
                     <div class="address-card">
                         <div class="address-card-header">
@@ -854,7 +854,84 @@
                         </div>
                         <div class="address-card-footer">
                             <i class="fa-solid fa-trash remove-btn"></i>
-                            <button class="btn btn-sharp">Sil</button>
+                            <button data-open-modal modal="edit-address-modal" id="modal-btn" class="btn btn-sharp">Düzenle</button>
+
+                            <dialog class="edit-address-modal" id="edit-address-modal" data-modal>
+                              <form action="">
+                                <div class="form-controls-even-column column-300">
+                                  <div class="form-input-box">
+                                    <label for="address-type">Adres Türü</label>
+                                    <select>
+                                      <option value="0">Teslimat</option>
+                                      <option value="1">Fatura</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="address-name">Adres Adı</label>
+                                    <input id="address-name" type="text" placeholder="Adres adını giriniz" />
+                                  </div>
+                                </div>
+                                <div class="form-controls-even-column column-300">
+                                  <div class="form-input-box">
+                                    <label for="firstName">Adı</label>
+                                    <input id="firstName" type="text" placeholder="İsminizi giriniz" />
+
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="lastName">Soyadı</label>
+                                    <input id="lastName" type="text" placeholder="Soyisminizi giriniz" />
+                                  </div>
+                                </div>
+                                <div class="form-controls-even-column column-200">
+                                  <div class="form-input-box">
+                                    <label for="country">Ülke</label>
+                                    <select>
+                                      <option value="">Seçiniz</option>
+                                      <option value="0">Türkiye</option>
+                                      <option value="1">Azerbaycan</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="city">Şehir</label>
+                                    <select>
+                                      <option value="">Seçiniz</option>
+                                      <option value="0">İstanbul</option>
+                                      <option value="1">Sakarya</option>
+                                    </select>                                  
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="district">İlçe</label>
+                                    <select>
+                                      <option value="">Seçiniz</option>
+                                      <option value="0">Başakşehir</option>
+                                      <option value="1">Esenler</option>
+                                    </select>                                  
+                                  </div>
+                                </div>
+                                <div class="form-controls-even-column column-200">
+                                  <div class="form-input-box">
+                                    <label for="phone1">Telefon</label>
+                                    <input id="phone1" type="text" placeholder="" />
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="phone2">Cep Telefonu</label>
+                                    <input id="phone2" type="text" placeholder="" />
+                                  </div>
+                                  <div class="form-input-box">
+                                    <label for="tc-no">TC Kimlik No</label>
+                                    <input id="tc-no" type="text" placeholder="">                               
+                                  </div>
+                                </div>
+                                <div class="form-input-box">
+                                  <label for="address">Adres</label>
+                                  <textarea id="address" rows="5" placeholder="Adres"></textarea>
+                                </div>
+                                <div class="form-footer">
+                                  <button class="btn btn-sm btn-reverse" formmethod="dialog">Vazgeç</button>
+                                  <input type="submit" class="btn btn-sharp btn-sm" value="Kaydet" />
+                                </div>
+                              </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -941,4 +1018,5 @@
       }
     });
   </script>
+  <script src="../../scripts/data-modal.js"></script>
 </html>
