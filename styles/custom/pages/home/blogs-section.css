@@ -164,6 +164,8 @@ main .blogs .blogs-content-container .blog-post-card .blog-details {
 .blogs-swiper {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: var(--card-border-radius-primary);;
 }
 
 .blogs-swiper .swiper-slide {

@@ -8,6 +8,12 @@
     border-radius: var(--card-border-radius-secondary);
     overflow: hidden;
     position: relative;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
 }
 
 .product-box .product-img {

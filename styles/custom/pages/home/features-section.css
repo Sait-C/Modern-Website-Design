@@ -41,7 +41,8 @@ main .features .features-wrapper .content-box .card {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.185);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.185); */
+    box-shadow: 4px 10px 25px 1px rgba(252, 56, 56, 0.1);
     background: var(--color-primary-100);
     margin: 10px 10px;
     transition: 0.3s;
@@ -81,13 +82,13 @@ main .features .features-wrapper .content-box .card:hover i {
 
 main .features .features-wrapper .content-box .card:hover {
     transform: scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
 @media screen and (max-width: 576px) {
     main .features .features-wrapper .content-box .card p {
         font-size: var(--font-size-200);
-        text-align: left;
+        text-align: center;
         font-weight: 600;
     }
 
@@ -109,8 +110,8 @@ main .features .features-wrapper .content-box .card:hover {
         padding: 10px;
         min-height: 120px;
         width: 150px;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
     }
 
     main .features .features-wrapper .card h2 {

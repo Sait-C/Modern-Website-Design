@@ -9,11 +9,12 @@ main .testimonials-section .section-header {
     max-width: 700px;
     text-align: center;
     margin: 30px auto 40px;
+    margin-bottom: 10px;
 }
 
 main .testimonials-section .section-header h1 {
     position: relative;
-    font-size: 36px;
+    font-size: clamp(var(--font-size-500), 5cqi, var(--font-size-800));
     color: var(--color-primary-400);
 }
 
@@ -21,7 +22,7 @@ main .testimonials-section .testimonial-swiper {
     position: relative;
 }
 main .testimonials-section .testimonial-swiper .testimonial-card {
-    padding: 1.25rem;
+    padding: 1rem;
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body {
@@ -38,13 +39,14 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote i {
-    font-size: var(--font-size-800);
+    font-size: var(--font-size-500);
     color: var(--color-secondary-100);
     margin-right: 1.25rem;
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote h2 {
     color: var(--color-primary-100);
+    font-size: var(--font-size-400);
     /*color: #dadada*/
 }
 
@@ -56,12 +58,8 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
     color: var(--color-secondary-200);
 }
 
-main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .ratings {
-    margin-top: 20px;
-}
-
 main .testimonials-section .testimonial-swiper .testimonial-card .ratings i {
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-200);
     color: var(--color-primary-400);
     cursor: pointer;
 }
@@ -69,12 +67,12 @@ main .testimonials-section .testimonial-swiper .testimonial-card .ratings i {
 main .testimonials-section .testimonial-swiper .testimonial-card .profile {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 main .testimonials-section .testimonial-card .profile .profile-image {
-    width: 55px;
-    height: 55px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 15px;
@@ -93,12 +91,12 @@ main .testimonials-section .testimonial-card .profile .profile-desc {
 }
 
 main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(1) {
-    font-size: 24px;
+    font-size: var(--font-size-300);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary-400);
 }
 
 main .testimonials-section .testimonial-card .profile .profile-desc span:nth-child(2) {
-    font-size: var(--font-size-300);
+    font-size: var(--font-size-200);
     color: var(--color-secondary-200);
 }
