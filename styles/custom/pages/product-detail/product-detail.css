@@ -1,3 +1,7 @@
+.product-detail-page {
+    padding-top: var(--padding-block-size-600);
+}
+
 .shop-details-wrapper {
     width: 100%;
     grid-column-gap: 2.5rem;
@@ -276,8 +280,4 @@
 
 .shop-details-info-footer .shop-details-share-social-medias .social-icon:hover {
     color: var(--color-secondary-300);
-}
-
-main .features {
-    background: transparent !important;
 }

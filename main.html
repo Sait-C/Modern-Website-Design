@@ -641,14 +641,32 @@
               <!--Popular products swiper-->
               <div class="home-product-card-slider-root" id="home-product-card-slider-root"></div>
               <!--Last published blog-->
-              <div class="skewed-blog">
-                <div class="skewed-blog-content">
-                  <small>1 Eylül 2021</small>
-                  <h1>Drone Ehliyeti Nasıl/Nereden Alınır?</h1>
-                  <p>Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil...</p>
-                  <a href="#">Devamını Oku &rarr;</a>
+              <div class="home-skewed-blog-post-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="skewed-blog">
+                      <div class="skewed-blog-content">
+                        <small>1 Eylül 2021</small>
+                        <h1>Drone Ehliyeti Nasıl/Nereden Alınır?</h1>
+                        <p>Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil...</p>
+                        <a href="#">Devamını Oku &rarr;</a>
+                      </div>
+                      <div class="skewed-blog-image"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="skewed-blog">
+                      <div class="skewed-blog-content">
+                        <small>1 Eylül 2021</small>
+                        <h1>Test Blog 2?</h1>
+                        <p>Hızla gelişen ve değişen teknoloji, hayatımıza yepyeni kavramlar ve nesneler ile dahil...</p>
+                        <a href="#">Devamını Oku &rarr;</a>
+                      </div>
+                      <div class="skewed-blog-image"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="skewed-blog-image"></div>
+                <div class="swiper-pagination"></div>
               </div>
           </div>
           <div class="home-right">
@@ -1086,6 +1104,30 @@
         el: '.pagination',
         clickable: true,
     }
+  });
+  </script>
+  <script>
+    var homeSkewedBlogPostsSwiper = new Swiper('.home-skewed-blog-post-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: false,
+    grabCursor: true,
+    effect: "coverflow",
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 90,
+      stretch: 30,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true
+    },
   });
   </script>
   <script>

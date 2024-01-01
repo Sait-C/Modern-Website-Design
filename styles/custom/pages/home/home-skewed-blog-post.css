@@ -1,103 +1,135 @@
 /*SKEWED BLOG POST START*/
-.skewed-blog p, small {
-    color: #8f8f8f;
-  }
-  .skewed-blog p {
-    font-size: var(--font-size-100);
-    line-height: 15px;
-  }
-  
-  .skewed-blog h1 {
-    margin: 0;
-    font-size: var(--font-size-400);
-  }
-  
-  .skewed-blog {
-    height: var(--card-height-size-500);
-    width: 100%;
-    color: #f1f1f1;
-    display: flex;
-    background: var(--color-secondary-700);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    border-radius: var(--card-border-radius-primary);
-  }
-  
-  .skewed-blog .skewed-blog-content {
-    padding: 1.5em;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  
-  .skewed-blog a {
-    color: var(--color-primary-100);
-    text-decoration: none;
-  }
-  
-  .skewed-blog .skewed-blog-image {
-    width: calc(50% + 50px);
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--card-border-radius-primary);
-    background: url("http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2023/09/drone-ile-ruzgar-turbini-kontrolu-ve-yuzey-hasar-tespiti-1.png.webp");
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  
-  .skewed-blog .skewed-blog-image::before {
-    content: '';
-    position: absolute;
-    left: -4.2em;
-    top: 50%;
-    transform: translateY(-50%) rotate(20deg);
-    background: var(--color-secondary-700);
-    width: 40%;
-    height: 140%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  }
-  
-  .skewed-left .skewed-blog-image::before {
-    transform: translateY(-50%) rotate(-20deg);
-    left: initial;
-    right: -6.1em;
-  }
-  /*SKEWED BLOG POST END*/
+.skewed-blog p,
+small {
+  color: #8f8f8f;
+}
+.skewed-blog p {
+  font-size: var(--font-size-100);
+  line-height: 15px;
+}
+
+.skewed-blog h1 {
+  margin: 0;
+  font-size: var(--font-size-400);
+}
+
+.skewed-blog {
+  height: var(--card-height-size-500);
+  width: 100%;
+  color: #f1f1f1;
+  display: flex;
+  background: var(--color-secondary-700);
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
+  border-radius: var(--card-border-radius-primary);
+}
+
+.skewed-blog .skewed-blog-content {
+  padding: 1.5em;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.skewed-blog a {
+  color: var(--color-primary-100);
+  text-decoration: none;
+}
+
+.skewed-blog .skewed-blog-image {
+  width: calc(50% + 50px);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--card-border-radius-primary);
+  background: url("http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2023/09/drone-ile-ruzgar-turbini-kontrolu-ve-yuzey-hasar-tespiti-1.png.webp");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.skewed-blog .skewed-blog-image::before {
+  content: "";
+  position: absolute;
+  left: -4.2em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background: var(--color-secondary-700);
+  width: 40%;
+  height: 140%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.skewed-left .skewed-blog-image::before {
+  transform: translateY(-50%) rotate(-20deg);
+  left: initial;
+  right: -6.1em;
+}
+/*SKEWED BLOG POST END*/
 
 @media screen and (max-width: 768px) {
-    .skewed-blog{
-      display: block;
-      position: relative;
-      width: 19em;
-      height: 12em;
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      margin: auto;
-      margin-top: -150px;
-    }
-    .skewed-blog .skewed-blog-image {
-      width: 100%;
-    }
-    .skewed-blog .skewed-blog-content {width: 100%;}
-    .skewed-blog .skewed-blog-image {
-      width: 100%;
-      border-top-right-radius: 0px;
-      border-top-left-radius: 0px;
-    }
-    .skewed-blog .skewed-blog-image::before {
-      width: 120%;
-      height: 40%;
-      top: -3em;
-      left: 50%;
-      transform: translateX(-50%) rotate(10deg);
-    }
-    .skewed-left .skewed-blog-image::before {
-      transform: translateX(-50%) rotate(-10deg);
-      top: initial;
-      bottom: -5em;
-    }
+  .skewed-blog {
+    display: block;
+    position: relative;
+    width: 19em;
+    height: 12em;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: auto;
+    margin-top: -150px;
   }
-  
+  .skewed-blog .skewed-blog-image {
+    width: 100%;
+  }
+  .skewed-blog .skewed-blog-content {
+    width: 100%;
+  }
+  .skewed-blog .skewed-blog-image {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .skewed-blog .skewed-blog-image::before {
+    width: 120%;
+    height: 40%;
+    top: -3em;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+  }
+  .skewed-left .skewed-blog-image::before {
+    transform: translateX(-50%) rotate(-10deg);
+    top: initial;
+    bottom: -5em;
+  }
+
+  .home-skewed-blog-post-swiper {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .home-skewed-blog-post-swiper .swiper-pagination {
+    left: 50% !important;
+    transform: translate(-50%, 230px) !important;
+    bottom: 0% !important;
+  }
+
+  .home-skewed-blog-post-swiper .swiper-pagination-bullet {
+    background: var(--color-primary-600) !important;
+  }
+}
+
+.home-skewed-blog-post-swiper {
+  max-width: 31.04rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-skewed-blog-post-swiper .swiper-pagination {
+  position: absolute;
+  top: 15px;
+  left: -7px;
+}
+.home-skewed-blog-post-swiper .swiper-pagination-bullet {
+  background: var(--color-primary-100);
+}
