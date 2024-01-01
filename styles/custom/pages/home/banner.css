@@ -171,6 +171,7 @@
         width: min(var(--container-max-width), 100vw - (var(--container-padding) * 0.3));
         transform: translateY(20%);
         margin: auto;
+        margin-top: 2rem;
     }
     .banner-item {
         width: 70px;
