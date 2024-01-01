@@ -1032,6 +1032,39 @@
           <div class="swiper-button-next"></div> -->            
         </div>
       </aside>
+
+
+      <!--Search Overlay-->
+      <div id="search" class="search-screen active">
+        <div onclick="closeSearchScreen()" class="close-btn"><i class="fa-solid fa-x"></i></div>
+        <div class="search-screen-content">
+          <h1 class="search-screen-content-title">Ne aradığını merak ediyoruz?</h1>
+          <div class="search-field">
+            <div onclick="closeSearchScreen()" class="close-btn-mobile"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="search-box">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" name="" placeholder="Ne arıyordunuz?">
+            </div>
+          </div>
+          <div class="recommended-category-searchings">
+            <div class="listitem">
+              <a href="#">Zirai İlaçlama</a>
+            </div>
+            <div class="listitem">
+              <a href="#">Endüstriyel Dronlar</a>
+            </div>
+            <div class="listitem">
+              <a href="#">Haritalama Dronları</a>
+            </div>
+            <div class="listitem">
+              <a href="#">Akademi İHA</a>
+            </div>
+            <div class="listitem">
+              <a href="#">Su Altı Dronları</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-row padding-block-400">
@@ -1244,6 +1277,7 @@
 
   <script src="./scripts/page-blur.js"></script>
   <script src="scripts/category-mega-menu-script.js"></script>
+  <script src="./scripts/search-screen.js"></script>
 </html>
 
 <!--
