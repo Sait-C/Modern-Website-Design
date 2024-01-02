@@ -33,114 +33,71 @@ main .services .drone-applications-container .content-wrapper p {
 }
 
 main .services .drone-applications-container .collection-wrapper {
-    width: 100%;
-}
-main .services .drone-applications-container .collection-wrapper .post-lists {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    color: var(--color-primary-100);
-    text-decoration: none;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
 }
 
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 65%;
+main .services .drone-applications-container .collection-wrapper .item-block {
+    height: 300px;
+    position: relative;
 }
 
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .post-description {
-    font-size: var(--font-size-400);
-    text-wrap: balance;
-    margin: 30px 0px 30px 0px;
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add ellipsis for overflow */
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit the number of displayed lines */
-    -webkit-box-orient: vertical; /* Display vertically */
-    line-height: 1.2; /* Adjust line height for better appearance */
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .post-title {
-    color: white;
-    font-weight: bold;
-    font-size: clamp(1.2em, 1.7em, 2.2em);
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon {
-    color: var(--color-primary-600);
-    display: block;
-    font-size: clamp(0.5em, 1.1em, 1.7em);
-    transition: opacity .5s
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon i {
-    margin-left: 5px;
-    transform: rotate(50deg);
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content .link-with-icon:hover {
-    color: var(--color-primary-600);
-    opacity: 0.5;
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-image {
-    height: 80%;
-    width: 27%;
-}
-
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-image img {
-    object-fit: cover;
+main .services .drone-applications-container .collection-wrapper .item-block img {
+    border-radius: var(--card-border-radius-secondary);
     width: 100%;
     height: 100%;
-    display: block;
-    border-radius: 10px;
+    object-fit: cover;
+    max-width: 100%;
+    display: inline-block;
 }
 
-main .services .drone-applications-container .collection-wrapper .post-lists .post-item:nth-child(2) {
-    border-top: 1.6px solid #4f5052;
-    border-bottom: 1.6px solid #4f5052;
+main .services .drone-applications-container .collection-wrapper .item-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: var(--card-border-radius-secondary);
 }
 
-@media screen and (max-width: 768px) {
-    main .services .drone-applications-container .content-wrapper {
-        width: 100%;
-    }
+main .services .drone-applications-container .collection-wrapper .item-block .item-content {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
 }
 
-@media screen and (max-width: 576px) {
-    main .services .drone-applications-container .collection-wrapper .post-lists .post-item {
-        flex-direction: column-reverse;
-        justify-content: center;
-        height: 480px;
-        padding: 30px;
-    }
-    main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content {
-        width: 100%;
-    }
-    main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-image {
-        width: 100%;
-        height: 200px;
-    }
+main .services .drone-applications-container .collection-wrapper .item-block .item-content a:hover {
+    background: var(--color-secondary-700);
+    color: var(--color-primary-100);
+}
 
-    main .services .drone-applications-container .collection-wrapper .post-lists .post-item .post-content {
-        margin: 30px auto;
-    }
+main .services .drone-applications-container .collection-wrapper .item-block .item-content h1 {
+    margin-top: 0.75rem;
+    font-size: var(--font-size-700);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2em;
+    color: var(--color-primary-100);
+    font-family: var(--font-family-secondary);
+}
 
-    main .services .drone-applications-container .content-wrapper {
-        width: 100%;
-        margin-bottom: 1rem;
+@media only screen and (max-width:768px) {
+    main .services .drone-applications-container .collection-wrapper {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
