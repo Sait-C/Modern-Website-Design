@@ -3,7 +3,7 @@
     border-radius: var(--card-border-radius-primary);
     padding: 1.5rem;
     backdrop-filter: blur(var(--nav-blur-size-100));
-    box-shadow: var(--nav-box-shadow);
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     height: 25rem;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     border-radius: var(--card-border-radius-secondary);
     overflow: hidden;
     position: relative;
