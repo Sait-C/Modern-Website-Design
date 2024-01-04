@@ -98,14 +98,13 @@ main .distributations h3 {
 
 @media screen and (max-width: 768px) {
     main .distributations {
-        margin-top: 200px;
+        margin-top: var(--padding-block-size-400);
     }
 }
 
 @media screen and (max-width: 576px) {
     main .distributations {
         flex-direction: column;
-        margin-top: 250px;
         gap: 50px;
     }
 }

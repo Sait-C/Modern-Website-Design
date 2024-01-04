@@ -70,14 +70,15 @@ small {
 
 @media screen and (max-width: 768px) {
   .skewed-blog {
-    display: block;
+    display: none;
+    /* display: block;
     position: relative;
     width: 19em;
     height: 12em;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     margin: auto;
-    margin-top: -150px;
+    margin-top: -150px; */
   }
   .skewed-blog .skewed-blog-image {
     width: 100%;
@@ -106,6 +107,7 @@ small {
   .home-skewed-blog-post-swiper {
     width: 100% !important;
     overflow: visible !important;
+    display: none;
   }
 
   .home-skewed-blog-post-swiper .swiper-pagination {

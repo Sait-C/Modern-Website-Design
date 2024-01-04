@@ -25,6 +25,7 @@
         min-height: 200px;
         height: auto;
         margin: 180px auto;
+        margin-bottom: 0;
     }
 }
 
@@ -287,7 +288,8 @@
         max-width: 300px;
         max-height: 300px !important;
         min-height: 100px !important;
-        margin: 180px auto !important;
+        margin: 180px auto;
+        margin-bottom: 0;
     }
     .home-product-card-slider-root .product-item-title {
         font-size: var(--font-size-300);

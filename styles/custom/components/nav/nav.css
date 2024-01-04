@@ -54,9 +54,19 @@
   
   nav .navbar .logo {
     display: block;
-    font-size: var(--font-size-300);
-    font-weight: 900;
-    color: var(--color-primary-500);
+    height: 27px;
+  }
+
+  nav .navbar .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media only screen and (max-width: 768px) {
+    nav .navbar .logo {
+      height: 16px;
+    }
   }
   
   nav .navbar .main-menu {

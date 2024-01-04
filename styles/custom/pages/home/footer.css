@@ -28,9 +28,14 @@ footer .logo {
     margin-bottom: 30px;
 }
 
+footer .etbis-img {
+    margin-top: 30px;
+    height: 120px;
+}
+
 footer .footer-col h3 {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     position: relative;
 }
 
