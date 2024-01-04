@@ -263,3 +263,108 @@
 .cart-content-container .cart-item-list-content .item-quantity input[type="number"] {
   max-width: 5rem;
 }
+
+/*RECENT PRODUCTS SECTION*/
+.cart-page .recent-products-section {
+  padding-top: var(--padding-block-size-200);
+}
+
+.cart-page .recent-products-section .product-list-slider {
+  position: relative;
+  height: 100%;
+  padding-block: 4rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: var(--card-border-radius-primary);
+}
+
+.cart-page .recent-products-section .product-list-slider .product-box {
+  background: var(--color-primary-100);
+  width: 80%;
+}
+
+.cart-page .recent-products-section .section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  width: 100%;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cart-page .recent-products-section .section-header span {
+  text-transform: uppercase;
+  color: var(--color-secondary-200);
+  font-size: var(--font-size-300);
+}
+
+.cart-page .recent-products-section .section-header h3 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-800);
+}
+
+/*Swiper customization*/
+.cart-page .swiper-navBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-100);
+  background: var(--color-primary-700);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-inline: 1rem;
+  transition: 0.3s;
+  border: 1px solid var(--color-primary-700);
+}
+
+.cart-page .swiper-navBtn:hover {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+.cart-page .swiper-navBtn::after {
+  font-size: var(--font-size-400);
+}
+
+.swiper-button-prev::after {
+  margin-right: 0.2rem;
+}
+
+.cart-page .swiper-button-next::after {
+  margin-left: 0.2rem;
+}
+
+.cart-page .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1.5rem;
+}
+.cart-page .swiper-pagination-bullet {
+  background: var(--color-primary-600);
+}
+
+.cart-page .swiper-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Media Quaries*/
+@media only screen and (max-width: 768px) {
+  .cart-page .swiper-navBtn {
+      margin-inline: 0rem;
+      width: 30px;
+      height: 30px;
+      font-size: var(--font-size-100);
+  }
+}
