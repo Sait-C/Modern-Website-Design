@@ -24,3 +24,14 @@
 .profile-account-container .page-content .content-form form .form-section-title {
     margin-top: 1rem;
 }
+.highlight-bold {
+    color: var(--color-primary-600) !important;
+}
+
+.highlight-semi-bold {
+    color: var(--color-primary-500) !important;
+}
+
+.highlight-light {
+    color: var(--color-primary-400) !important;
+}

@@ -4,7 +4,28 @@
     flex-direction: column;
 }
 
+.profile-account-container .page-content .page-content-description {
+    width: 85% !important;
+}
+
 .profile-account-container .page-content .content-form form .input-field {
     max-width: none;
     justify-content: start;
+}
+
+.profile-account-container .checkbox-description-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-account-container .page-content .page-content-description {
+        width: 100% !important;
+    }
+
+    .profile-account-container .page-content .content-form {
+        width: 100% !important;
+    }
 }

@@ -4,6 +4,7 @@
   width: 100%;
   grid-template-columns: minmax(0, 1fr) repeat(auto-fit, minmax(10rem, 0.4fr));
   grid-gap: 1.5rem; /* Adjust the value as needed */
+  padding-top: var(--padding-block-size-600);
 }
 
 @media screen and (max-width: 768px) {
