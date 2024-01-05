@@ -595,6 +595,7 @@
                                   class="quantity-item"
                                   type="number"
                                   value="1"
+                                  min="1"
                                 />
                               </div>
                             </form>
@@ -628,6 +629,7 @@
                                   class="quantity-item"
                                   type="number"
                                   value="1"
+                                  min="1"
                                 />
                               </div>
                             </form>
@@ -661,6 +663,7 @@
                                   class="quantity-item"
                                   type="number"
                                   value="1"
+                                  min="1"
                                 />
                               </div>
                             </form>
@@ -733,8 +736,16 @@
     <main>
       <div class="container cart-page">
         <div class="cart-content-container">
+          <div class="cart-action-header-mobile">
+            <button class="btn btn-sm btn-sharp">Sepeti Kaydet</button>
+            <button class="btn btn-sm btn-sharp">Sepeti Yükle</button>
+          </div>
           <div class="cart-item-list-content">
-            <h1>Sepet Detayı</h1>
+            <div class="cart-item-list-header">
+              <h1>Sepet Detayı</h1>
+              <button class="btn btn-sm btn-sharp">Sepeti Kaydet</button>
+              <button class="btn btn-sm btn-sharp">Sepeti Yükle</button>
+            </div>
             <div class="cart-items">
               <div class="item">
                 <div class="item-image-info-wrapper">
@@ -764,7 +775,7 @@
                     <form action="javascript:none()">
                       <label for="quantity">Miktar</label>
                       <div class="form-input-box">
-                        <input class="quantity-item" type="number" value="1" />
+                        <input class="quantity-item" type="number" value="1" min="1"/>
                       </div>
                     </form>
                   </div>
@@ -803,7 +814,7 @@
                     <form action="javascript:none()">
                       <label for="quantity">Miktar</label>
                       <div class="form-input-box">
-                        <input class="quantity-item" type="number" value="1" />
+                        <input class="quantity-item" type="number" value="1" min="1"/>
                       </div>
                     </form>
                   </div>
@@ -842,7 +853,7 @@
                     <form action="javascript:none()">
                       <label for="quantity">Miktar</label>
                       <div class="form-input-box">
-                        <input class="quantity-item" type="number" value="1" />
+                        <input class="quantity-item" type="number" value="1" min="1"/>
                       </div>
                     </form>
                   </div>
@@ -881,7 +892,7 @@
                     <form action="javascript:none()">
                       <label for="quantity">Miktar</label>
                       <div class="form-input-box">
-                        <input class="quantity-item" type="number" value="1" />
+                        <input class="quantity-item" type="number" value="1" min="1"/>
                       </div>
                     </form>
                   </div>

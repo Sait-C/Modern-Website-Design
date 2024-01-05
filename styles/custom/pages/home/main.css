@@ -47,21 +47,19 @@ main .home .home-right {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  min-width: 100%;
+  width: 100%;
   flex-shrink: 0;
-  background: black;
+  background: var(--color-primary-200);
   overflow: hidden;
   user-select: none;
   gap: 10rem;
   text-align: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }
 
 .text-wrapper h1 {
   font-size: 12px;
   font-weight: lighter;
-  color: #fff;
+  color: var(--color-secondary-700);
   text-transform: uppercase;
   white-space: nowrap;
   padding: 0.6rem;

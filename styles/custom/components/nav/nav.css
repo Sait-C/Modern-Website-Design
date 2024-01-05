@@ -139,6 +139,31 @@
     display: none;
   }
 
+  nav .contact-info {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* margin-right: 7rem; */
+  }
+
+  nav .contact-info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-100);
+  }
+
+  nav .contact-info .gsm i {
+    color: var(--color-secondary-300);
+  }
+
+  nav .contact-info .whatsapp i {
+    color: green;
+  }
+
   @media screen and (max-width: 900px) {
     /*NAV START*/
     .nav-container {
@@ -195,6 +220,10 @@
     }
     nav .navbar .nav-btn {
       display: block;
+    }
+
+    nav .contact-info {
+      display: flex;
     }
     /*NAV END*/
   }
