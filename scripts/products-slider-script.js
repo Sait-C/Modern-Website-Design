@@ -25,7 +25,8 @@ const productsSwiper = (swiperClass, data, options) => {
     slideImage.classList.add("product-slide-img");
 
     const productImage = document.createElement("img");
-    productImage.src = item.imgUrl;
+    productImage.classList.add('lazy-load');
+    productImage.setAttribute('data-src', item.imgUrl);
 
     slideImage.appendChild(productImage);
 

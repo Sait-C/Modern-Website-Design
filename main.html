@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Example cache headers for one year -->
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
     <link rel="stylesheet" href="./styles/custom.css">
-    <link rel="stylesheet" href="./styles/custom/pages/home/main.css" />
+    <link rel="stylesheet" href="./styles/custom/pages/home/main.css"/>
     <link rel="stylesheet" href="./styles/custom/components/nav/nav.css">
     <link rel="stylesheet" href="./styles/custom/pages/home/banner.css" />
     <link rel="stylesheet" href="./styles/custom/pages/home/distributations-section.css" />
@@ -28,7 +28,11 @@
     referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css" integrity="sha512-cAtZ0Luj6XlQ7YGgi5mPW0szI2z/2+btPjOqVEqK3z4h1/qojUwvQyTcocgKKOFv8noUFH5GOuhheX7PeDwwPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/custom/pages/home/home-product-card.css" />
+    <link rel="stylesheet" href="./styles/custom/pages/home/home-product-card.css" />  
+  
+    <link fetchpriority="high" rel="preload" href="./assets/banner-images/1.jpg" as="image">
+    <link fetchpriority="high" rel="preload" href="./assets/banner-images/2.jpg" as="image">
+    <link fetchpriority="high" rel="preload" href="./assets/banner-images/3.png" as="image">
   </head>
   <body>
     <div class="announcements">
@@ -844,7 +848,7 @@
             </div>
             <div class="collection-wrapper padding-block-200">
               <div class="item-block">
-                <img src="https://www.dronmarket.com/class/INNOVAEditor/assets/dji-agras-zirai-ilaclama-dronu-uygulamalari.png" alt="">
+                <img src="./assets/dji-agras-zirai-ilaclama-dronu-uygulamalari.png" alt="">
                 <div class="item-content">
                   <h1>Tarım Drone Uygulamaları</h1>
                   <a href="#" class="btn btn-reverse btn-sm">Daha Fazla Oku</a>
@@ -905,7 +909,7 @@
                   <div class="swiper-slide">
                     <div class="blog-post-card">
                       <a class="blog-post-image-link" href="#">
-                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
+                        <img class="lazy-load" data-src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
                       </a>
                       <div class="blog-post-details-wrap">
                         <div class="blog-card-content">
@@ -922,7 +926,7 @@
                   <div class="swiper-slide">
                     <div class="blog-post-card">
                       <a class="blog-post-image-link" href="#">
-                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
+                        <img class="lazy-load" data-src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/drone-ehliyet-nasialinir.jpg.webp" alt="">
                       </a>
                       <div class="blog-post-details-wrap">
                         <div class="blog-card-content">
@@ -939,7 +943,7 @@
                   <div class="swiper-slide">
                     <div class="blog-post-card">
                       <a class="blog-post-image-link" href="#">
-                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/hangi-dronelar-icin-belge.jpg.webp" alt="">
+                        <img class="lazy-load" data-src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/09/hangi-dronelar-icin-belge.jpg.webp" alt="">
                       </a>
                       <div class="blog-post-details-wrap">
                         <div class="blog-card-content">
@@ -956,7 +960,7 @@
                   <div class="swiper-slide">
                     <div class="blog-post-card">
                       <a class="blog-post-image-link" href="#">
-                        <img src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/08/IHA-Drone-Pilotlugu-Ehliyeti-ve-Egitimi.jpg.webp" alt="">
+                        <img class="lazy-load" data-src="http://blog.dronmarket.com/wp-content/webp-express/webp-images/uploads/2021/08/IHA-Drone-Pilotlugu-Ehliyeti-ve-Egitimi.jpg.webp" alt="">
                       </a>
                       <div class="blog-post-details-wrap">
                         <div class="blog-card-content">
@@ -1165,6 +1169,9 @@
 
     </footer>
   </body>
+
+  <!--Lazy Load-->
+  <script src="./scripts/lazy-load.js"></script>
 
   <script type="text/javascript">
     const navBtn = document.querySelector(".nav-btn");

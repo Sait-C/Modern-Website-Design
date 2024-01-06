@@ -17,6 +17,13 @@
     transition: background-color 2s; 
 }
 
+.banner-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card-border-radius-primary);
+}
+
 .banner-item:nth-child(3)::before{
     border-radius: var(--card-border-radius-primary);
     background-color: rgba(0, 0, 0, 0.5);
@@ -46,6 +53,7 @@
     transform: translate(0, 60%);
     border-radius: var(--card-border-radius-primary);
     box-shadow: 0 10px 20px #505050;
+    contain: paint;
 }
 
 .banner-item:nth-child(1),
@@ -178,6 +186,9 @@
         height: 70px;
         border-radius: var(--card-border-radius-secondary);
         top: 60%
+    }
+    .banner-item img {
+        border-radius: var(--card-border-radius-secondary);
     }
     .banner-item::before {
        border-radius: var(--card-border-radius-secondary);
