@@ -50,6 +50,7 @@ const homeProductCardSlider = () => {
       const image = document.createElement("img");
       image.classList.add('lazy-load');
       image.setAttribute('data-src', item.imgUrl);
+      image.alt = item.title;
       itemImage.appendChild(image);
 
       const content = document.createElement("div");

@@ -82,6 +82,7 @@ const slider = () => {
 
     const slideItemImage = document.createElement("img");
     slideItemImage.src = item.imgUrl;
+    slideItemImage.alt = item.title;
     slideItemImage.setAttribute('fetchpriority', 'high');
     slideItemImage.setAttribute('loading', 'lazy');
     slideItemImage.setAttribute('decoding', 'async');
@@ -118,7 +119,8 @@ const slider = () => {
 
     // Create the prev button
     const prevButton = document.createElement("button");
-    prevButton.id = "prev";
+    prevButton.id = "banner-prev-btn";
+    prevButton.ariaLabel = "Önceki slayta git"
     prevButton.addEventListener("click", handleClickPrev);
 
     const prevIcon = document.createElement("i");
@@ -127,7 +129,8 @@ const slider = () => {
 
     // Create the next button
     const nextButton = document.createElement("button");
-    nextButton.id = "next";
+    nextButton.id = "banner-next-btn";
+    nextButton.ariaLabel = "Sonraki slayta git"
     nextButton.addEventListener("click", handleClickNext);
 
     const nextIcon = document.createElement("i");

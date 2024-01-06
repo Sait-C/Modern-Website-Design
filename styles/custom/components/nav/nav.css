@@ -81,14 +81,14 @@
     list-style: none;
   }
   
-  nav .navbar .main-menu li a:not(.btn) {
+  nav .navbar .main-menu li .menu-link {
     display: block;
     font-size: var(--font-size-200);
     color: var( --navbar-list-item-text-color);
     transition: 0.3s;
   }
   
-  nav .navbar .main-menu li a:hover {
+  nav .navbar .main-menu li .link:hover {
     color: var(--navbar-list-item-text-hover-color);
   }
   

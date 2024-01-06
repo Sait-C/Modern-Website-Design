@@ -253,6 +253,9 @@
         height: 100px;
         border-radius: var(--card-border-radius-secondary);
     }
+    .banner-item img {
+        border-radius: var(--card-border-radius-secondary);
+    }
     .banner-item::before {
         border-radius: var(--card-border-radius-secondary);    
      }

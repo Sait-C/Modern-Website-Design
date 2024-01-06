@@ -56,7 +56,7 @@ main .home .home-right {
   text-align: center;
 }
 
-.text-wrapper h1 {
+.text-wrapper span {
   font-size: 12px;
   font-weight: lighter;
   color: var(--color-secondary-700);

@@ -12,8 +12,15 @@
     border-top-left-radius: var(--card-border-radius-primary);
 }
 
+.tab-container .tab-filter-container .filter-btn a {
+    color: var(--color-primary-100);
+}
+
 .tab-container .filter-btn:not(.active) {
     background: transparent;
+}
+
+.tab-container .filter-btn:not(.active) a {
     color: var(--color-secondary-700);
 }
 

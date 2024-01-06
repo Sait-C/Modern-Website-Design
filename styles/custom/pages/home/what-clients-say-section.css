@@ -12,7 +12,7 @@ main .testimonials-section .section-header {
     margin-bottom: 10px;
 }
 
-main .testimonials-section .section-header h1 {
+main .testimonials-section .section-header h2 {
     position: relative;
     font-size: clamp(var(--font-size-500), 5cqi, var(--font-size-800));
     color: var(--color-primary-400);
@@ -44,9 +44,10 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
     margin-right: 1.25rem;
 }
 
-main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote h2 {
+main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body .quote span {
     color: var(--color-primary-100);
     font-size: var(--font-size-400);
+    font-weight: var(--font-weight-bold);
     /*color: #dadada*/
 }
 

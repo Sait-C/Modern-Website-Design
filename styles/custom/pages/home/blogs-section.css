@@ -108,10 +108,11 @@ main .blogs .blog-card-content {
     display: inline-block;
 }
 
+main .blogs .blogs-content-container .blog-post-card .blog-card-name h3 {
+    font-size: clamp(var(--font-size-100), 7cqi, 1.4em) !important;
+}
 main .blogs .blogs-content-container .blog-post-card .blog-card-name {
     color: white;
-    font-size: clamp(var(--font-size-100), 7cqi, 1.4em);
-    font-weight: 600;
     transition: color .5s;
     overflow: hidden; /* Hide overflow text */
     text-overflow: ellipsis; /* Add ellipsis for overflow */

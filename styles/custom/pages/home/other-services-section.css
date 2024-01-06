@@ -25,7 +25,7 @@ main .services .drone-applications-container .content-wrapper h2 {
 }
 
 main .services .drone-applications-container .content-wrapper p {
-    color: #707b8b;
+    color: #7a8493;
     margin-top: 1rem;
     font-size: var(--font-size-400);
     text-align: center;
@@ -87,7 +87,7 @@ main .services .drone-applications-container .collection-wrapper .item-block .it
     color: var(--color-primary-100);
 }
 
-main .services .drone-applications-container .collection-wrapper .item-block .item-content h1 {
+main .services .drone-applications-container .collection-wrapper .item-block .item-content h3 {
     margin-top: 0.75rem;
     font-size: var(--font-size-700);
     font-weight: var(--font-weight-bold);
