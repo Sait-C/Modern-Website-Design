@@ -196,7 +196,7 @@
   justify-content: center;
 }
 
-.cart-item-list-content .cart-items .item .cart-item-price-wrapper span {
+.cart-item-list-content .cart-items .item .cart-item-price-wrapper .old-price {
   font-size: var(--font-size-300);
   color: var(--color-secondary-300);
   text-decoration: line-through;
