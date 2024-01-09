@@ -62,7 +62,7 @@ main .services .drone-applications-container .collection-wrapper .item-block::be
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: var(--card-border-radius-secondary);
 }
 

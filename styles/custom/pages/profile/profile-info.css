@@ -23,6 +23,7 @@
 
 .profile-account-container .page-content .content-form form .form-section-title {
     margin-top: 1rem;
+    font-size: var(--font-size-400);
 }
 .highlight-bold {
     color: var(--color-primary-600) !important;

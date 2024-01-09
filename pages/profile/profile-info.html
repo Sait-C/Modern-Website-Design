@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dronmarket - Drone, DJI Ürünleri</title>
+    <meta name="description" content="Türkiye'nin en büyük drone satış sitesi Dronmarket'te en ucuz, en iyi kameralı drone fiyatlarını bulabilir; indirimleri yakalayabilirsin.">
+    <meta name="keywords" content="DJI, drone, dron, drone al, en uygun drone, drone al,drone fiyatları, kameralı drone modelleri, profesyonel drone, endüstriyel drone, drone tavsiye">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@dronmarket" />
+    <meta name="twitter:title" content="Dronmarket - Drone Ürünleri ve Daha Fazlası" />
+    <meta name="twitter:description" content="Türkiye'nin en büyük drone satış sitesi Dronmarket'te en ucuz, en iyi kameralı drone fiyatlarını bulabilir; indirimleri yakalayabilirsin." />
+    <meta name="twitter:image" content="https://i.ytimg.com/vi/Ph0qP5Cxni8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGEIgZSgPMA8=&rs=AOn4CLAQrbK6XwkUzUockyDOAyMQriJzHw" />
+    <meta property="og:url" content="https://www.dronmarket.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dronmarket - En Uygun Drone Modelleri">
+    <meta property="og:image" content="https://st.myideasoft.com/idea/cq/36/themes/selftpl_630601f2ddf8f/assets/uploads/logo.png?revision=1676452612">
+    <meta property="og:description" content="Türkiye'nin en büyük drone satış sitesi Dronmarket'te en ucuz, en iyi kameralı drone fiyatlarını bulabilir; indirimleri yakalayabilirsin.">
     <link rel="stylesheet" href="../../styles/custom.css" />
     <link
       rel="stylesheet"
@@ -33,564 +45,460 @@
     />
   </head>
   <body>
+    <aside aria-label="Büyük sezon sonu indirimini kaçırma" class="announcements">
+      <div class="marquee text-wrapper">
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+        <span>BÜYÜK SEZON SONU İNDİRİMLERİ BAŞLADI</span>
+      </div>
+    </aside>
     <header>
-      <nav>
+      <!--NAVBAR-->
+      <nav aria-label="Birincil Navigasyon">
         <div class="nav-container">
           <div class="navbar">
-            <a href="#" class="logo">Dronmarket</a>
-            <button class="nav-btn"></button>
+            <div class="logo">
+              <a href="#" aria-label="Dronmarket şirket logosuna tıklayarak ana sayfaya gidin"><img src="../../assets/logo.webp" alt="Dronmarket yazan Dronmarket şirket logosu"></a>
+            </div>
+            <div class="contact-info">
+              <div class="gsm" aria-label="İletişim için telefon numarası">
+                <i class="fa-solid fa-phone"></i>
+                <span>0 850 532 8797</span>
+              </div>
+              <div class="whatsapp" aria-label="Whatsapp telefon numarası">
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <span>0 545 300 3766</span>
+              </div>
+            </div>
+            <button aria-label="Mobil birincil üst menüyü aç" class="nav-btn"></button>
             <ul class="main-menu">
               <li class="nav-category-list-menu blur-if-hover">
-                <a href="javascript:void(0);">Kategoriler</a>
+                <a class="menu-link" aria-label="Kategorileri Listesini Görüntüle" href="javascript:void(0);">Kategoriler</a>
                 <div class="category-mega-menu">
                   <div class="category-mega-menu-inner">
-                    <div
-                      class="category-mega-menu-item category-mega-menu-base-item"
-                    >
-                      <div class="category-mega-menu-item-heading">
-                        Kategoriler
-                      </div>
-                      <div
-                        onclick="toggleSubCategories(1)"
-                        class="category-mega-menu-item-list"
-                      >
+                    <div class="category-mega-menu-item category-mega-menu-base-item">
+                      <div class="category-mega-menu-item-heading"><h1 class="fs-300 fw-light">Kategoriler</h1></div>
+                      <div aria-label="Endüstriyel Dronlar ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(1)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../../assets/icons/endustrial_drone.webp"
-                            alt=""
-                          />
+                          <img src="./assets/icons/endustrial_drone.webp" alt="Endüstriyel bir dron içeren endüstriyel dron kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Endüstriyel Dronlar</h1>
+                          <h2>Endüstriyel Dronlar</h2>
                           <p>Endüstriyel dronları görüntüle.</p>
                         </div>
                       </div>
-                      <div
-                        onclick="toggleSubCategories(2)"
-                        class="category-mega-menu-item-list"
-                      >
+                      <div aria-label="DJI Drone ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(2)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../../assets/icons/dji_drone.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/dji_drone.png" alt="Beyaz bir DJI dron içeren DJI dron kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Drone</h1>
+                          <h2>DJI Drone</h2>
                           <p>DJI markasının dronlarını görüntüle.</p>
                         </div>
                       </div>
-                      <div
-                        onclick="toggleSubCategories(3)"
-                        class="category-mega-menu-item-list"
-                      >
+                      <div aria-label="Dron Multikopter ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(3)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../../assets/icons/multicopter_drone.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/multicopter_drone.png" alt="Bir multikopter içeren Multikopter dron kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Dron Multikopter</h1>
+                          <h2>Dron Multikopter</h2>
                           <p>FPV dronlarını görüntüle.</p>
                         </div>
                       </div>
-                      <div
-                        onclick="toggleSubCategories(4)"
-                        class="category-mega-menu-item-list"
-                      >
+                      <div aria-label="Dron malzemeleri ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(4)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../../assets/icons/drone_equippments.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_equippments.png" alt="Elektronik set içeren dron malzemeleri kategorisi">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Dron Malzemeleri</h1>
+                          <h2>Dron Malzemeleri</h2>
                           <p>İhtiyacın olabilecek tüm malzemeleri görüntüle.</p>
                         </div>
                       </div>
-                      <div class="category-mega-menu-item-list">
+                      <a href="/" aria-label="Profesyonel dron kategorisindeki ürünleri görüntüle" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="Bir dron içeren profesyonel dron kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Profesyonel Drone</h1>
+                          <h2>Profesyonel Drone</h2>
                           <p>Profesyonel dronları görüntüle.</p>
                         </div>
-                      </div>
-                      <div
-                        onclick="toggleSubCategories(5)"
-                        class="category-mega-menu-item-list"
-                      >
+                      </a>
+                      <div aria-label="Zirai İnsansız Hava Araçları ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(5)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="T40 model dron içeren zirai insansız hava araçları kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Zirai İnsansız Hava Araçları</h1>
+                          <h2>Zirai İnsansız Hava Araçları</h2>
                           <p>Tarımsal dronları ve parçalarını görüntüle.</p>
                         </div>
                       </div>
-                      <div class="category-mega-menu-item-list">
+                      <a href="/" aria-label="Su altı dronları kategorisindeki ürünleri görüntüle" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/underwater_drone.webp"
-                            alt=""
-                          />
+                          <img src="./assets/icons/underwater_drone.webp" alt="Bir su altı dronu içeren su altı dronu kategorisi">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Su Altı Drone</h1>
+                          <h2>Su Altı Drone</h2>
                           <p>Su altı dronlarını görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" aria-label="İHA Dron pilot eğitimleri ile ilgili ürünleri görüntüle " class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/star.png" alt="" />
+                          <img src="./assets/icons/star.png" alt="Bir yıldız içeren İHA drone pilot eğitimleri kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>İHA Drone Pilot Eğitimleri</h1>
+                          <h2>İHA Drone Pilot Eğitimleri</h2>
                           <p>Eğitimleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div
-                        onclick="toggleSubCategories(6)"
-                        class="category-mega-menu-item-list"
-                      >
+                      </a>
+                      <div aria-label="Drone Kamera ve Gimballeri ana kategorisinin alt kategorilerini listele" onclick="toggleSubCategories(6)" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_camera.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_camera.png" alt="Bir go pro görseli içeren drone kamera ve gimaballeri kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Kamera ve Gimballeri</h1>
+                          <h2>Drone Kamera ve Gimballeri</h2>
                           <p>Dron kameralarını görüntüle.</p>
                         </div>
                       </div>
-                      <div class="category-mega-menu-item-list">
+                      <a href="/" aria-label="Akıllı Teknolojiler kategorisindeki ürünleri listele" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/smart_tech.png" alt="" />
+                          <img src="./assets/icons/smart_tech.png" alt="Bir tablet görseli içeren akıllı teknolojiler kategorisi ikonu">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Akıllı Teknoloji</h1>
+                          <h2>Akıllı Teknoloji</h2>
                           <p>Teknolojik ürünleri görüntüle.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-1"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
-                      <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>Endüstriyel Dronlar</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                    <div id="category-mega-menu-sub-item-1" class="category-mega-menu-item category-mega-menu-sub-item">
+                      <header class="category-mega-menu-item-heading">
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>Endüstriyel Dronlar</span>
+                        <a aria-label="Endüstriyel Dronlar kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>
+                      </header>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Enerji Dron Uygulamaları</h1>
-                          <p>
-                            Enerji dron uygulamaları için ürünleri görüntüle.
-                          </p>
+                          <h3>Enerji Dron Uygulamaları</h3>
+                          <p>Enerji dron uygulamaları için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Güvenlik Drone Uygulamaları</h1>
+                          <h3>Güvenlik Drone Uygulamaları</h3>
                           <p>Güvenlik alanındaki ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>İnşaat ve Harita Dron Uygulamaları</h1>
+                          <h3>İnşaat ve Harita Dron Uygulamaları</h3>
                           <p>İnşaat ve harita alanındaki ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Tarım Drone Uygulamaları</h1>
+                          <h3>Tarım Drone Uygulamaları</h3>
                           <p>Tarımsal drone ürünlerini görüntüle.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-2"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
+                    <div id="category-mega-menu-sub-item-2" class="category-mega-menu-item category-mega-menu-sub-item">
                       <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>DJI Drone</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>DJI Drone</span>
+                        <a aria-label="DJI Drone kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>
                       </div>
-                      <div class="category-mega-menu-item-list">
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Tello</h1>
+                          <h3>DJI Tello</h3>
                           <p>DJI Tello parçaları için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Spark Serisi</h1>
-                          <p>
-                            DJI Spark serisi dronları için ürünleri görüntüle.
-                          </p>
+                          <h3>DJI Spark Serisi</h3>
+                          <p>DJI Spark serisi dronları için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Mavic Serisi</h1>
+                          <h3>DJI Mavic Serisi</h3>
                           <p>DJI Mavic dronları için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Phantom 4 Serisi</h1>
+                          <h3>DJI Phantom 4 Serisi</h3>
                           <p>DJI Phantom 4 için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Inspire 2</h1>
+                          <h3>DJI Inspire 2</h3>
                           <p>DJI Inspire 2 için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>DJI Matrice Serisi</h1>
+                          <h3>DJI Matrice Serisi</h3>
                           <p>DJI Matrice için ürünleri görüntüle.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-3"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
+                    <div id="category-mega-menu-sub-item-3" class="category-mega-menu-item category-mega-menu-sub-item">
                       <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>Drone Multikopter</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>Drone Multikopter</span>
+                        <a aria-label="Drone Multikopter kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Kameralı Drone</h1>
+                          <h3>Kameralı Drone</h3>
                           <p>Kameralı dronları ve ürünlerini görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Mini Drone</h1>
+                          <h3>Mini Drone</h3>
                           <p>Mini dronlar için ürünleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Yarış Drone'ları</h1>
+                          <h3>Yarış Drone'ları</h3>
                           <p>FPV yarış dronlarını ve ürünlerini görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>En Ucuz Dronlar</h1>
+                          <h3>En Ucuz Dronlar</h3>
                           <p>En ucuz ürünleri görüntüle.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-4"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
+                    <div id="category-mega-menu-sub-item-4" class="category-mega-menu-item category-mega-menu-sub-item">
                       <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>Drone Malzemeleri</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>Drone Malzemeleri</span>
+                        <a aria-label="Dron Malzemeleri kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_frame.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_frame.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Frameleri</h1>
+                          <h3>Drone Frameleri</h3>
                           <p>Çeşitli drone framelerini görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_engine.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_engine.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Motorları</h1>
+                          <h3>Drone Motorları</h3>
                           <p>Çeşitli drone motorlarını görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone_esc.png" alt="" />
+                          <img src="./assets/icons/drone_esc.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone ESC Modelleri</h1>
+                          <h3>Drone ESC Modelleri</h3>
                           <p>Çeşitli ESC modellerini görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_controller.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_controller.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Uçuş Kontrol Kartları</h1>
+                          <h3>Drone Uçuş Kontrol Kartları</h3>
                           <p>Çeşitli uçuş kontrol kartlarını görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_battery.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_battery.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Bataryaları</h1>
+                          <h3>Drone Bataryaları</h3>
                           <p>Çeşitli bataryaları görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_propeller.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_propeller.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Pervaneleri</h1>
-                          <p>
-                            Çeşitli boyut ve modeldeki pervaneleri görüntüle.
-                          </p>
+                          <h3>Drone Pervaneleri</h3>
+                          <p>Çeşitli boyut ve modeldeki pervaneleri görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_parts.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_parts.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Parçaları</h1>
-                          <p>
-                            Sensörlerden vidalara çeşitli dron parçalarını
-                            görüntüle.
-                          </p>
+                          <h3>Drone Parçaları</h3>
+                          <p>Sensörlerden vidalara çeşitli dron parçalarını görüntüle.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_remotecontrol.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_remotecontrol.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Kumandaları</h1>
+                          <h3>Drone Kumandaları</h3>
                           <p>Kumanda olmadan drone uçuramazsın.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone_sets.png" alt="" />
+                          <img src="./assets/icons/drone_sets.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Drone Setleri</h1>
+                          <h3>Drone Setleri</h3>
                           <p>Drone setleri başlamak için harikadır.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_controlreceiver.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_controlreceiver.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Kumanda Alıcı</h1>
+                          <h3>Kumanda Alıcı</h3>
                           <p>Kumandalarınının alıcıya ihtiyacı var.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/drone_telemetry.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/drone_telemetry.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Telemetri Modülleri</h1>
-                          <p>
-                            Haberleşme için harika olan telemetri modüllerini
-                            keşfet.
-                          </p>
+                          <h3>Telemetri Modülleri</h3>
+                          <p>Haberleşme için harika olan telemetri modüllerini keşfet.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-5"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
+                    <div id="category-mega-menu-sub-item-5" class="category-mega-menu-item category-mega-menu-sub-item">
                       <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>Zirai İnsansız Hava Araçları</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>Zirai İnsansız Hava Araçları</span>
+                        <a aria-label="Zirai İnsansız Hava Araçları kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Zirai İlaçlama Droneları</h1>
+                          <h3>Zirai İlaçlama Droneları</h3>
                           <p>Hadi, zirai ilaçlama dronelarımıza göz at.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Batarya ve Şarj Cihazı</h1>
+                          <h3>Batarya ve Şarj Cihazı</h3>
                           <p>Batarya ve şarj cihazın olmadan havalanma.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Yedek Parçaları</h1>
+                          <h3>Yedek Parçaları</h3>
                           <p>Zirai ilaçlama dronun için yedek parçalara bak.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/drone-icon.png" alt="" />
+                          <img src="./assets/icons/drone-icon.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Bitki Analizi Droneları</h1>
+                          <h3>Bitki Analizi Droneları</h3>
                           <p>Bitki analizi için droneları görüntüle.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div
-                      id="category-mega-menu-sub-item-6"
-                      class="category-mega-menu-item category-mega-menu-sub-item"
-                    >
+                    <div id="category-mega-menu-sub-item-6" class="category-mega-menu-item category-mega-menu-sub-item">
                       <div class="category-mega-menu-item-heading">
-                        <i
-                          onclick="showBaseCategories()"
-                          class="fa-solid fa-arrow-left back-to-base-categories-btn"
-                        ></i>
-                        <h2>Drone Kamera ve Gimballeri</h2>
-                        <a href="#" class="view-all-btn">Tümünü Görüntüle</a>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                        <i onclick="showBaseCategories()" class="fa-solid fa-arrow-left back-to-base-categories-btn"></i>
+                        <span>Drone Kamera ve Gimballeri</span>
+                        <a aria-label="Drone Kamera ve Gimballeri kategorisindeki tüm ürünleri listele" href="#" class="view-all-btn btn btn-reverse">Tümünü Görüntüle</a>                      </div>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img src="../../assets/icons/gopro.png" alt="" />
+                          <img src="./assets/icons/gopro.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>GoPro Aksiyon Kamerası</h1>
-                          <p>
-                            GoPro aksiyon kameralarına ve aksesuarlarına bak.
-                          </p>
+                          <h3>GoPro Aksiyon Kamerası</h3>
+                          <p>GoPro aksiyon kameralarına ve aksesuarlarına bak.</p>
                         </div>
-                      </div>
-                      <div class="category-mega-menu-item-list">
+                      </a>
+                      <a href="/" class="category-mega-menu-item-list">
                         <div class="category-mega-menu-item-image">
-                          <img
-                            src="../../assets/icons/osmo_action.png"
-                            alt=""
-                          />
+                          <img src="./assets/icons/osmo_action.png" alt="">
                         </div>
                         <div class="category-mega-menu-item-list-info">
-                          <h1>Osmo Action Yedek Parçaları</h1>
-                          <p>
-                            Osmo Action aksiyon kamerası için yedek parçalara
-                            bak.
-                          </p>
+                          <h3>Osmo Action Yedek Parçaları</h3>
+                          <p>Osmo Action aksiyon kamerası için yedek parçalara bak.</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li><a href="#">Ana Sayfa</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Hakkında</a></li>
-              <li><a href="#">İletişim</a></li>
+              <li><a class="menu-link" aria-label="Referanslar sayfasına git" href="#">Referanslar</a></li>
+              <li><a class="menu-link" aria-label="Dronmarket blog websitesine git" href="#">Blog</a></li>
+              <li><a class="menu-link" aria-label="Hakkında sayfasına git ve Dronmarket hakkında bilgiler edin" href="#">Hakkında</a></li>
+              <li><a class="menu-link" aria-label="İletişim sayfasın git ve Dronmarketle iletişim kur" href="#">İletişim</a></li>
               <li class="nav-cart-list-menu blur-if-hover">
                 <div class="cart-counter-container">
-                  <span class="cart-counter">1</span>
+                  <span class="cart-counter">3</span>
                   <i class="fa-solid fa-cart-shopping cart-btn"></i>
                 </div>
                 <div class="cart-mega-menu">
@@ -600,14 +508,17 @@
                       <div class="cart-item">
                         <div class="cart-item-image">
                           <img
-                            src="../../assets/sample-product-images/product-img-1.jpg"
-                            alt=""
+                            src="../assets/sample-product-images/product-img-1.jpg"
+                            alt="Product Name"
                           />
                         </div>
                         <div class="cart-item-content">
                           <div class="cart-item-info">
-                            <h1>Item Name</h1>
-                            <p>50$</p>
+                            <span>Long item name testttttttttt</span>
+                            <div class="cart-item-price-wrapper">
+                              <span class="item-price">$50.00</span>
+                              <span class="old-price">$65.00</span>
+                            </div>
                             <button
                               class="btn btn-sm btn-sharp cart-item-remove-btn"
                             >
@@ -631,14 +542,17 @@
                       <div class="cart-item">
                         <div class="cart-item-image">
                           <img
-                            src="../../assets/sample-product-images/product-img-1.jpg"
-                            alt=""
+                            src="../assets/sample-product-images/product-img-1.jpg"
+                            alt="Product Name"
                           />
                         </div>
                         <div class="cart-item-content">
                           <div class="cart-item-info">
-                            <h1>Item Name</h1>
-                            <p>50$</p>
+                            <span>Item Name</span>
+                            <div class="cart-item-price-wrapper">
+                              <span class="item-price">$50.00</span>
+                              <span class="old-price">$65.00</span>
+                            </div>
                             <button
                               class="btn btn-sharp btn-sm cart-item-remove-btn"
                             >
@@ -662,14 +576,17 @@
                       <div class="cart-item">
                         <div class="cart-item-image">
                           <img
-                            src="../../assets/sample-product-images/product-img-1.jpg"
-                            alt=""
+                            src="../assets/sample-product-images/product-img-1.jpg"
+                            alt="Product Name"
                           />
                         </div>
                         <div class="cart-item-content">
                           <div class="cart-item-info">
-                            <h1>Item Name</h1>
-                            <p>50$</p>
+                            <span>Item Name</span>
+                            <div class="cart-item-price-wrapper">
+                              <span class="item-price">$50.00</span>
+                              <span class="old-price">$65.00</span>
+                            </div>
                             <button
                               class="btn btn-sharp btn-sm cart-item-remove-btn"
                             >
@@ -700,16 +617,9 @@
                   </div>
                 </div>
               </li>
-              <button class="btn btn-mobile nav-action-btn auth-btn">
-                Giriş Yap
-              </button>
-              <div
-                style="display: none"
-                class="nav-profile-list-menu btn-mobile blur-if-hover"
-              >
-                <button
-                  class="signed-in-profile-nav-menu btn btn-reverse btn-sm btn-mobile"
-                >
+              <!-- <button class="btn btn-mobile auth-btn">Giriş Yap</button> -->
+              <div class="nav-profile-list-menu btn-mobile blur-if-hover">
+                <button class="signed-in-profile-nav-menu btn btn-reverse btn-sm btn-mobile">
                   <i class="fa-regular fa-user"></i>
                   <span>Hesabım</span>
                 </button>
@@ -730,14 +640,9 @@
                 </div>
               </div>
             </ul>
-            <button class="auth-btn btn btn-reverse btn-sm nav-action-btn">
-              Giriş Yap
-            </button>
-            <div
-              style="display: none"
-              class="nav-profile-list-menu blur-if-hover"
-            >
-              <button class="signed-in-profile-nav-menu btn btn-reverse btn-sm">
+            <!-- <button class="auth-btn btn btn-reverse btn-sm">Giriş Yap</button> -->
+            <div class="nav-profile-list-menu blur-if-hover">
+              <button aria-label="Hesabına git" class="signed-in-profile-nav-menu btn btn-reverse btn-sm">
                 <i class="fa-regular fa-user"></i>
                 <span>Hesabım</span>
               </button>
@@ -746,12 +651,12 @@
                   <div class="nav-profile-mega-menu-heading">Profil</div>
                   <div>
                     <ul class="profile-operations-list">
-                      <li><a href="#">Hesabıma Git</a></li>
-                      <li><a href="#">Siparişlerim</a></li>
-                      <li><a href="#">Havale Bildirimi Yap</a></li>
-                      <li><a href="#">Bilgilerini Güncelle</a></li>
-                      <li><a href="#">Puan veya Hediye Çeklerine Bak</a></li>
-                      <li><a href="#">Favori Ürünlerine Gözat</a></li>
+                      <li><a aria-label="Hesap detaylarına git" href="#">Hesabıma Git</a></li>
+                      <li><a aria-label="Siparişlerini görüntüle" href="#">Siparişlerim</a></li>
+                      <li><a aria-label="Havale Bildirimi Yap" href="#">Havale Bildirimi Yap</a></li>
+                      <li><a aria-label="Bilgilerini Güncelle" href="#">Bilgilerini Güncelle</a></li>
+                      <li><a aria-label="Puan veya Hediye Çeklerini görüntüle" href="#">Puan veya Hediye Çeklerine Bak</a></li>
+                      <li><a aria-label="Favori ürünlerine gözat" href="#">Favori Ürünlerine Gözat</a></li>
                     </ul>
                   </div>
                 </div>
@@ -760,78 +665,88 @@
           </div>
         </div>
       </nav>
+      <div class="header-contact-info">
+        <div class="gsm" aria-label="İletişim için telefon numarası">
+          <i class="fa-solid fa-phone"></i>
+          <span>0 850 532 8797</span>
+        </div>
+        <div class="whatsapp" aria-label="Whatsapp telefon numarası">
+          <i class="fa-brands fa-square-whatsapp"></i>
+          <span>0 545 300 3766</span>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container padding-block-600">
         <div class="profile-account-container">
           <div class="sidenav-wrapper">
-            <div class="open-menu-btn">
+            <div role="button" aria-label="Open bottom menu" class="open-menu-btn">
               <i class="fa-solid fa-arrow-up"></i>
             </div>
             <div class="sidenav">
               <ul class="sidenav-nav">
                 <li class="sidenav-item selected">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Üye Bilgilerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-user"></i>
                     <span>Üye Bilgilerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="İletişim Tercihlerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-address-book"></i>
                     <span>İletişim Tercihlerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Adres Defteri" href="#" class="sidenav-link">
                     <i class="fa-solid fa-address-card"></i>
                     <span>Adres Defteri</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Alışveriş Sepetim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span>Alışveriş Sepetim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Sipariş ve İade" href="#" class="sidenav-link">
                     <i class="fa-solid fa-money-bill"></i>
                     <span>Sipariş ve İade</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Ödemelerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-dollar-sign"></i>
                     <span>Ödemelerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Favori Ürünlerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-heart"></i>
                     <span>Favori Ürünlerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Havale Bildirim Formu" href="#" class="sidenav-link">
                     <i class="fa-solid fa-align-justify"></i>
                     <span>Havale Bildirim Formu</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Puanlarım ve Hediye Çeklerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-star"></i>
                     <span>Puanlarım ve Hediye Çeklerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Davetlerim" href="#" class="sidenav-link">
                     <i class="fa-solid fa-user-plus"></i>
                     <span>Davetlerim</span>
                   </a>
                 </li>
                 <li class="sidenav-item">
-                  <a href="#" class="sidenav-link">
+                  <a aria-label="Güvenli Çıkış" href="#" class="sidenav-link">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     <span>Güvenli Çıkış</span>
                   </a>
@@ -840,45 +755,52 @@
             </div>
           </div>
           <div class="page-content">
-            <h1>Profilimi Güncelle</h1>
+            <h1 id="update-profile-form-desc">Profilimi Güncelle</h1>
             <div class="content-form">
-              <form action="">
-                <h3 class="form-section-title">Üye Bilgilerim</h3>
+              <form aria-label="Profilimi Güncelle" role="form" aria-describedby="update-profile-form-desc" action="">
+                <h2 class="form-section-title">Üye Bilgilerim</h2>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fas fa-user highlight-light"></i>
-                    <input type="text" placeholder="Ad" />
+                    <label style="display: none;" for="firstName">Ad</label>
+                    <input required id="firstName" type="text" placeholder="Ad" />
                   </div>
                   <div class="input-field">
                     <i class="fas fa-user highlight-light"></i>
-                    <input type="text" placeholder="Soyad" />
+                    <label style="display: none;" for="lastName">Soyad</label>
+                    <input required id="lastName" type="text" placeholder="Soyad" />
                   </div>
                 </div>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-envelope highlight-light"></i>
-                    <input type="text" placeholder="Email" />
+                    <label style="display: none;" for="email">Email</label>
+                    <input id="email" required inputmode="email" type="text" placeholder="Email" />
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-calendar-days highlight-light"></i>
-                    <input type="date" placeholder="Doğum Tarihi" />
+                    <label style="display: none;" for="birthDate">Doğum Tarihi</label>
+                    <input id="birthDate" required type="date" placeholder="Doğum Tarihi" />
                   </div>
                 </div>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-phone highlight-light"></i>
-                    <input type="text" placeholder="Telefon" />
+                    <label style="display: none;" for="gsm">Telefon</label>
+                    <input required inputmode="tel" id="gsm" type="text" placeholder="Telefon" />
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-phone highlight-light"></i>
-                    <input type="text" placeholder="Cep Telefonu" />
+                    <label style="display: none;" for="phone">Cep Telefonu</label>
+                    <input required inputmode="tel" id="phone" type="text" placeholder="Cep Telefonu" />
                   </div>
                 </div>
-                <h3 class="form-section-title">Adres Düzenle</h3>
+                <h2 id="edit-address-desc" class="form-section-title">Adres Düzenle</h2>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-address-book highlight-semi-bold"></i>
-                    <select required>
+                    <label style="display: none;" for="country">Ülke</label>
+                    <select id="country" autocomplete="address-level1" aria-describedby="edit-address-desc" required>
                       <option value="">Seçiniz</option>
                       <option value="0">Türkiye</option>
                       <option value="1">Tayvan</option>
@@ -887,7 +809,8 @@
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-address-book highlight-semi-bold"></i>
-                    <select>
+                    <label style="display: none;" for="city">İl</label>
+                    <select id="city" autocomplete="address-level2" aria-describedby="edit-address-desc" required>
                       <option value="">Seçiniz</option>
                       <option value="0">Sivas</option>
                       <option value="1">Sakarya</option>
@@ -898,39 +821,46 @@
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-address-book highlight-semi-bold"></i>
-                    <input type="text" placeholder="İlçe" />
+                    <label style="display: none;" for="district">İlçe</label>
+                    <input required autocomplete="address-level3" id="district" type="text" placeholder="İlçe" />
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-file-invoice highlight-semi-bold"></i>
-                    <input type="text" placeholder="Vergi No" />
+                    <label style="display: none;" for="taxNo">Vergi No</label>
+                    <input required id="taxNo" type="text" placeholder="Vergi No" />
                   </div>
                 </div>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-building highlight-semi-bold"></i>
-                    <input type="text" placeholder="Vergi Dairesi" />
+                    <label style="display: none;" for="taxAddress">Vergi Dairesi</label>
+                    <input id="taxAddress" required type="text" placeholder="Vergi Dairesi" />
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-signature highlight-semi-bold"></i>
-                    <input type="text" placeholder="Ticari Ünvanı" />
+                    <label style="display: none;" for="jobTitle">Ticari Ünvanı</label>
+                    <input required type="text" id="jobTitle" placeholder="Ticari Ünvanı" />
                   </div>
                 </div>
                 <div class="input-field textarea-input-field">
                   <i class="fa-solid fa-address-book highlight-semi-bold"></i>
-                  <textarea type="textarea" placeholder="Adres" rows="5"></textarea>
+                  <label style="display: none;" for="address">Adres</label>
+                  <textarea id="address" type="textarea" placeholder="Adres" rows="5"></textarea>
                 </div>
-                <h3 class="form-section-title">Şifre Değiştirme</h3>
+                <h2 class="form-section-title">Şifre Değiştirme</h2>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-lock highlight-bold"></i>
-                    <input type="password" placeholder="Mevcut Şifre" />
+                    <label style="display: none;" for="currentPassword">Mevcut Şifre</label>
+                    <input id="currentPassword" required type="password" placeholder="Mevcut Şifre" />
                   </div>
                   <div class="input-field">
                     <i class="fa-solid fa-lock highlight-bold"></i>
-                    <input type="password" placeholder="Yeni Şifre" />
+                    <label style="display: none;" for="newPassword">Yeni Şifre</label>
+                    <input id="newPassword" required type="password" placeholder="Yeni Şifre" />
                   </div>
                 </div>
-                <input type="submit" class="btn btn-smooth" value="Kaydet" />
+                <input aria-label="Kaydet" type="submit" class="btn btn-smooth" value="Kaydet" />
               </form>
             </div>
           </div>
@@ -940,41 +870,49 @@
     <footer>
       <div class="footer-row padding-block-400">
         <div class="footer-col">
-          <img src="../../assets/logo.webp" class="logo" />
-          <p>
-            Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.
-          </p>
+          <img src="../../assets/logo-white.webp" class="logo" alt="Dronmarket yazan Dronmarket şirket logosu"/>
+          <p>Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.</p>
+          <a aria-label="Dronmarket etbis profiline git" target="_blank" href="https://www.eticaret.gov.tr/siteprofil/E8884099F9664E07B26705A9DDC545DC/wwwdronmarketcom"><img class="etbis-img" src="../../assets/etbis.jpg" alt="Etbis'e kayıtlıdır yazan bir QR kod"></a>
         </div>
         <div class="footer-col">
           <h3>İletişim</h3>
-          <p>Merkez Ofis:</p>
+          <p class="email-id">destek@dronmarket.com</p>
+          <p>Merkez Ofis: </p>
           <p>Gülbahar Mahallesi Cemal Sururi Sokak</p>
           <p>Halim Meriç İş Merkezi Şişli/İstanbul</p>
-          <p class="email-id">destek@dronmarket.com</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.972843778323!2d30.405195!3d40.800649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccad8b4ead7e41%3A0xdb4f7d7da7317e33!2sDronmarket%20ARGE%20Ofisi!5e0!3m2!1str!2sus!4v1677277539143!5m2!1str!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          role="none"
+          title="Dronmarket Merkez Ofisi"
+          aria-label="Dronmarket merkez ofisinin harita üzerinde konumu"
+          ></iframe>
         </div>
         <div class="footer-col">
           <h3>Linkler</h3>
           <ul>
-            <li><a href="#">Ana Sayfa</a></li>
-            <li><a href="#">İletişim</a></li>
-            <li><a href="#">Hakkımızda</a></li>
-            <li><a href="#">Banka Bilgilerimiz</a></li>
-            <li><a href="#">Gizlilik ve Güvenlik</a></li>
-            <li><a href="#">Üye Ol veya Giriş Yap</a></li>
+            <li><a aria-label="Ana Sayfa" href="#">Ana Sayfa</a></li>
+            <li><a aria-label="İletişim" href="#">İletişim</a></li>
+            <li><a aria-label="Hakkımızda" href="#">Hakkımızda</a></li>
+            <li><a aria-label="Banka Bilgilerimiz" href="#">Banka Bilgilerimiz</a></li>
+            <li><a aria-label="Gizlilik ve Güvenlik" href="#">Gizlilik ve Güvenlik</a></li>
+            <li><a aria-label="Üye Ol veya Giriş Yap" href="#">Üye Ol veya Giriş Yap</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3>Bültene Abone Ol</h3>
-          <form>
+          <h3 id="email-subscription">Bültene Abone Ol</h3>
+          <form aria-labelledby="email-subscription">
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Emailin gir" required />
-            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            <input type="email" placeholder="Emailin gir" required>
+            <button aria-label="Email bültenine kayıt ol" type="submit"><i class="fas fa-arrow-right"></i></button>
           </form>
           <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-pinterest"></i>
+            <a aria-label="Dronmarket Facebook adresine git" href="/"><i class="fab fa-facebook-f"></i></a></i>
+            <a aria-label="Dronmarket twitter profil adresine git" href="/"><i class="fab fa-twitter"></i></a>
+            <a aria-label="Dronmarket'le whatsapp iletişimi için tıkla" href="/"><i class="fab fa-whatsapp"></i></a>
+            <a aria-label="Dronmarket pinterest hesabına git" href=""><i class="fab fa-pinterest"></i></a>
           </div>
         </div>
       </div>

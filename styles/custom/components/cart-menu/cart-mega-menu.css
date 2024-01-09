@@ -14,17 +14,18 @@
     background: var(--color-primary-700);
     width: auto;
     padding-inline: 0.3rem;
-    padding-block: 0.1rem;
+    padding-block: 0.05rem;
     height: auto;
-    font-size: 0.65em;
+    font-size: 0.7em;
     border-radius: 1rem;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -0.2rem;
-    right: -0.1rem;
-    color: var(--color-secondary-700);
+    text-align: center;
+    top: -0.10rem;
+    right: 0.15rem;
+    color: var(--color-primary-100);
 }
 
 .cart-mega-menu {

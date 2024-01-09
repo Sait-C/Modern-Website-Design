@@ -88,7 +88,7 @@
     transition: 0.3s;
   }
   
-  nav .navbar .main-menu li .link:hover {
+  nav .navbar .main-menu li .menu-link:hover {
     color: var(--navbar-list-item-text-hover-color);
   }
   

@@ -29,19 +29,19 @@
     gap: 0.5rem;
 }
 
-.scores-state-analytics .analytic h4 {
+.scores-state-analytics .analytic h2 {
     font-weight: 400;
     color: #555;
     font-size: var(--font-size-300);
 }
 
-.scores-state-analytics .analytic h1 {
+.scores-state-analytics .analytic .score {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-400);
     color: var(--color-secondary-400);
 }
 
-.scores-state-analytics .analytic h2 {
+.scores-state-analytics .analytic .value {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-300);
     color: var(--color-secondary-300);
