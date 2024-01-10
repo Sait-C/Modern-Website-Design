@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./styles/custom/pages/home/get-offer-cta.css" />
     <link rel="stylesheet" href="./styles/custom/pages/home/features-section.css" />
     <link rel="stylesheet" href="./styles/custom/pages/home/most-products-section.css" />
+    <link rel="stylesheet" href="./styles/custom/components/product/product.css">
     <link rel="stylesheet" href="./styles/custom/pages/home/other-services-section.css" />
     <link rel="stylesheet" href="./styles/custom/pages/home/blogs-section.css" />
     <link rel="stylesheet" href="./styles/custom/pages/home/what-clients-say-section.css" />
@@ -840,13 +841,304 @@
               </div>
               <div class="tab-filter-item-container">
                 <div id="on-sale" aria-labelledby="on-sale-products" class="tab-item on-sale selected_tab">
-                  <div class="on-sale-products-swiper products-swiper"></div>
+                  <div class="on-sale-products-swiper products-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                  </div>
                 </div>
                 <div id="popular" aria-labelledby="popular-products" class="tab-item popular">
-                  <div class="popular-products-swiper products-swiper"></div>
+                  <div class="popular-products-swiper products-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                  </div>
                 </div>
                 <div id="new" aria-labelledby="new-products" class="tab-item new">
-                  <div class="new-products-swiper products-swiper"></div>
+                  <div class="new-products-swiper products-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-box">
+                          <div class="like-btn">
+                            <label class="heart-container">
+                              <input aria-label="Favorilere Ekle" type="checkbox" role="checkbox">
+                              <div class="checkmark">
+                                <svg viewBox="0 0 256 256">
+                                <rect fill="none" height="256" width="256"></rect>
+                                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="product-img">
+                            <img decoding="async" class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/007/dji-bs65-akilli-sarj-istasyonu-1_min.jpg?revision=1697143329" alt="Product Name">
+                          </div>
+                          <div class="product-detail-box">
+                            <div class="product-type">
+                              <a href="#">Product Name</a>
+                              <span>Product Category</span>
+                            </div>
+                            <div class="product-price">
+                              <span aria-label="İndirimli Fiyat" href="/" class="new-price">$50</span>
+                              <span aria-label="İndirimsiz Fiyat" href="/" class="old-price">$50</span>
+                            </div>
+                          </div>
+                          <button aria-label="Sepete Ekle" class="btn btn-smooth add-to-cart-btn">
+                            Sepete Ekle
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1139,7 +1431,14 @@
         <div class="footer-col">
           <img src="./assets/logo-white.webp" class="logo" alt="Dronmarket yazan Dronmarket şirket logosu"/>
           <p>Email bültenine kayıt ol, harika fırsatları ve ürünleri kaçırma.</p>
-          <a aria-label="Dronmarket etbis profiline git" target="_blank" href="https://www.eticaret.gov.tr/siteprofil/E8884099F9664E07B26705A9DDC545DC/wwwdronmarketcom"><img class="etbis-img" src="./assets/etbis.jpg" alt="Etbis'e kayıtlıdır yazan bir QR kod"></a>
+          <div class="our-dealers">
+            <h3>Şubelerimiz</h3>
+            <ul>
+              <li><span class="fs-400">Çorum</span> <a href="https://maps.app.goo.gl/UoRkVV8rPtnBKSzx9">tıkla ve adresi görüntüle</a></li>
+              <li><span class="fs-400">İzmir</span> <a href="https://maps.app.goo.gl/UoRkVV8rPtnBKSzx9">tıkla ve adresi görüntüle</a></li>
+              <li><span class="fs-400">Sakarya</span> <a href="https://maps.app.goo.gl/UoRkVV8rPtnBKSzx9">tıkla ve adresi görüntüle</a></li>
+            </ul>
+          </div>
         </div>
         <div class="footer-col">
           <h3>İletişim</h3>
@@ -1168,6 +1467,14 @@
             <li><a aria-label="Üye olmak veya giriş yapmak için tıkla" href="#">Üye Ol veya Giriş Yap</a></li>
           </ul>
         </div>
+        <!-- <div class="footer-col">
+          <h3>Şubelerimiz</h3>
+          <ul>
+            <li>Çorum</li>
+            <li>İzmir</li>
+            <li>Sakarya</li>
+          </ul>
+        </div> -->
         <div class="footer-col">
           <h3 id="email-subscription">Bültene Abone Ol</h3>
           <form aria-labelledby="email-subscription">
@@ -1181,6 +1488,7 @@
             <a aria-label="Dronmarket'le whatsapp iletişimi için tıkla" href="/"><i class="fab fa-whatsapp"></i></a>
             <a aria-label="Dronmarket pinterest hesabına git" href=""><i class="fab fa-pinterest"></i></a>
           </div>
+          <a aria-label="Dronmarket etbis profiline git" target="_blank" href="https://www.eticaret.gov.tr/siteprofil/E8884099F9664E07B26705A9DDC545DC/wwwdronmarketcom"><img class="etbis-img" src="./assets/etbis.jpg" alt="Etbis'e kayıtlıdır yazan bir QR kod"></a>
         </div>
       </div>
     </footer>
@@ -1243,37 +1551,42 @@
     },
   });
   </script>
+  
   <script>
-    const onSaleProductsSwiper = new Swiper('.on-sale-products-swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 3,
-    loop: false,
-    spaceBetween: 30,
+    const productsSwiperOptions = {
+      // Optional parameters
+      direction: 'horizontal',
+      slidesPerView: 4,
+      loop: false,
+      spaceBetween: 110,
+      grabCursor: true,
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-    breakpoints: {
-      0: {
-        slidesPerView: 1
-      },
-      576: {
-        slidesPerView: 1
-      },
-      577: {
-        slidesPerView: 2
-      },
-      1024: {
-        slidesPerView: 3
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        576: {
+          slidesPerView: 1
+        },
+        577: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
       }
     }
-  });
+    const popularProductsSwiper = new Swiper('.popular-products-swiper', productsSwiperOptions);
+    const newProductsSwiper = new Swiper('.new-products-swiper', productsSwiperOptions);
+    const onSaleProductsSwiper = new Swiper('.on-sale-products-swiper', productsSwiperOptions);
   </script>
-  <script src="scripts/products-slider-script.js"></script>
+  <!-- <script src="scripts/products-slider-script.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
     // Make navbar to fixed on scroll
@@ -1360,22 +1673,3 @@
   <script src="./scripts/search-screen.js"></script>
   <script src="./scripts/top-scroll.js"></script>
 </html>
-
-<!--
-TODO:  - CLS sorunlarını çöz
-       - *******Ürün arama Search Bar ekle
-       - *********Responsive sorunlarını tespit et ve çöz
-       - Performansı iyileştir
-       - Mobilde navbar arkası blur olmuyor
-       - products-tab-script javascript dosyası çok hatalı onu fix et yeniden yaz daha optimize yaz
-       - Swiperların şuan comment altında olan pagination ve navigationlarını uncomment yaptığımda layout bozuluyor nav arrowlar sayfanın en üstüne gözüküyor vs.
-       - En son her şeyin üstünden geç ve site uyumunu sağla
-       - ******Reveal/Scroll Animasyonları ekle
-       - Add aria-labels
--->
-
-<!--
-  30.10.2023 yapılacaklar:
-  3- Go over all of page and ensure site compliance
-  4- Gelecek günler için üstteki yazılanlara bak
--->

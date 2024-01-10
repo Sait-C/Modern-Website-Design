@@ -29,8 +29,25 @@ footer .logo {
 }
 
 footer .etbis-img {
-    margin-top: 30px;
-    height: 120px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+footer .our-dealers {
+    padding-top: 30px;
+}
+
+footer .our-dealers h3 {
+    margin-bottom: 5px !important;
+    text-decoration: underline;
+}
+
+footer .our-dealers li a:hover {
+    text-decoration: underline;
+}
+
+footer .our-dealers li {
+    color: var(--color-primary-400);
 }
 
 footer .footer-col h3 {
