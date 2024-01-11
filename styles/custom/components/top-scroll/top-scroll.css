@@ -18,6 +18,6 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 35px;
+  font-size: var(--font-size-500);
   color: #001a2e;
 }
