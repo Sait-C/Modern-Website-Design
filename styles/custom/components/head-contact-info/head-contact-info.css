@@ -22,12 +22,12 @@ header .header-contact-info div {
 }
 
 header .header-contact-info .gsm i {
-  color: var(--color-secondary-200);
+  color: var(--color-secondary-300);
 }
 
 header .header-contact-info .whatsapp span,
 header .header-contact-info .gsm span {
-  color: var(--color-secondary-200);
+  color: var(--color-secondary-300);
 }
 
 header .header-contact-info .whatsapp i {

@@ -25,7 +25,7 @@ tabPanels.forEach((panel) => {
   panel.setAttribute("tabindex", "0");
 });
 
-tabsContainer.addEventListener("click", (e) => {
+tabsList.addEventListener("click", (e) => {
   const clickedTab = e.target.closest("a");
   if (!clickedTab) return;
   e.preventDefault();
