@@ -16,21 +16,21 @@ const slider = () => {
     {
       id: 1,
       imgUrl:
-        "../assets/banner-images/1.jpg",
+        "./assets/banner-images/1.jpg",
       description: "Badduck DM - 07 1080P HD Kameralı Katlanabilir FPV Drone",
       title: "YENİ HOBİ DRONU",
     },
     {
       id: 2,
       imgUrl:
-        "../assets/banner-images/2.jpg",
+        "./assets/banner-images/2.jpg",
       description: "DJI - Agriculture",
       title: "TÜRKİYE RESMİ SATICISI",
     },
     {
       id: 3,
       imgUrl:
-        "../assets/banner-images/3.png",
+        "./assets/banner-images/3.png",
       description:
         "Milli Eğitim Bakanlığı ve SHGM onaylı İHA-0 ve İHA-1 Dron pilotluğu eğitimleri",
       title: "MEB VE SHGM ONAYLI EĞİTİMLER",
@@ -38,21 +38,21 @@ const slider = () => {
     {
       id: 4,
       imgUrl:
-        "../assets/banner-images/3.png",
+        "./assets/banner-images/3.png",
       description: "Türkiye Resmi Distribütörü",
       title: "CHASING",
     },
     {
       id: 5,
       imgUrl:
-        "../assets/banner-images/1.jpg",
+        "./assets/banner-images/1.jpg",
       description: "Türkiye Resmi Distribütörü",
       title: "EMLID",
     },
     {
       id: 6,
       imgUrl:
-        "../assets/banner-images/3.png",
+        "./assets/banner-images/3.png",
       description:
         "Şimdi ön sipariş verip stoklarla sınırlı indirimden sen de faydalan!",
       title: "DJI MATRICE 30T DE İLK 10 MÜŞTERİYE ÖZEL %30 İNDİRİM",
