@@ -3,7 +3,7 @@
     top: var(--top-categories-top-offset-size-primary);
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 50;
     display: flex;
     flex-direction: row;
     align-items: center;
