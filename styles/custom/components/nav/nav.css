@@ -141,9 +141,12 @@
 
   nav .contact-info {
     display: none;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1rem;
+    gap: 1rem;
+    width: 100%;
     /* margin-right: 7rem; */
   }
 
@@ -152,16 +155,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    font-size: var(--font-size-100);
   }
 
   nav .contact-info .gsm i {
     color: var(--color-secondary-300);
+    font-size: var(--font-size-400);
   }
 
   nav .contact-info .whatsapp i {
-    color: green;
+    color: var(--color-secondary-300);
+    font-size: var(--font-size-500);
   }
 
   @media screen and (max-width: 900px) {

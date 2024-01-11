@@ -39,3 +39,29 @@ header .header-contact-info .whatsapp i {
     display: none;
   }
 }
+
+
+/* .contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-top: 1.5rem;
+}
+
+.contact-info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-100);
+}
+
+.contact-info .gsm i {
+  color: var(--color-secondary-300);
+}
+.contact-info .whatsapp i {
+  color: green;
+} */

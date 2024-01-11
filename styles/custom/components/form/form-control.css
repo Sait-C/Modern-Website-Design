@@ -25,6 +25,24 @@ form .input-field-errors {
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-size: var(--font-size-200);
+    margin-top: -1rem;
+}
+
+form .input-field-errors .error-box {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+form .input-field-errors .error-box i {
+    color: red;
+}
+
+form .input-field.invalid i {
+    color: red;
 }
 
 form .input-field-errors p {

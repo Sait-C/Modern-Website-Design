@@ -6,7 +6,7 @@
   justify-content: space-around;
   width: 100%;
   flex-shrink: 0;
-  background: var(--color-primary-200);
+  background: transparent;
   overflow: hidden;
   user-select: none;
   gap: 10rem;
