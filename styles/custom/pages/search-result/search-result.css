@@ -1,0 +1,218 @@
+main .container {
+  padding-top: var(--padding-block-size-600);
+}
+
+/*Banner*/
+.page-banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.7s;
+  contain: paint;
+}
+
+.page-banner h1 {
+  color: var(--color-secondary-700);
+  font-size: var(--font-size-700);
+  position: relative;
+  z-index: 1;
+}
+
+.page-banner .searched-text {
+  font-family: var(--font-family-secondary);
+}
+
+/*Product List Content*/
+.product-list-content-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1.5rem; /* Adjust the value as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .product-list-content-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .products-wrapper .pagination {
+    font-size: var(--font-size-100);
+  }
+  .products-wrapper .pagination ul {
+    align-items: center;
+  }
+  .products-wrapper .pagination ul li.page {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+  }
+}
+
+.products-wrapper .product-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.products-wrapper {
+  padding: 2rem;
+  background: var(--color-primary-100);
+  width: 100%;
+  border-radius: var(--card-border-radius-primary);
+}
+
+/*Pagination of Product List*/
+.products-wrapper .pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--padding-block-size-200);
+}
+
+.products-wrapper .pagination ul {
+  border-radius: 50px;
+  background: var(--color-primary-100);
+  padding: 10px 20px;
+  display: flex;
+}
+
+.products-wrapper .pagination ul li {
+  list-style: none;
+  line-height: 50px;
+  margin: 0px 5px;
+}
+
+.products-wrapper .pagination ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-secondary-500);
+  border-radius: 50%;
+}
+
+.products-wrapper .pagination ul li.page {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.products-wrapper .pagination ul li.page:hover a,
+.products-wrapper .pagination ul li.page.active a {
+  background: var(--color-primary-700);
+  color: var(--color-primary-100);
+  font-weight: var(--font-weight-bold);
+}
+
+.products-wrapper .pagination ul li.prev:hover a,
+.products-wrapper .pagination ul li.next:hover a {
+  color: var(--color-primary-700);
+}
+
+.products-wrapper .pagination ul li.prev {
+  margin-right: 20px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-200);
+}
+
+.products-wrapper .pagination ul li.next {
+  margin-left: 20px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-200);
+}
+
+/*Magnifier*/
+
+.detailed-search-magnifier {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.detailed-search-magnifier .magnifier-btn {
+  border: none;
+  text-decoration: none;
+  box-shadow: none;
+  font-size: var(--font-size-400);
+  padding: 1.2rem;
+  border-radius: 50%;
+  background: var(--color-primary-400);
+  color: var(--color-secondary-700);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.detailed-search-magnifier .magnifier-btn:hover {
+  color: var(--color-secondary-700);
+  background: var(--color-primary-500);
+}
+
+.detailed-search-magnifier {
+  width: 100%;
+  margin: 1rem auto;
+  position: relative;
+  line-height: 1.5rem; /* 200% */
+  letter-spacing: 0.00063rem;
+  font-weight: 100;
+}
+
+.detailed-search-magnifier::before {
+  content: "Detaylı";
+  display: block;
+  width: 47%;
+  height: 1px;
+  background: var(--color-secondary-700);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+  text-align: end;
+}
+
+.detailed-search-magnifier::after {
+  content: "Arama";
+  display: block;
+  width: 47%;
+  height: 1px;
+  background: var(--color-secondary-700);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+  text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+  .detailed-search-magnifier::after,
+  .detailed-search-magnifier::before {
+    text-align: center;
+  }
+}
+
+/*Dialog*/
+.detail-search-modal {
+  width: 50%;
+}
+
+.detail-search-modal form .form-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.detail-search-modal form .form-footer .btn-reverse:hover {
+  color: var(--color-primary-100);
+  background: var(--color-secondary-300);
+}
