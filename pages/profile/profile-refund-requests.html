@@ -29,7 +29,7 @@
     />
     <link
       rel="stylesheet"
-      href="../../styles/custom/pages/profile/profile-payments.css"
+      href="../../styles/custom/pages/profile/profile-refund-requests.css"
     />
     <link rel="stylesheet" href="../../styles/custom/pages/home/footer.css" />
     <link
@@ -753,69 +753,65 @@
             </div>
           </div>
           <div class="page-content">
-            <h1 id="payments-list-table-desc">Ödemelerim</h1>
-            <div class="list-of-payments-wrapper">
-                <table role="table" aria-label="Ödemelerim" aria-describedby="payments-list-table-desc">
+            <h1 id="refund-requests-list-table-desc">İade Taleplerim</h1>
+            <div class="list-of-refund-requests-wrapper">
+                <table role="table" aria-label="İade Taleplerim" aria-describedby="refund-requests-list-table-desc">
                     <thead role="rowgroup" class="thead-light">
                         <tr role="row">
-                            <th role="cell" scope="col">Ref No</th>
+                            <th role="cell" scope="col">Sipariş No</th>
+                            <th role="cell" scope="col">Talep Kodu</th>
+                            <th role="cell" scope="col">Ödeme Türü</th>
                             <th role="cell" scope="col">Durumu</th>
-                            <th role="cell" scope="col">Ödeme Tarihi</th>
-                            <th role="cell" scope="col">Toplam Tutar</th>
+                            <th role="cell" scope="col">İade Bedeli</th> 
+                            <th role="cell" scope="col">Talep Tarihi</th>
                             <th role="cell" scope="col">İşlemler</th>
                         </tr>
                     </thead>
                     <tbody role="rowgroup">
                         <tr role="row">
-                            <th role="cell" data-title="Ref No" scope="row">8745987</th>
+                            <th role="cell" data-title="Sipariş No" scope="row">8745987</th>
+                            <th role="cell" data-title="Talep Kodu" scope="row">8745987</th>
+                            <th role="cell" data-title="Ödeme Türü" scope="row">Kredi Kartı</th>
                             <th role="cell" data-title="Durumu" scope="row"><p class="status accepted">Onaylandı</p></th>
-                            <th role="cell" data-title="Sipariş Tarihi" scope="row">26-01-2023 13:43:02</th>
-                            <th role="cell" data-title="Toplam Tutar" scope="row">138,12 TL</th>
+                            <th role="cell" data-title="İade Bedeli" scope="row">138,12 TL</th>
+                            <th role="cell" data-title="Talep Tarihi" scope="row">26-01-2023 13:43:02</th>
                             <th role="cell" data-title="İşlemler" scope="row">
                               <div class="action-wrapper">
                                 <div class="action-icon order-details-action">
-                                  <div class="tooltip">Ödeme Detayı</div>
+                                  <div class="tooltip">İade Talebi Detayı</div>
                                   <span><i class="fa-brands fa-dochub"></i></span>
-                                </div>
-                                <div class="action-icon">
-                                  <div class="tooltip">Dekont Al</div>
-                                  <span><i class="fa-solid fa-print"></i></span>
                                 </div>
                               </div>
                             </th>
                         </tr>
                         <tr role="row">
-                            <th role="cell" data-title="Ref No" scope="row">3548975</th>
-                            <th role="cell" data-title="Durumu" scope="row"><p class="status pending">Beklemede</p></th>
-                            <th role="cell" data-title="Sipariş Tarihi" scope="row">26-01-2023 13:43:02</th>
-                            <th role="cell" data-title="Toplam Tutar" scope="row">8.457,12 TL</th>
+                            <th role="cell" data-title="Sipariş No" scope="row">8745987</th>
+                            <th role="cell" data-title="Talep Kodu" scope="row">8745987</th>
+                            <th role="cell" data-title="Ödeme Türü" scope="row">Kredi Kartı</th>
+                            <th role="cell" data-title="Durumu" scope="row"><p class="status pending">Onay Bekliyor</p></th>
+                            <th role="cell" data-title="İade Bedeli" scope="row">138,12 TL</th>
+                            <th role="cell" data-title="Talep Tarihi" scope="row">26-01-2023 13:43:02</th>
                             <th role="cell" data-title="İşlemler" scope="row">
                               <div class="action-wrapper">
                                 <div class="action-icon order-details-action">
-                                  <div class="tooltip">Ödeme Detayı</div>
+                                  <div class="tooltip">İade Talebi Detayı</div>
                                   <span><i class="fa-brands fa-dochub"></i></span>
-                                </div>
-                                <div class="action-icon">
-                                  <div class="tooltip">Dekont Al</div>
-                                  <span><i class="fa-solid fa-print"></i></span>
                                 </div>
                               </div>
                             </th>
                         </tr>
                         <tr role="row">
-                            <th role="cell" data-title="Ref No" scope="row">1549875</th>
+                            <th role="cell" data-title="Sipariş No" scope="row">8745987</th>
+                            <th role="cell" data-title="Talep Kodu" scope="row">8745987</th>
+                            <th role="cell" data-title="Ödeme Türü" scope="row">Kredi Kartı</th>
                             <th role="cell" data-title="Durumu" scope="row"><p class="status cancelled">Reddedildi</p></th>
-                            <th role="cell" data-title="Sipariş Tarihi" scope="row">26-01-2023 13:43:02</th>
-                            <th role="cell" data-title="Toplam Tutar" scope="row">5.441,12 TL</th>
+                            <th role="cell" data-title="İade Bedeli" scope="row">138,12 TL</th>
+                            <th role="cell" data-title="Talep Tarihi" scope="row">26-01-2023 13:43:02</th>
                             <th role="cell" data-title="İşlemler" scope="row">
                               <div class="action-wrapper">
                                 <div class="action-icon order-details-action">
-                                  <div class="tooltip">Ödeme Detayı</div>
+                                  <div class="tooltip">İade Talebi Detayı</div>
                                   <span><i class="fa-brands fa-dochub"></i></span>
-                                </div>
-                                <div class="action-icon">
-                                  <div class="tooltip">Dekont Al</div>
-                                  <span><i class="fa-solid fa-print"></i></span>
                                 </div>
                               </div>
                             </th>
