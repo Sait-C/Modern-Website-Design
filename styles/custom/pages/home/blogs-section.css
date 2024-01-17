@@ -179,4 +179,20 @@ main .blogs .blogs-content-container .blog-post-card .blog-details {
     main .blogs .blogs-top-wrapper {
         width: 100%;
     }
+
+    main .blogs .blogs-content-container {
+        height: 500px;
+    }
+
+    main .blogs .blogs-content-container .blog-post-card .blog-post-image-link {
+        height: 400px;
+    }
+
+    main .blogs .blogs-content-container .blog-post-card .blog-post-details-wrap {
+        padding: 1.5rem;
+    }
+
+    main .blogs .blogs-content-container .blog-post-card .blog-card-date-wrap {
+        margin-bottom: 5px;
+    }
 }

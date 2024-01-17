@@ -21,3 +21,15 @@
   font-size: var(--font-size-400);
   color: #001a2e;
 }
+
+
+@media only screen and (max-width: 576px) {
+  #progress {
+    height: 50px;
+    width: 50px;
+  }
+
+  #progress-value {
+    font-size: var(--font-size-200);
+  }
+}

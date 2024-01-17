@@ -18,11 +18,12 @@ header .header-contact-info div {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: var(--font-size-200);
+  font-size: var(--font-size-300);
 }
 
 header .header-contact-info .gsm i {
   color: var(--color-secondary-300);
+  font-size: 1.1em;
 }
 
 header .header-contact-info .whatsapp span,
@@ -31,6 +32,7 @@ header .header-contact-info .gsm span {
 }
 
 header .header-contact-info .whatsapp i {
+  font-size: var(--font-size-400);
   color: green;
 }
 

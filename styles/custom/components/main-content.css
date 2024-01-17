@@ -149,3 +149,10 @@ body {
 .transparent-bg {
   background: transparent !important;
 }
+
+
+@media only screen and (max-width: 576px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}

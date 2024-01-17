@@ -53,10 +53,17 @@ main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body
 
 main .testimonials-section .testimonial-swiper .testimonial-card .test-card-body p {
     margin: 10px 0px 15px;
-    font-size: var(--font-size-200);
-    line-height: 1.5;
     /* color: #767a86; */
     color: var(--color-secondary-200);
+    -ms-word-break: break-all;
+    word-break: break-all;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical; /* Display vertically */
+    line-height: 1.2; /* Adjust line height for better appearance */
+    font-size: var(--font-size-200);
 }
 
 main .testimonials-section .testimonial-swiper .testimonial-card .ratings i {

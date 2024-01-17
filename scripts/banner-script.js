@@ -145,6 +145,31 @@ const slider = () => {
 
   // Add the container to the DOM (assuming there is an element with id "root" where you want to mount the slider)
   document.getElementById("root").appendChild(container);
+
+  let startX = 0;
+  let endX = 0;
+
+  container.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  container.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  container.addEventListener('touchend', () => {
+    const diffX = startX - endX;
+
+    if (Math.abs(diffX) > 50) { // You can adjust this threshold as needed
+      if (diffX > 0) {
+        // Swipe left
+        handleClickNext();
+      } else {
+        // Swipe right
+        handleClickPrev();
+      }
+    }
+  });
 };
 
 // Call the slider function to initialize slider

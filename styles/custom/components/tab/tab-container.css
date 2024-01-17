@@ -67,3 +67,14 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .tab-container .tab-filter-container {
+        padding: 1rem;
+    }
+
+    .tab-container .tab-filter-container li {
+        padding-inline: 0.6rem;
+        padding-block: 0.8rem;
+    }
+}

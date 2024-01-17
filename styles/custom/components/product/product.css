@@ -95,6 +95,7 @@
     margin-bottom: 1rem;
     width: 75%;
     margin-inline: auto;
+    z-index: 3;
 }
 
 .product-box .like-btn {
