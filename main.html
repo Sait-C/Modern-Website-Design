@@ -708,7 +708,42 @@
         <section class="home">
           <div class="home-left">
               <!--Popular products swiper-->
-              <div class="home-product-card-slider-root" id="home-product-card-slider-root"></div>
+              <div class="home-product-card-slider-root" id="home-product-card-slider-root">
+                <div class="swiper-wrapper">
+                  <div class="product-item swiper-slide">
+                    <div class="product-item-image">
+                      <img class="" data-src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr" alt="DJI Zenmuse H20 Drone Kamerası" src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr">
+                    </div>
+                    <div class="product-item-content">
+                      <div class="product-item-title">DJI Zenmuse H20 Drone Kamerası</div>
+                      <div class="product-item-description">Enerji, Güvenlik, İnşaat ve Haritalama Drone Uygulamaları , Drone Kamera ve Gimballeri</div>
+                      <a class="btn btn-shadow btn-sharp">Ürüne Git</a>
+                    </div>
+                  </div>
+                  <div class="product-item swiper-slide">
+                    <div class="product-item-image">
+                      <img class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr" alt="DJI Zenmuse H20 Drone Kamerası" src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr">
+                    </div>
+                    <div class="product-item-content">
+                      <div class="product-item-title">DJI Zenmuse H20 Drone Kamerası</div>
+                      <div class="product-item-description">Enerji, Güvenlik, İnşaat ve Haritalama Drone Uygulamaları , Drone Kamera ve Gimballeri</div>
+                      <a class="btn btn-shadow btn-sharp">Ürüne Git</a>
+                    </div>
+                  </div>
+                  <div class="product-item swiper-slide">
+                    <div class="product-item-image">
+                      <img class="lazy-load" data-src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr" alt="DJI Zenmuse H20 Drone Kamerası" src="https://ideacdn.net/idea/cq/36/myassets/products/917/dji-zenmuse-h20-drone-kamerasi-1.jpg?revision=1697143329&amp;AppLanguageCode=tr">
+                    </div>
+                    <div class="product-item-content">
+                      <div class="product-item-title">DJI Zenmuse H20 Drone Kamerası</div>
+                      <div class="product-item-description">Enerji, Güvenlik, İnşaat ve Haritalama Drone Uygulamaları , Drone Kamera ve Gimballeri</div>
+                      <a class="btn btn-shadow btn-sharp">Ürüne Git</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
               <!--Last published blog-->
               <div class="home-skewed-blog-post-swiper">
                 <div class="swiper-wrapper">
@@ -1512,7 +1547,7 @@
   <script src="scripts/banner-script.js"></script>
   <script src="scripts/tab-script-v2.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-  <script src="scripts/home-product-card-slider-script.js"></script>
+  <!-- <script src="scripts/home-product-card-slider-script.js"></script> -->
   <script>
     var swiper = new Swiper('.home-product-card-slider-root', {
     spaceBetween: 30,
@@ -1540,8 +1575,9 @@
     slidesPerView: 1,
     loop: true,
     grabCursor: true,
+    speed: 1000,
     autoplay: {
-      delay: 3000,
+      delay: 3500,
       disableOnInteraction: false,
     },
     
@@ -1655,8 +1691,9 @@
     direction: 'horizontal',
     slidesPerView: 2,
     loop: true,
+    speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     spaceBetween: 50,

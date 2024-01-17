@@ -146,8 +146,8 @@ const slider = () => {
   // Add the container to the DOM (assuming there is an element with id "root" where you want to mount the slider)
   document.getElementById("root").appendChild(container);
 
-  let startX = 0;
-  let endX = 0;
+  let startX = null;
+  let endX = null;
 
   container.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
@@ -158,8 +158,13 @@ const slider = () => {
   });
 
   container.addEventListener('touchend', () => {
-    const diffX = startX - endX;
+    if(!startX || !endX)
+      return;
 
+    const diffX = startX - endX;
+    startX = null;
+    endX = null;
+    console.log(diffX)
     if (Math.abs(diffX) > 50) { // You can adjust this threshold as needed
       if (diffX > 0) {
         // Swipe left

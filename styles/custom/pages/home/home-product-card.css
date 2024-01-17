@@ -29,12 +29,6 @@
     }
 }
 
-@media screen and (max-height: 500px) and (min-width: 992px) {
-    .home-product-card-slider-root{
-        height: 350px;
-    }
-}
-
 .home-product-card-slider-root .product-item {
     display: flex;
     align-items: center;
@@ -215,6 +209,7 @@
 }
 
 .home-product-card-slider-root .product-item a {
+    display: unset;
     letter-spacing: 1px;
     padding-block: var(--button-padding-y-secondary);
 }
