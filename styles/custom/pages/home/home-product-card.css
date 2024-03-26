@@ -34,6 +34,10 @@
     align-items: center;
 }
 
+.home-product-card-slider-root .swiper-slide {
+    width: 100% !important;
+}
+
 @media screen and (max-width: 768px) {
     .home-product-card-slider-root .product-item {
         flex-direction: column;

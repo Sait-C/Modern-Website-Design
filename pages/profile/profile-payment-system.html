@@ -824,32 +824,73 @@
             </div>
             <form>
               <div class="form-input-box">
-                <label for="card-number">Kart Numarası</label>
+                <label for="creditCardNumber">Kart Numarası</label>
                 <input
                   inputmode="numeric"
-                  type="number"
-                  id="card-number"
+                  type="text"
+                  id="creditCardNumber"
                   placeholder="1234123412341234"
+                  required
                 />
               </div>
               <div class="form-input-box">
-                <label for="card-name-input">Kart Sahibi:</label>
+                <label for="creditCardName">Kart Sahibi:</label>
                 <input
                   type="text"
-                  id="card-name-input"
+                  id="creditCardName"
                   placeholder="Your Name"
+                  required
                 />
               </div>
               <div class="date-cvv">
                 <div class="form-input-box">
-                  <label for="validity-input">Geçerlilik Tarihi:</label>
-                  <input type="date" id="validity-input" />
+                  <label for="creditCardMonth">Ay</label>
+                  <select name="ccmonth" id="creditCardMonth" required id="district">
+                      <option value="">Seçiniz</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                  </select>                                  
                 </div>
                 <div class="form-input-box">
-                  <label for="cvv">CVV:</label>
-                  <input inputmode="numeric" type="number" id="cvv" placeholder="***" />
+                    <label for="creditCardYear">Yıl</label>
+                    <select required id="creditCardYear" name="ccyear">
+                        <option value="">Seçiniz</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                    </select>                                  
+                </div>
+                <div class="form-input-box">
+                  <label for="creditCardCvc">CVV:</label>
+                  <input required inputmode="numeric" type="number" id="creditCardCvc" placeholder="***" />
                 </div>
               </div>
+              <div class="form-input-box">
+                <label for="customPaymentNote">Ödeme Notu</label>
+                <textarea style="resize: none;" id="customPaymentNote" name="customPaymentNote" type="textarea" placeholder="" rows="5"></textarea>
+              </div>
+              <div class="form-controls-even-column column-300">
+                <div class="form-input-box">
+                  <label for="creditCardNumber">Ödenecek Tutar</label>
+                  <input required inputmode="numeric" name="ccnumber" type="number" id="creditCardNumber" placeholder="0"/>
+                </div>
+                <div class="form-input-box">
+                  <label hidden for="currency">Birim</label>
+                  <select name="currency" id="currency" required>
+                    <option value="">Seçiniz</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="TL" selected>TL</option>
+                    <option value="GBP">GBP</option>
+                </select> 
+                </div>
+              </div>
+              <div class="contentbox-body list agreement-list" data-selector="credit-card-installment-box">
+                <ul data-selector="installment-empty" class="">
+                </ul>
+                <ul data-selector="installment-hall" data-installment-lang="Taksit" data-first-installment-lang="Peşin" class="d-none" style="display: block;">
+                </ul>
+              </div>
+              <input aria-label="Ödemeyi Tamamla" type="submit" class="btn btn-smooth" value="Ödemeyi Tamamla" data-selector="payment-submit-button"/>
             </form>
           </div>
         </div>

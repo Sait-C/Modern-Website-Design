@@ -1,0 +1,10 @@
+.forgotpass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgotpass .contentbox-body {
+    max-width: 600px;
+}

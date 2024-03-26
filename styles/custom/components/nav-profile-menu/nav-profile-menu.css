@@ -124,3 +124,24 @@
         gap: 0rem;
     }
 }
+
+
+/* Mobile top mobile nav profile list mega menu */
+.nav-profile-list-menu.top-nav-profile-list-menu-mobile .nav-profile-mega-menu {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 555;
+}
+
+.nav-profile-list-menu.top-nav-profile-list-menu-mobile .signed-in-profile-nav-menu {
+  padding: 0 !important;
+  font-size: 1.20em !important;
+  border: none;
+  background: none;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.nav-profile-list-menu.top-nav-profile-list-menu-mobile .profile-operations-list {
+  gap: 2rem;
+}

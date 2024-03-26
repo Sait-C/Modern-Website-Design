@@ -4,7 +4,7 @@ main .container {
 }
 
 /*Banner*/
-.main-category-banner {
+.main-category-banner .head-content {
     width: 100%;
     height: 7rem;
     border-radius: 12.5rem;
@@ -26,13 +26,13 @@ main .container {
     height: 100%;
 }
 
-.main-category-banner:hover {
+.main-category-banner:hover .head-content{
     height: 30rem;
     border-radius: var(--card-border-radius-primary);
     background-size: cover;
 }
 
-.main-category-banner:hover > .main-category-description {
+.main-category-banner:hover  .main-category-description {
     display: block;
     width: 60%;
     position: relative;
@@ -41,7 +41,7 @@ main .container {
     animation: showcontent 0.5s linear;
 }
 
-.main-category-banner:hover::before {
+.main-category-banner:hover .head-content::before {
     border-radius: var(--card-border-radius-primary);
 }
 
@@ -54,7 +54,7 @@ main .container {
 .main-category-banner .main-category-description {
     color: var(--color-primary-100);
     display: none;
-    transform: 0.4s;
+    transition: all 0.4s;
     opacity: 0;
 }
 
@@ -71,7 +71,7 @@ main .container {
     }
 }
 
-.main-category-banner::after {
+.main-category-banner .head-content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -365,7 +365,7 @@ main .container {
 }
 
 .subscribe-cta {
-    background: url("../../../../assets/background-objects/glow_circle_1.png") !important;
+    background: url("https://dronmarket.com/dosya/assets/bg-objects/glow_circle_1.png") !important;
     overflow: hidden;
     position: relative;
     background-position: 5% 70%;

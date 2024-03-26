@@ -1,0 +1,25 @@
+.page-buttons {
+    display: none;
+}
+
+.contentbox-body img {
+    max-width: 100% !important;
+}
+
+.contentbox-body iframe {
+    max-width: 100% !important;
+}
+
+.contentbox-body table {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .contentbox-body img {
+        width: 100% !important;
+    }
+
+    .contentbox-body iframe {
+        width: 100% !important;
+    }
+}

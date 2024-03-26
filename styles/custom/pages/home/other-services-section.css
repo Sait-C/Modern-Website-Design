@@ -97,7 +97,7 @@ main .services .drone-applications-container .collection-wrapper .item-block .it
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     text-transform: uppercase;
-    background: url('../../../../assets/back.png');
+    background: url('https://dronmarket.com/dosya/assets/bg-objects/text-back.png');
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;

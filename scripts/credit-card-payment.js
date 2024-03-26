@@ -1,11 +1,14 @@
-const cardNumber = document.getElementById("card-number");
+const cardNumber = document.getElementById("creditCardNumber");
 const cardHolderName = document.getElementById("card-holder-name");
-const cardNameInput = document.getElementById("card-name-input");
+const cardNameInput = document.getElementById("creditCardName");
 const displayValidity = document.getElementById("validity");
-const validityInput = document.getElementById("validity-input");
+const validityMonthInput = document.getElementById("creditCardMonth");
+const validityYearInput = document.getElementById("creditCardYear");
 const cardNumberDisplay = document.querySelectorAll(".card-number-display");
-const cvvInput = document.getElementById("cvv");
+const cvvInput = document.getElementById("creditCardCvc");
 const cvvDisplay = document.getElementById("cvv-display");
+let validityYearValue = "24";
+let validityMonthValue = "01";
 let currentSpanIndex = 0;
 cardNumber.addEventListener("input", () => {
   const inputNumber = cardNumber.value.replace(/\D/g, "");
@@ -35,7 +38,23 @@ cardNameInput.addEventListener("input", () => {
   }
 });
 
-validityInput.addEventListener("input", () => {
+validityMonthInput.addEventListener("change", () => {
+  validityMonthValue = validityMonthInput.value;
+
+  //Final formatted string
+  const formattedString = `${validityMonthValue}/${validityYearValue}`;
+  displayValidity.innerText = formattedString;
+});
+
+validityYearInput.addEventListener("change", () => {
+  validityYearValue = validityYearInput.value;
+
+  //Final formatted string
+  const formattedString = `${validityMonthValue}/${validityYearValue}`;
+  displayValidity.innerText = formattedString;
+});
+
+/* validityInput.addEventListener("input", () => {
   const inputString = validityInput.value;
   if (inputString.length < 1) {
     displayValidity.innerText = "06/28";
@@ -48,7 +67,7 @@ validityInput.addEventListener("input", () => {
   //Final formatted string
   const formattedString = `${month}/${year}`;
   displayValidity.innerText = formattedString;
-});
+}); */
 
 //cvv
 cvvInput.addEventListener("input", () => {
@@ -75,7 +94,8 @@ document.addEventListener("click", () => {
 
 window.onload = () => {
   cvvInput.value = "";
-  validityInput.value = "";
+  validityMonthInput.value = "";
+  validityYearInput.value = "";
   cardNameInput.value = "";
   cardNumber.value = "";
 };

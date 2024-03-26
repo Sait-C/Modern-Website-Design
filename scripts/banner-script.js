@@ -12,6 +12,27 @@ const slider = () => {
     slideRef.prepend(items[items.length - 1]);
   };
 
+  // Assuming 'parentElement' is the parent element to which you want to append the new child
+  // And 'newChild' is the element you want to append
+  function appendChildAsSecond(parentElement, newChild) {
+    // Get the second child of the parent element
+    var secondChild = parentElement.children[1];
+    
+    // Insert the new child before the second child
+    parentElement.insertBefore(newChild, secondChild);
+  }
+
+  function handleBannerItemClick (event) {
+    let item = event.currentTarget;
+    let parent = item.parentElement;
+    console.log(parent.firstChild);
+    console.log(item);
+    // Check if the parent is not the clicked element
+    if (parent.children[1] != item) {
+      appendChildAsSecond(slideRef, item);
+    }
+  }
+
   const data = [
     {
       id: 1,
@@ -100,7 +121,7 @@ const slider = () => {
     description.classList.add('banner-item-description');
     description.textContent = item.description;
 
-    const button = document.createElement("button");
+    const button = document.createElement("a");
     button.textContent = "Daha fazlasını gör";
     button.classList.add('btn');
     button.classList.add('btn-reverse');
@@ -141,6 +162,7 @@ const slider = () => {
     buttons.appendChild(prevButton);
     buttons.appendChild(nextButton);
     container.appendChild(buttons);
+    slideItem.addEventListener("click", handleBannerItemClick);
 });
 
   // Add the container to the DOM (assuming there is an element with id "root" where you want to mount the slider)

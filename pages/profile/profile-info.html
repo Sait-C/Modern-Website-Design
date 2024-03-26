@@ -781,6 +781,31 @@
                     <input id="birthDate" required type="date" placeholder="Doğum Tarihi" />
                   </div>
                 </div>
+                <div class="input-body padding-block-100">
+                  <fieldset required class="radio-buttons">
+                    <legend>Cinsiyet</legend>
+                    <label class="radio-button">
+                      <input type="radio" name="gender[]" value="male" id="gender-male">
+                      <div class="radio-circle"></div>
+                      <span class="radio-label">Erkek</span>
+                    </label>
+                    <label class="radio-button">
+                      <input type="radio" name="gender[]" value="gender-female">
+                      <div class="radio-circle"></div>
+                      <span class="radio-label">Kadın</span>
+                    </label>
+                    <label class="radio-button">
+                      <input type="radio" name="gender[]" value="unspecified" id="gender-unspecified">
+                      <div class="radio-circle"></div>
+                      <span class="radio-label">Belirtmek İstemiyorum</span>
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-address-book highlight-semi-bold"></i>
+                  <label style="display: none;" for="tc_id">T.C Kimlik No</label>
+                  <input type="text" id="tc_id" class="form-control" name="tcId" pattern="\d*" maxlength="11" value="10104022358" data-required="1" placeholder="T.C Kimlik No">
+                </div>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-phone highlight-light"></i>
@@ -846,6 +871,10 @@
                   <textarea id="address" type="textarea" placeholder="Adres" rows="5"></textarea>
                 </div>
                 <h2 class="form-section-title">Şifre Değiştirme</h2>
+                <label class="checkbox-label-container">
+                    <input aria-label="Şifreni Değiştir" value="1" type="checkbox" role="checkbox" id="new-password" data-selector="change-password" name="newpass[]">
+                    <div class="checkmark"></div>
+                </label>
                 <div class="form-controls-even-column column-300">
                   <div class="input-field">
                     <i class="fa-solid fa-lock highlight-bold"></i>

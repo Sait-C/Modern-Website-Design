@@ -7,6 +7,10 @@
   display: none;
 }
 
+.search-screen form {
+    width: 100%;
+}
+
 .search-screen .search-field {
     width: 100%;
     display: flex;

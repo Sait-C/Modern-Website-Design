@@ -257,3 +257,25 @@
     font-size: var(--font-size-100);
   }
 }
+
+/* Mobile top mobile nav cart mega menu */
+.nav-cart-list-menu.top-nav-cart-list-menu-mobile .cart-mega-menu {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 555;
+}
+
+.nav-cart-list-menu.top-nav-cart-list-menu-mobile .cart-btn {
+  padding: 0 !important;
+  font-size: var(--font-size-400) !important;
+}
+
+.nav-cart-list-menu.top-nav-cart-list-menu-mobile .cart-counter-container {
+  padding-right: 15px;
+}
+
+.nav-cart-list-menu.top-nav-cart-list-menu-mobile .cart-counter-container .cart-counter {
+  font-size: 0.8em !important;
+  top: -0.3rem !important;
+  right: 0.3rem !important;
+}
